@@ -32,7 +32,7 @@ class PhotoTabBarController: UITabBarController, Storyboarded {
             
             if photoCount == numAllowedPhotos {
                 //  Present alert to advise user that the photoCount limit has been reached
-                showAlert(PhotoConstants.PhotoRestrictions.alertTitle, message: PhotoConstants.PhotoRestrictions.alertMessage, buttonText: "OK")
+                presentAlert(title: PhotoConstants.PhotoRestrictions.alertTitle, message: PhotoConstants.PhotoRestrictions.alertMessage, buttonTitle: "OK")
                 return
             }
             
@@ -90,13 +90,6 @@ class PhotoTabBarController: UITabBarController, Storyboarded {
         guard let feedViewController = viewControllers?.first as? FeedViewController else { return }
         feedViewController.coordinator = coordinator
     }
-    
-    func showAlert(_ title: String, message: String, buttonText: String) {
-        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: buttonText, style: .default, handler: nil))
-        present(ac, animated: true)
-    }
-
 }
 
 extension PhotoTabBarController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {

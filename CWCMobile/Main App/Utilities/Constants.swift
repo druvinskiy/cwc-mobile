@@ -25,3 +25,7 @@ enum CourseName: String {
     case fundamentals = "Fundamentals"
     case database = "Database"
 }
+
+struct AlertMessage {
+    static var comingSoon = "The \(AppName.guidebook.rawValue) is coming soon. In the meantime, feel free to check out the other apps you'll learn how to build."
+}

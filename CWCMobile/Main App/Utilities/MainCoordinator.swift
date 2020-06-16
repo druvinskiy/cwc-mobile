@@ -62,7 +62,8 @@ class MainCoordinator: NSObject, Coordinator {
             return
             
         case .guidebook:
-            break
+            appVC.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
+            return
         case .none:
             break
         }
