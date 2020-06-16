@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Profile View Controller-->
+        <scene sceneID="yh3-oe-nD3">
+            <objects>
+                <viewController storyboardIdentifier="CreateProfileViewController" modalPresentationStyle="overFullScreen" id="Jy0-ZF-sPk" customClass="CreateProfileViewController" customModule="CWCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ImW-4S-0Vl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-Vq-NzF">
+                                <rect key="frame" x="20" y="345.5" width="374" height="205"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome! Create your username:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-fz-r5F">
+                                        <rect key="frame" x="100" y="0.0" width="174.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCO-lf-lxt">
+                                        <rect key="frame" x="0.0" y="83" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7gj-fe-vER"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARp-mA-r7J">
+                                        <rect key="frame" x="87" y="165" width="200" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="tjy-Xh-MMO"/>
+                                            <constraint firstAttribute="height" constant="40" id="xbj-G9-A5L"/>
+                                        </constraints>
+                                        <state key="normal" title="Confirm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="confirmTapped:" destination="Jy0-ZF-sPk" eventType="touchUpInside" id="b71-O9-bJS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eCO-lf-lxt" firstAttribute="leading" secondItem="xsX-Vq-NzF" secondAttribute="leading" id="5l2-Bm-zD4"/>
+                                    <constraint firstAttribute="trailing" secondItem="eCO-lf-lxt" secondAttribute="trailing" id="DjK-90-4dJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xsX-Vq-NzF" firstAttribute="centerY" secondItem="ImW-4S-0Vl" secondAttribute="centerY" id="BY1-Tw-Jwx"/>
+                            <constraint firstItem="UrI-Fo-Fg9" firstAttribute="trailing" secondItem="xsX-Vq-NzF" secondAttribute="trailing" constant="20" id="Hye-Ye-omi"/>
+                            <constraint firstItem="xsX-Vq-NzF" firstAttribute="leading" secondItem="UrI-Fo-Fg9" secondAttribute="leading" constant="20" id="jod-6O-fQE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UrI-Fo-Fg9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IBA-gj-PN0"/>
+                    <connections>
+                        <outlet property="usernameTextField" destination="eCO-lf-lxt" id="yyu-YK-l6U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMR-dv-Z9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492.753623188406" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

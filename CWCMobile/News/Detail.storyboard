@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="9Vw-Bc-BsG">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="VYW-ay-lBb" customClass="DetailViewController" customModule="CWCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXq-tB-fu1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aog-UD-tN6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="u65-LN-hhn">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aog-UD-tN6" firstAttribute="top" secondItem="gXq-tB-fu1" secondAttribute="top" id="BX8-4l-200"/>
+                            <constraint firstItem="aog-UD-tN6" firstAttribute="leading" secondItem="gXq-tB-fu1" secondAttribute="leading" id="Hof-k1-6hY"/>
+                            <constraint firstItem="u65-LN-hhn" firstAttribute="centerY" secondItem="gXq-tB-fu1" secondAttribute="centerY" id="JVV-Ob-19f"/>
+                            <constraint firstAttribute="bottom" secondItem="aog-UD-tN6" secondAttribute="bottom" id="S70-Gp-fsp"/>
+                            <constraint firstItem="u65-LN-hhn" firstAttribute="centerX" secondItem="gXq-tB-fu1" secondAttribute="centerX" id="SzW-Xk-Djh"/>
+                            <constraint firstAttribute="trailing" secondItem="aog-UD-tN6" secondAttribute="trailing" id="Tle-JQ-jDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dAl-og-pVD"/>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="u65-LN-hhn" id="0DB-Cc-oua"/>
+                        <outlet property="webView" destination="aog-UD-tN6" id="7We-VY-vD9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQh-Pf-XHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>

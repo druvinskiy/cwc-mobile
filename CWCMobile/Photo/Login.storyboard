@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="4DY-Mh-CEE">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="5rC-O7-BgZ" customClass="LoginViewController" customModule="CWCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7YD-Ls-y4u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmY-Ey-pX5">
+                                <rect key="frame" x="107" y="428" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Snf-kh-7IB"/>
+                                    <constraint firstAttribute="height" constant="40" id="mnL-iq-Y4l"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="5rC-O7-BgZ" eventType="touchUpInside" id="Yxq-kO-RGS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snappygram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i46-w3-0w4">
+                                <rect key="frame" x="115" y="279" width="184.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="i46-w3-0w4" firstAttribute="centerY" secondItem="7YD-Ls-y4u" secondAttribute="centerY" constant="-150" id="4lh-Dz-We1"/>
+                            <constraint firstItem="NmY-Ey-pX5" firstAttribute="centerX" secondItem="7YD-Ls-y4u" secondAttribute="centerX" id="SPJ-Vg-efN"/>
+                            <constraint firstItem="NmY-Ey-pX5" firstAttribute="centerY" secondItem="7YD-Ls-y4u" secondAttribute="centerY" id="gzr-B7-kPZ"/>
+                            <constraint firstItem="i46-w3-0w4" firstAttribute="centerX" secondItem="7YD-Ls-y4u" secondAttribute="centerX" id="j8A-IW-HEL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T6j-Mu-x9z"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EuY-ye-nsH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3K-lz-byS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742.0289855072465" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
