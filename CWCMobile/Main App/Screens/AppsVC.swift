@@ -14,7 +14,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     var dataSource = AppsDataSource()
     var appView = CWCAppView()
     
-    init(coordinator: MainCoordinator) {
+    init(coordinator: MainCoordinator?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
         self.coordinator = coordinator
     }

@@ -15,17 +15,3 @@ protocol Coordinator {
 
     func start()
 }
-
-extension Coordinator {
-    var navigationController: UINavigationController {
-        get {
-            return UINavigationController()
-        }
-        
-        set {
-            
-        }
-    }
-    
-    func start() {}
-}

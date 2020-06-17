@@ -29,3 +29,7 @@ enum CourseName: String {
 struct AlertMessage {
     static var comingSoon = "The \(AppName.guidebook.rawValue) is coming soon. In the meantime, feel free to check out the other apps you'll learn how to build."
 }
+
+struct Keys {
+    static let onboardingKey = "onboarding"
+}

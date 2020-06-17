@@ -10,26 +10,42 @@ import UIKit
 
 class MainCoordinator: NSObject, Coordinator {
     var childCoordinators = [Coordinator]()
-    var rootViewController: UIViewController
     var navigationController: UINavigationController
     
-    init(with viewController: UIViewController) {
-        self.rootViewController = viewController
-        navigationController = UINavigationController()
+    let firstLaunch = FirstLaunch.alwaysFirst()
+    
+    init(navigationController: UINavigationController) {
+        
+        self.navigationController = navigationController
+        
+        super.init()
+        
+        self.navigationController.delegate = self
+    }
+    
+    func start() {
+        if firstLaunch.isFirstLaunch {
+            displayOnboarding()
+        } else {
+            displayApps()
+        }
+    }
+    
+    fileprivate func displayOnboarding() {
+        let onboardingVC = OnboardingVC(collectionViewLayout: UICollectionViewFlowLayout())
+        onboardingVC.modalPresentationStyle = .fullScreen
+        onboardingVC.coordinator = self
+        
+        navigationController.present(onboardingVC, animated: true)
     }
     
     func displayApps() {
-        configureNavigationController()
-        rootViewController.present(navigationController, animated: true)
-    }
-    
-    var appVC: AppsVC!
-    
-    fileprivate func configureNavigationController() {
-        appVC = AppsVC(coordinator: self)
-        navigationController = UINavigationController(rootViewController: appVC)
-        navigationController.modalPresentationStyle = .fullScreen
-        navigationController.delegate = self
+        if firstLaunch.isFirstLaunch {
+            navigationController.dismiss(animated: true)
+        }
+        
+        let appsVC = AppsVC(coordinator: self)
+        navigationController.pushViewController(appsVC, animated: true)
     }
     
     func didSelectApp(app: App) {
@@ -62,7 +78,7 @@ class MainCoordinator: NSObject, Coordinator {
             return
             
         case .guidebook:
-            appVC.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
+            //appVC.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
             return
         case .none:
             break
@@ -73,7 +89,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func didSwipeDown() {
-        navigationController.popToViewController(appVC, animated: true)
+        //navigationController.popToViewController(appVC, animated: true)
     }
 }
 
