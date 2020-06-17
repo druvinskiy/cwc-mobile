@@ -38,14 +38,6 @@ class FeedViewController: SwipingAppController, Floatable {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if let viewControllers = self.navigationController?.viewControllers {
-            viewControllers.forEach { (vc) in
-                if vc.isKind(of: LoginViewController.classForCoder()) {
-                     return
-                }
-            }
-        }
-        
         sendFloatingViewUp(numberToSubtractFrom: -140)
     }
     

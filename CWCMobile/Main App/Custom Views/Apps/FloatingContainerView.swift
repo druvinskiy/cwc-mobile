@@ -10,6 +10,8 @@ import UIKit
 
 class FloatingContainerView: UIView {
     
+    static var hasNotBeenShown = false
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -42,16 +44,6 @@ class FloatingContainerView: UIView {
         stackView.fillSuperview(padding: .init(top: 0, left: 16, bottom: 0, right: 16))
         stackView.alignment = .center
     }
-    
-//    private let statusBarHeight: CGFloat = {
-//        var heightToReturn: CGFloat = 0.0
-//             for window in UIApplication.shared.windows {
-//                 if let height = window.windowScene?.statusBarManager?.statusBarFrame.height, height > heightToReturn {
-//                     heightToReturn = height
-//                 }
-//             }
-//        return heightToReturn
-//    }()
     
     func sendUp(numberToSubtractFrom: CGFloat) {
         let statusBarFrame = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero

@@ -37,6 +37,8 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         UIDevice.current.setValue(value, forKey: "orientation")
         
         collectionView.reloadData()
+        
+        FloatingContainerView.hasNotBeenShown = true
     }
     
     override var shouldAutorotate: Bool {
