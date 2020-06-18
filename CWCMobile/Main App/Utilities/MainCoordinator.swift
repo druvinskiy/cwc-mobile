@@ -12,7 +12,7 @@ class MainCoordinator: NSObject, Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
-    let firstLaunch = FirstLaunch.alwaysFirst()
+    lazy var appsVC = AppsVC(coordinator: self)
     
     init(navigationController: UINavigationController) {
         
@@ -24,10 +24,12 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func start() {
+        let firstLaunch = FirstLaunch(userDefaults: .standard, key: Keys.onboardingKey)
+        
+        self.navigationController.pushViewController(appsVC, animated: true)
+        
         if firstLaunch.isFirstLaunch {
             displayOnboarding()
-        } else {
-            displayApps()
         }
     }
     
@@ -40,12 +42,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func displayApps() {
-        if firstLaunch.isFirstLaunch {
-            navigationController.dismiss(animated: true)
-        }
-        
-        let appsVC = AppsVC(coordinator: self)
-        navigationController.pushViewController(appsVC, animated: true)
+        navigationController.dismiss(animated: true)
     }
     
     func didSelectApp(app: App) {
@@ -78,7 +75,7 @@ class MainCoordinator: NSObject, Coordinator {
             return
             
         case .guidebook:
-            //appVC.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
+            navigationController.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
             return
         case .none:
             break
@@ -89,13 +86,13 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func didSwipeDown() {
-        //navigationController.popToViewController(appVC, animated: true)
+        navigationController.popToViewController(appsVC, animated: true)
     }
 }
 
 extension MainCoordinator: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-
+        
         if !(viewController is AppsVC) { return }
         navigationController.navigationBar.prefersLargeTitles = true
     }
