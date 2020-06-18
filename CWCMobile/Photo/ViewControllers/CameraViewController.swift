@@ -16,8 +16,6 @@ class CameraViewController: SwipingAppController {
     
     @IBOutlet weak var doneButton: UIButton!
     
-    var photoCounter = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,10 +31,6 @@ class CameraViewController: SwipingAppController {
         doneButton.alpha = 0
         
         progressLabel.alpha = 0
-        
-        //  Retrieve photoCounter from UserDefaults
-        photoCounter = LocalStorageService.getPhotoCount()
-            
     }
 
     func savePhoto(image: UIImage) {
@@ -64,10 +58,6 @@ class CameraViewController: SwipingAppController {
                 
             }
         }
-    
-        //  Increment photoCounter and save to UserDefaults
-        photoCounter += 1
-        LocalStorageService.savePhotoCount(count: photoCounter)
     }
 
     @IBAction func doneTapped(_ sender: Any) {

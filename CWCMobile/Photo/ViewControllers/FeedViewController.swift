@@ -30,6 +30,9 @@ class FeedViewController: SwipingAppController, Floatable {
             // Set our photos array to the retrieved photos
             self.photos = retrievedPhotos
             
+            // Update the savedPhotoCount
+            LocalStorageService.savePhotoCount(count: self.photos.count)
+            
             // Tell the tableview to reload
             self.tableView.reloadData()
         }
@@ -60,6 +63,9 @@ class FeedViewController: SwipingAppController, Floatable {
             
             // Assign new photos to our photos property
             self.photos = newPhotos
+            
+            // Update the savedPhotoCount
+            LocalStorageService.savePhotoCount(count: self.photos.count)
             
             DispatchQueue.main.async {
                

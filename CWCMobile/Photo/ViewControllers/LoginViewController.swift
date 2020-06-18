@@ -11,10 +11,12 @@ import FirebaseUI
 
 class LoginViewController: SwipingAppController, Floatable {
 
+    var savedUserIds: [String]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        savedUserIds = LocalStorageService.getSavedUserIds()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -77,6 +79,19 @@ extension LoginViewController: FUIAuthDelegate {
                     
                     // Save user to local storage
                     LocalStorageService.saveUser(userId: user!.userId, username: user!.username)
+                    
+                    //  Check that this userId is in savedUserIds array                   
+                    if self.savedUserIds!.count == 0 {
+                        //  Must have previously logged in so add user
+                        self.savedUserIds!.append((user?.userId)!)
+                        LocalStorageService.saveUserIds(userIds: self.savedUserIds!)
+                    } else {
+                        if !(self.savedUserIds?.contains((user?.userId)!))! {
+                            //  A userId exists but it isn't this one so append it to savedUserIds
+                            self.savedUserIds!.append((user?.userId)!)
+                            LocalStorageService.saveUserIds(userIds: self.savedUserIds!)
+                        }
+                    }
                     
                     // Create an instance of the tab bar controller
                     let tabBarVC = PhotoTabBarController.instantiate()
