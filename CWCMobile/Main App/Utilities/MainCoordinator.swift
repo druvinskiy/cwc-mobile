@@ -26,6 +26,7 @@ class MainCoordinator: NSObject, Coordinator {
     func start() {
 //        let firstLaunch = FirstLaunch(userDefaults: .standard, key: Keys.onboardingKey)
         let firstLaunch = FirstLaunch.alwaysFirst()
+        navigationController.navigationBar.isHidden = true
         
         self.navigationController.pushViewController(appsVC, animated: true)
         

@@ -33,6 +33,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         super.viewWillAppear(animated)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.navigationController?.navigationBar.isHidden = false
             self.title = "Apps"
             self.transitionView.removeFromSuperview()
         }
@@ -62,7 +63,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     func setupTransitionView() {
         appView.addSubview(transitionView)
         NSLayoutConstraint.activate([
-            transitionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            transitionView.topAnchor.constraint(equalTo: view.topAnchor),
             transitionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             transitionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             transitionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
