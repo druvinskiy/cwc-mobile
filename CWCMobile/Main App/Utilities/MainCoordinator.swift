@@ -24,14 +24,14 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        let firstLaunch = FirstLaunch(userDefaults: .standard, key: Keys.onboardingKey)
+//        let firstLaunch = FirstLaunch(userDefaults: .standard, key: Keys.onboardingKey)
+        let firstLaunch = FirstLaunch.alwaysFirst()
         
         self.navigationController.pushViewController(appsVC, animated: true)
         
         if firstLaunch.isFirstLaunch {
+            displayOnboarding()
         }
-        displayOnboarding()
-        #warning("Move the displayOnBoaring() function call back into the if statement above when we are happy with the transitionView operation and remove this warning.")
     }
     
     fileprivate func displayOnboarding() {

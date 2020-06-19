@@ -14,9 +14,14 @@ class OnboardingVC: UICollectionViewController {
     
     lazy var dataSource = OnboardingDataSource(coordinator: coordinator)
     lazy var onboardingView = CWCOnboardingView(numberOfPages: dataSource.numberOfPages)
+    lazy var transitionView = TransitionView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.transitionView.removeFromSuperview()
+        }
         collectionView.dataSource = dataSource
     }
     
@@ -25,6 +30,17 @@ class OnboardingVC: UICollectionViewController {
         
         collectionView = onboardingView
         setupCollectionView()
+        setupTransitionView()
+    }
+    
+    func setupTransitionView() {
+        onboardingView.addSubview(transitionView)
+        NSLayoutConstraint.activate([
+            transitionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            transitionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            transitionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            transitionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
     }
     
     func setupCollectionView() {
