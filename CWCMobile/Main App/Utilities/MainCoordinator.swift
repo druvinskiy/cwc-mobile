@@ -29,8 +29,9 @@ class MainCoordinator: NSObject, Coordinator {
         self.navigationController.pushViewController(appsVC, animated: true)
         
         if firstLaunch.isFirstLaunch {
-            displayOnboarding()
         }
+        displayOnboarding()
+        #warning("Move the displayOnBoaring() function call back into the if statement above when we are happy with the transitionView operation and remove this warning.")
     }
     
     fileprivate func displayOnboarding() {

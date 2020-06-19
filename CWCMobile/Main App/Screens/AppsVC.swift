@@ -13,6 +13,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     weak var coordinator: MainCoordinator?
     var dataSource = AppsDataSource()
     var appView = CWCAppView()
+    var transitionView = TransitionView()
     
     init(coordinator: MainCoordinator?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
@@ -25,12 +26,17 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Apps"
+           
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.title = "Apps"
+            self.transitionView.removeFromSuperview()
+        }
+        
         navigationController?.setNavigationBarHidden(false, animated: true)
         
         let value = UIInterfaceOrientation.portrait.rawValue
@@ -50,6 +56,17 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         
         collectionView = appView
         setupCollectionView()
+        setupTransitionView()
+    }
+    
+    func setupTransitionView() {
+        appView.addSubview(transitionView)
+        NSLayoutConstraint.activate([
+            transitionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            transitionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            transitionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            transitionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
     }
     
     func setupCollectionView() {

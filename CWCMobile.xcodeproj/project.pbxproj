@@ -92,6 +92,7 @@
 		B8E2B0A8247B6AA800605EC3 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2B0A7247B6AA800605EC3 /* VerticalStackView.swift */; };
 		B8E4C725248F20A60074CC2A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E4C724248F20A50074CC2A /* Login.storyboard */; };
 		DB7017712485442F0071FF47 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7017702485442F0071FF47 /* WebKit.framework */; };
+		DBDC99AD249CF87500543A05 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC99AC249CF87500543A05 /* TransitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,6 +184,7 @@
 		B8E2B0A7247B6AA800605EC3 /* VerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		B8E4C724248F20A50074CC2A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DB7017702485442F0071FF47 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DBDC99AC249CF87500543A05 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
 		F606A965A2CC5B32D4F134A3 /* Pods-CWCMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWCMobile.release.xcconfig"; path = "Target Support Files/Pods-CWCMobile/Pods-CWCMobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +249,7 @@
 				B8E2B0A1247B68E600605EC3 /* Apps */,
 				B82A95C32479F667006063BC /* Onboarding */,
 				B83ED0BC249957EE008F4ABD /* AlertContainerView.swift */,
+				DBDC99AC249CF87500543A05 /* TransitionView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -736,6 +739,7 @@
 				B86EDB8924832C0300E020D8 /* ArticleModel.swift in Sources */,
 				B82A95C22479E5E4006063BC /* UIView+Layout.swift in Sources */,
 				B86EDB9324832C4400E020D8 /* NewsViewController.swift in Sources */,
+				DBDC99AD249CF87500543A05 /* TransitionView.swift in Sources */,
 				B86EDB9024832C3B00E020D8 /* CacheManager.swift in Sources */,
 				B87ECFB32480CCC2005E2356 /* MatchViewController.swift in Sources */,
 				B8E2B09F247B66C400605EC3 /* App.swift in Sources */,
