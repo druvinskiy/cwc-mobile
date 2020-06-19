@@ -19,10 +19,13 @@ class OnboardingVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.transitionView.removeFromSuperview()
-        }
         collectionView.dataSource = dataSource
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        transitionView.removeFromSuperview()
     }
     
     override func loadView() {

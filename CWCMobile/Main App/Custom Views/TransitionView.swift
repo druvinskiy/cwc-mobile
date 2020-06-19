@@ -24,6 +24,17 @@ class TransitionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func removeFromSuperview() {
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: .curveEaseOut, animations: {
+
+            self.alpha = 0
+            
+        }, completion: { (_) in
+            
+            super.removeFromSuperview()
+        })
+    }
+    
     private func configure() {
         backgroundColor = .systemBackground
         translatesAutoresizingMaskIntoConstraints = false
