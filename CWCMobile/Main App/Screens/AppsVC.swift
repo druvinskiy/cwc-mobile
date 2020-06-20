@@ -59,12 +59,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     func setupTransitionView() {
         appView.addSubview(transitionView)
-        NSLayoutConstraint.activate([
-            transitionView.topAnchor.constraint(equalTo: view.topAnchor),
-            transitionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            transitionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            transitionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
+        transitionView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
     
     func setupCollectionView() {

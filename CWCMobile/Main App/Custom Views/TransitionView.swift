@@ -37,6 +37,5 @@ class TransitionView: UIView {
     
     private func configure() {
         backgroundColor = .systemBackground
-        translatesAutoresizingMaskIntoConstraints = false
     }
 }
