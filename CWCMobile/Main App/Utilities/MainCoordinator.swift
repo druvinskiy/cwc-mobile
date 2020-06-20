@@ -78,7 +78,22 @@ class MainCoordinator: NSObject, Coordinator {
         navigationController.pushViewController(tabBarVC, animated: true)
     }
     
-    @objc fileprivate func handleSettings() { }
+    @objc fileprivate func handleSettings() {
+        let settingsVC = SettingsVC()
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleDone))
+        settingsVC.navigationItem.rightBarButtonItem = doneButton
+        
+        let settingsNavigationController = UINavigationController(rootViewController: settingsVC)
+        settingsNavigationController.navigationBar.prefersLargeTitles = true
+        settingsNavigationController.modalPresentationStyle = .fullScreen
+        
+        navigationController.present(settingsNavigationController, animated: true)
+    }
+    
+    @objc fileprivate func handleDone() {
+        navigationController.dismiss(animated: true)
+    }
     
     fileprivate func displayOnboarding() {
         let onboardingVC = OnboardingVC(collectionViewLayout: UICollectionViewFlowLayout())

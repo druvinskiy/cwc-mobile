@@ -44,6 +44,10 @@
 		B86EDB9124832C3B00E020D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EDB8F24832C3B00E020D8 /* DetailViewController.swift */; };
 		B86EDB9324832C4400E020D8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EDB9224832C4400E020D8 /* NewsViewController.swift */; };
 		B87C8E5D249AE4FF008DF3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87C8E5C249AE4FF008DF3E9 /* LaunchScreen.storyboard */; };
+		B87C8E5F249E9B84008DF3E9 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E5E249E9B84008DF3E9 /* SettingsVC.swift */; };
+		B87C8E61249E9CAC008DF3E9 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E60249E9CAC008DF3E9 /* UITableView+Ext.swift */; };
+		B87C8E64249E9DCF008DF3E9 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */; };
+		B87C8E66249E9E37008DF3E9 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */; };
 		B87ECF7C247E0028005E2356 /* AppCellBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */; };
 		B87ECF7E247E00B4005E2356 /* ImageAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */; };
 		B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF80247F57F8005E2356 /* AppsDataSource.swift */; };
@@ -136,6 +140,10 @@
 		B86EDB8F24832C3B00E020D8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B86EDB9224832C4400E020D8 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		B87C8E5C249AE4FF008DF3E9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B87C8E5E249E9B84008DF3E9 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		B87C8E60249E9CAC008DF3E9 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellBackgroundView.swift; sourceTree = "<group>"; };
 		B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAppCell.swift; sourceTree = "<group>"; };
 		B87ECF80247F57F8005E2356 /* AppsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDataSource.swift; sourceTree = "<group>"; };
@@ -206,6 +214,7 @@
 			children = (
 				B82A95B22478CFCD006063BC /* Managers */,
 				B87ECF7F247F57AC005E2356 /* Datasources */,
+				B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */,
 				B82A95BD2479E016006063BC /* Constants.swift */,
 				B8E2B094247B08AF00605EC3 /* Coordinator.swift */,
 				B8E2B098247B09F200605EC3 /* MainCoordinator.swift */,
@@ -239,6 +248,7 @@
 				B82A95C12479E5E4006063BC /* UIView+Layout.swift */,
 				B82A95CA247A1236006063BC /* UIViews+Convenience.swift */,
 				B83ED0B82499572A008F4ABD /* UIViewController+Ext.swift */,
+				B87C8E60249E9CAC008DF3E9 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,6 +256,7 @@
 		B82A95B52478D001006063BC /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				B87C8E62249E9D82008DF3E9 /* Settings */,
 				B8E2B0A1247B68E600605EC3 /* Apps */,
 				B82A95C32479F667006063BC /* Onboarding */,
 				B83ED0BC249957EE008F4ABD /* AlertContainerView.swift */,
@@ -259,6 +270,7 @@
 			children = (
 				B8E2B092247AF72500605EC3 /* OnboardingVC.swift */,
 				B8E2B09C247B470D00605EC3 /* AppsVC.swift */,
+				B87C8E5E249E9B84008DF3E9 /* SettingsVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -358,6 +370,14 @@
 				B86EDB9224832C4400E020D8 /* NewsViewController.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		B87C8E62249E9D82008DF3E9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		B87ECF7F247F57AC005E2356 /* Datasources */ = {
@@ -707,6 +727,7 @@
 				B87ECFB82480CCEB005E2356 /* CardCollectionViewCell.swift in Sources */,
 				B87ECFAE2480C55F005E2356 /* SwipingAppController.swift in Sources */,
 				B87ECFB72480CCEB005E2356 /* Card.swift in Sources */,
+				B87C8E5F249E9B84008DF3E9 /* SettingsVC.swift in Sources */,
 				B82A95BA2478D0F3006063BC /* PageCell.swift in Sources */,
 				B8E2B091247AF41B00605EC3 /* OnboardingDataSource.swift in Sources */,
 				B8D393AC2485CF3100ED8646 /* Photo.swift in Sources */,
@@ -734,6 +755,7 @@
 				B8D393A92485CF3100ED8646 /* FeedViewController.swift in Sources */,
 				B86EDB7E2483279F00E020D8 /* Question.swift in Sources */,
 				B87ECFC42480CD01005E2356 /* SoundManager.swift in Sources */,
+				B87C8E61249E9CAC008DF3E9 /* UITableView+Ext.swift in Sources */,
 				B87ECF7C247E0028005E2356 /* AppCellBackgroundView.swift in Sources */,
 				B87ECFB92480CCEB005E2356 /* CardModel.swift in Sources */,
 				B86EDB8924832C0300E020D8 /* ArticleModel.swift in Sources */,
@@ -748,6 +770,8 @@
 				B8D393A82485CF3100ED8646 /* CreateProfileViewController.swift in Sources */,
 				B86EDB7C2483279F00E020D8 /* QuizViewController.swift in Sources */,
 				B82A95CB247A1236006063BC /* UIViews+Convenience.swift in Sources */,
+				B87C8E66249E9E37008DF3E9 /* SettingsSection.swift in Sources */,
+				B87C8E64249E9DCF008DF3E9 /* SettingsCell.swift in Sources */,
 				B8D393A52485CF3100ED8646 /* CameraViewController.swift in Sources */,
 				B83ED0BB24995789008F4ABD /* AlertVC.swift in Sources */,
 				B82A95BC2478D169006063BC /* Page.swift in Sources */,
