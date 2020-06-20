@@ -42,6 +42,6 @@ class OnboardingDataSource: NSObject, UICollectionViewDataSource {
     }
     
     @objc fileprivate func startButtonPressed() {
-        coordinator?.displayApps()
+        coordinator?.startButtonPressed()
     }
 }

@@ -26,19 +26,12 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           
+        
+        self.title = "Apps"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.navigationController?.navigationBar.isHidden = false
-            self.title = "Apps"
-            self.transitionView.removeFromSuperview()
-        }
-        
-        navigationController?.setNavigationBarHidden(false, animated: true)
         
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
@@ -58,6 +51,10 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         collectionView = appView
         setupCollectionView()
         setupTransitionView()
+    }
+    
+    func removeTransitionView() {
+        transitionView.removeFromSuperview()
     }
     
     func setupTransitionView() {

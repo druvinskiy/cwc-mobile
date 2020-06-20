@@ -9,10 +9,10 @@
 import UIKit
 
 class MainCoordinator: NSObject, Coordinator {
-    var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
-    
-    lazy var appsVC = AppsVC(coordinator: self)
+    internal var childCoordinators = [Coordinator]()
+    internal var navigationController: UINavigationController
+    fileprivate lazy var appsVC = AppsVC(coordinator: self)
+    fileprivate var specificAppVC = SwipingAppController()
     
     init(navigationController: UINavigationController) {
         
@@ -20,66 +20,31 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-//        let firstLaunch = FirstLaunch(userDefaults: .standard, key: Keys.onboardingKey)
+        configureNavigationController()
+        
         let firstLaunch = FirstLaunch.alwaysFirst()
-        
-        navigationController.delegate = self
-        navigationController.navigationBar.isHidden = true
-        navigationController.pushViewController(appsVC, animated: true)
-        
-        let settingsButton = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(handleSettings))
-        navigationController.navigationItem.rightBarButtonItem = settingsButton
-        
-        if firstLaunch.isFirstLaunch {
-            displayOnboarding()
-        }
+        if firstLaunch.isFirstLaunch { displayOnboarding() } else { displayApps() }
     }
     
-    @objc fileprivate func handleSettings() {
-        
-    }
-    
-    fileprivate func displayOnboarding() {
-        let onboardingVC = OnboardingVC(collectionViewLayout: UICollectionViewFlowLayout())
-        onboardingVC.modalPresentationStyle = .fullScreen
-        onboardingVC.coordinator = self
-        
-        navigationController.present(onboardingVC, animated: true)
-    }
-    
-    func displayApps() {
+    func startButtonPressed() {
         navigationController.dismiss(animated: true)
     }
     
     func didSelectApp(app: App) {
         let appName = AppName(rawValue: app.name)
-        var viewController = SwipingAppController()
         
         switch appName {
         case .war:
-            viewController = WarViewController.instantiate()
+            specificAppVC = WarViewController.instantiate()
         case .match:
-            viewController = MatchViewController.instantiate()
+            specificAppVC = MatchViewController.instantiate()
         case .quiz:
-            viewController = QuizViewController.instantiate()
+            specificAppVC = QuizViewController.instantiate()
         case .news:
-            viewController = NewsViewController.instantiate()
+            specificAppVC = NewsViewController.instantiate()
         case .photo:
-            
-            let loginVC = LoginViewController.instantiate()
-            loginVC.coordinator = self
-            
-            guard LocalStorageService.loadUser() != nil else {
-                viewController = LoginViewController.instantiate()
-                break
-            }
-            
-            let tabBarVC = PhotoTabBarController.instantiate()
-            tabBarVC.loginVC = loginVC
-            tabBarVC.set(coordinator: self)
-            navigationController.pushViewController(tabBarVC, animated: true)
+            setupPhotoApp()
             return
-            
         case .guidebook:
             navigationController.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
             return
@@ -87,19 +52,53 @@ class MainCoordinator: NSObject, Coordinator {
             break
         }
         
-        viewController.coordinator = self
-        navigationController.pushViewController(viewController, animated: true)
+        specificAppVC.coordinator = self
+        navigationController.pushViewController(specificAppVC, animated: true)
     }
     
     func didSwipeDown() {
+        navigationController.setNavigationBarHidden(false, animated: false)
         navigationController.popToViewController(appsVC, animated: true)
     }
-}
-
-extension MainCoordinator: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+    
+    // MARK: - Fileprivate
+    
+    fileprivate func setupPhotoApp() {
+        let loginVC = LoginViewController.instantiate()
+        loginVC.coordinator = self
         
-        if !(viewController is AppsVC) { return }
+        guard LocalStorageService.loadUser() != nil else {
+            specificAppVC = LoginViewController.instantiate()
+            return
+        }
+        
+        let tabBarVC = PhotoTabBarController.instantiate()
+        tabBarVC.loginVC = loginVC
+        tabBarVC.set(coordinator: self)
+        navigationController.pushViewController(tabBarVC, animated: true)
+    }
+    
+    @objc fileprivate func handleSettings() { }
+    
+    fileprivate func displayOnboarding() {
+        let onboardingVC = OnboardingVC(collectionViewLayout: UICollectionViewFlowLayout())
+        onboardingVC.modalPresentationStyle = .fullScreen
+        onboardingVC.coordinator = self
+        
+        navigationController.present(onboardingVC, animated: true) { self.displayApps() }
+    }
+    
+    fileprivate func configureNavigationController() {
         navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.setNavigationBarHidden(true, animated: true)
+        navigationController.pushViewController(appsVC, animated: true)
+        
+        let settingsButton = UIBarButtonItem(image: #imageLiteral(resourceName: "settings").withTintColor(Theme.chrisBlue!), style: .plain, target: self, action: #selector(handleSettings))
+        appsVC.navigationItem.rightBarButtonItem = settingsButton
+    }
+    
+    fileprivate func displayApps() {
+        navigationController.setNavigationBarHidden(false, animated: true)
+        appsVC.removeTransitionView()
     }
 }
