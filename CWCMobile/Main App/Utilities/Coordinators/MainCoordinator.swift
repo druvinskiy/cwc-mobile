@@ -23,7 +23,7 @@ class MainCoordinator: NSObject, Coordinator {
         configureNavigationController()
         
         let firstLaunch = FirstLaunch.alwaysFirst()
-        if firstLaunch.isFirstLaunch { displayOnboarding() } else { displayApps() }
+        if firstLaunch.isFirstLaunch { displayOnboarding(addTransitionView: true) } else { displayApps() }
     }
     
     func startButtonPressed() {
@@ -61,6 +61,17 @@ class MainCoordinator: NSObject, Coordinator {
         navigationController.popToViewController(appsVC, animated: true)
     }
     
+    func replayWalkthroughPressed() {
+        displayOnboarding(addTransitionView: false)
+    }
+    
+    func childDidFinish(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() where coordinator === child {
+            childCoordinators.remove(at: index)
+            break
+        }
+    }
+    
     // MARK: - Fileprivate
     
     fileprivate func setupPhotoApp() {
@@ -79,24 +90,14 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     @objc fileprivate func handleSettings() {
-        let settingsVC = SettingsVC()
-        
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleDone))
-        settingsVC.navigationItem.rightBarButtonItem = doneButton
-        
-        let settingsNavigationController = UINavigationController(rootViewController: settingsVC)
-        settingsNavigationController.navigationBar.prefersLargeTitles = true
-        settingsNavigationController.modalPresentationStyle = .fullScreen
-        
-        navigationController.present(settingsNavigationController, animated: true)
+        let child = SettingsCoordinator(navigationController: navigationController)
+        child.parentCoordinator = self
+        childCoordinators.append(child)
+        child.start()
     }
     
-    @objc fileprivate func handleDone() {
-        navigationController.dismiss(animated: true)
-    }
-    
-    fileprivate func displayOnboarding() {
-        let onboardingVC = OnboardingVC(collectionViewLayout: UICollectionViewFlowLayout())
+    fileprivate func displayOnboarding(addTransitionView: Bool) {
+        let onboardingVC = addTransitionView ? TransitionOnboardingVC() : OnboardingVC()
         onboardingVC.modalPresentationStyle = .fullScreen
         onboardingVC.coordinator = self
         

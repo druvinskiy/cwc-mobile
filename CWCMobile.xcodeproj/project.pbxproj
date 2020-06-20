@@ -48,6 +48,7 @@
 		B87C8E61249E9CAC008DF3E9 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E60249E9CAC008DF3E9 /* UITableView+Ext.swift */; };
 		B87C8E64249E9DCF008DF3E9 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */; };
 		B87C8E66249E9E37008DF3E9 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */; };
+		B87C8E69249EC2AB008DF3E9 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */; };
 		B87ECF7C247E0028005E2356 /* AppCellBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */; };
 		B87ECF7E247E00B4005E2356 /* ImageAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */; };
 		B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF80247F57F8005E2356 /* AppsDataSource.swift */; };
@@ -144,6 +145,7 @@
 		B87C8E60249E9CAC008DF3E9 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellBackgroundView.swift; sourceTree = "<group>"; };
 		B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAppCell.swift; sourceTree = "<group>"; };
 		B87ECF80247F57F8005E2356 /* AppsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDataSource.swift; sourceTree = "<group>"; };
@@ -212,12 +214,11 @@
 		B82A95B12478CFC4006063BC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B87C8E67249EC287008DF3E9 /* Coordinators */,
 				B82A95B22478CFCD006063BC /* Managers */,
 				B87ECF7F247F57AC005E2356 /* Datasources */,
 				B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */,
 				B82A95BD2479E016006063BC /* Constants.swift */,
-				B8E2B094247B08AF00605EC3 /* Coordinator.swift */,
-				B8E2B098247B09F200605EC3 /* MainCoordinator.swift */,
 				B8E2B096247B08F700605EC3 /* Storyboarded.swift */,
 				B8C129B12496951300FA319D /* Floatable.swift */,
 				B8E2B0A7247B6AA800605EC3 /* VerticalStackView.swift */,
@@ -378,6 +379,16 @@
 				B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		B87C8E67249EC287008DF3E9 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B8E2B094247B08AF00605EC3 /* Coordinator.swift */,
+				B8E2B098247B09F200605EC3 /* MainCoordinator.swift */,
+				B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		B87ECF7F247F57AC005E2356 /* Datasources */ = {
@@ -741,6 +752,7 @@
 				B82A95BE2479E016006063BC /* Constants.swift in Sources */,
 				B87ECF83247F5944005E2356 /* CWCAppView.swift in Sources */,
 				B8E2B093247AF72500605EC3 /* OnboardingVC.swift in Sources */,
+				B87C8E69249EC2AB008DF3E9 /* SettingsCoordinator.swift in Sources */,
 				B82A95C9247A1186006063BC /* CWCOnboardingButton.swift in Sources */,
 				B8E2B09B247B457000605EC3 /* StartPageCell.swift in Sources */,
 				B82A95C52479F6B0006063BC /* CWCOnboardingView.swift in Sources */,

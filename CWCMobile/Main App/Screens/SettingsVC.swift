@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsVC: UITableViewController {
     
+    weak var coordinator: SettingsCoordinator?
+    
     fileprivate let settingsCellId = "settingsCellId"
     
     override func viewDidLoad() {
@@ -53,5 +55,21 @@ class SettingsVC: UITableViewController {
         }
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let section = SettingsSection(rawValue: indexPath.section) else { return }
+        
+        switch section {
+        case .general:
+            let general = GeneralOptions(rawValue: indexPath.row)
+            
+            switch general {
+            case .showOnboarding:
+                coordinator?.replayWalkthroughPressed()
+            default:
+                break
+            }
+        }
     }
 }
