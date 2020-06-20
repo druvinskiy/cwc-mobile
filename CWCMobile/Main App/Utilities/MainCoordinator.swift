@@ -17,22 +17,26 @@ class MainCoordinator: NSObject, Coordinator {
     init(navigationController: UINavigationController) {
         
         self.navigationController = navigationController
-        
-        super.init()
-        
-        self.navigationController.delegate = self
     }
     
     func start() {
 //        let firstLaunch = FirstLaunch(userDefaults: .standard, key: Keys.onboardingKey)
         let firstLaunch = FirstLaunch.alwaysFirst()
-        navigationController.navigationBar.isHidden = true
         
-        self.navigationController.pushViewController(appsVC, animated: true)
+        navigationController.delegate = self
+        navigationController.navigationBar.isHidden = true
+        navigationController.pushViewController(appsVC, animated: true)
+        
+        let settingsButton = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(handleSettings))
+        navigationController.navigationItem.rightBarButtonItem = settingsButton
         
         if firstLaunch.isFirstLaunch {
             displayOnboarding()
         }
+    }
+    
+    @objc fileprivate func handleSettings() {
+        
     }
     
     fileprivate func displayOnboarding() {
