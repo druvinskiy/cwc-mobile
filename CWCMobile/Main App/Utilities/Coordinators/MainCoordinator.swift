@@ -59,6 +59,9 @@ class MainCoordinator: NSObject, Coordinator {
         navigationController.setNavigationBarHidden(false, animated: false)
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.popToViewController(appsVC, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            self?.navigationController.navigationBar.sizeToFit()
+        }
     }
     
     func replayWalkthroughPressed() {
