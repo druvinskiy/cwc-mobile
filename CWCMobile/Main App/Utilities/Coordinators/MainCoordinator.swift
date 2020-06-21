@@ -58,6 +58,7 @@ class MainCoordinator: NSObject, Coordinator {
     
     func didSwipeDown() {
         navigationController.setNavigationBarHidden(false, animated: false)
+        navigationController.navigationBar.prefersLargeTitles = true
         navigationController.popToViewController(appsVC, animated: true)
     }
     

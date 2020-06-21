@@ -39,6 +39,10 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         collectionView.reloadData()
         
         FloatingContainerView.hasNotBeenShown = true
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.navigationBar.sizeToFit()
+        }
     }
     
     override var shouldAutorotate: Bool {
