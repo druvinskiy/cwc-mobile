@@ -8,13 +8,23 @@
 
 import UIKit
 
+protocol SettingsCellDelegate: AnyObject {
+    func handleSwitchAction(isEnabled: Bool, cell: SettingsCell)
+}
+
 class SettingsCell: UITableViewCell {
+    
+    weak var delegate: SettingsCellDelegate?
     
     var sectionType: SectionType? {
         didSet {
             guard let sectionType = sectionType else {return}
             textLabel?.text = sectionType.description
-            switchControl.isHidden = !sectionType .containsSwitch
+            switchControl.isHidden = !sectionType.containsSwitch
+            
+            if sectionType.containsSwitch {
+                selectionStyle = .none
+            }
         }
     }
     
@@ -33,7 +43,6 @@ class SettingsCell: UITableViewCell {
         addSubview(switchControl)
         switchControl.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         switchControl.rightAnchor.constraint(equalTo: rightAnchor, constant: -12).isActive = true
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,6 +50,6 @@ class SettingsCell: UITableViewCell {
     }
     
     @objc func handleSwitchAction (sender: UISwitch) {
-        FloatingContainerView.isEnabled = sender.isOn
+        delegate?.handleSwitchAction(isEnabled: sender.isOn, cell: self)
     }
 }

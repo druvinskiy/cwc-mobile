@@ -8,11 +8,14 @@
 
 import UIKit
 
+//swiftlint:disable weak_delegate
+
 class SettingsVC: UITableViewController {
     
     weak var coordinator: SettingsCoordinator?
     
     fileprivate let settingsCellId = "settingsCellId"
+    fileprivate lazy var settingsDelegate = MySettingsCellDelegate(tableView: tableView)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,10 +55,11 @@ class SettingsVC: UITableViewController {
         case .general:
             let general = GeneralOptions(rawValue: indexPath.row)
             cell.sectionType = general
+            cell.delegate = settingsDelegate
             
             switch general {
             case .showSwipeMessage:
-                cell.switchControl.isOn = FloatingContainerView.isEnabled
+                cell.switchControl.isOn = MainLocalStorageService.isFloatingViewEnabled()
             default:
                 break
             }

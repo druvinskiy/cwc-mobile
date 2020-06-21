@@ -49,6 +49,8 @@
 		B87C8E64249E9DCF008DF3E9 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */; };
 		B87C8E66249E9E37008DF3E9 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */; };
 		B87C8E69249EC2AB008DF3E9 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */; };
+		B87C8E6B249FE896008DF3E9 /* MainLocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */; };
+		B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */; };
 		B87ECF7C247E0028005E2356 /* AppCellBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */; };
 		B87ECF7E247E00B4005E2356 /* ImageAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */; };
 		B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF80247F57F8005E2356 /* AppsDataSource.swift */; };
@@ -146,6 +148,8 @@
 		B87C8E63249E9DCF008DF3E9 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		B87C8E65249E9E37008DF3E9 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLocalStorageService.swift; sourceTree = "<group>"; };
+		B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingsCellDelegate.swift; sourceTree = "<group>"; };
 		B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellBackgroundView.swift; sourceTree = "<group>"; };
 		B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAppCell.swift; sourceTree = "<group>"; };
 		B87ECF80247F57F8005E2356 /* AppsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDataSource.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 		B82A95B12478CFC4006063BC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B87C8E6C24A00C88008DF3E9 /* Delegates */,
 				B87C8E67249EC287008DF3E9 /* Coordinators */,
 				B82A95B22478CFCD006063BC /* Managers */,
 				B87ECF7F247F57AC005E2356 /* Datasources */,
@@ -230,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				B83ED0C02499A512008F4ABD /* FirstLaunch.swift */,
+				B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -389,6 +395,14 @@
 				B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B87C8E6C24A00C88008DF3E9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		B87ECF7F247F57AC005E2356 /* Datasources */ = {
@@ -735,6 +749,7 @@
 				B8D393AD2485CF3100ED8646 /* PhotoConstants.swift in Sources */,
 				B8E2B095247B08AF00605EC3 /* Coordinator.swift in Sources */,
 				B8E2B0A4247B695300605EC3 /* ColorAppCell.swift in Sources */,
+				B87C8E6B249FE896008DF3E9 /* MainLocalStorageService.swift in Sources */,
 				B87ECFB82480CCEB005E2356 /* CardCollectionViewCell.swift in Sources */,
 				B87ECFAE2480C55F005E2356 /* SwipingAppController.swift in Sources */,
 				B87ECFB72480CCEB005E2356 /* Card.swift in Sources */,
@@ -791,6 +806,7 @@
 				B8E2B09D247B470D00605EC3 /* AppsVC.swift in Sources */,
 				B8E2B099247B09F200605EC3 /* MainCoordinator.swift in Sources */,
 				B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */,
+				B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */,
 				B8E2B097247B08F700605EC3 /* Storyboarded.swift in Sources */,
 				B8C129B22496951300FA319D /* Floatable.swift in Sources */,
 				B86EDB7F2483279F00E020D8 /* ResultViewController.swift in Sources */,

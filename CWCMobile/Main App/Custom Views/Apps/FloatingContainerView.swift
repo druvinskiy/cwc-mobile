@@ -9,9 +9,7 @@
 import UIKit
 
 class FloatingContainerView: UIView {
-    
-    static var isEnabled = true
-    
+
     static private(set) var hasBeenShown = true
     
     override init(frame: CGRect) {
@@ -24,7 +22,7 @@ class FloatingContainerView: UIView {
     }
     
     static func hasBeenShown(_ value: Bool) {
-        guard isEnabled else {
+        guard MainLocalStorageService.isFloatingViewEnabled() else {
             hasBeenShown = true
             return
         }

@@ -32,4 +32,5 @@ struct AlertMessage {
 
 struct Keys {
     static let onboardingKey = "onboarding"
+    static let floatingViewKey = "floatingView"
 }
