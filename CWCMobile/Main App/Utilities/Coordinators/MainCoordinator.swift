@@ -81,6 +81,8 @@ class MainCoordinator: NSObject, Coordinator {
         
         guard LocalStorageService.loadUser() != nil else {
             specificAppVC = LoginViewController.instantiate()
+            specificAppVC.coordinator = self
+            navigationController.pushViewController(specificAppVC, animated: true)
             return
         }
         
