@@ -10,7 +10,9 @@ import UIKit
 
 class FloatingContainerView: UIView {
     
-    static var hasNotBeenShown = false
+    static var isEnabled = true
+    
+    static private(set) var hasBeenShown = true
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,6 +21,15 @@ class FloatingContainerView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    static func hasBeenShown(_ value: Bool) {
+        guard isEnabled else {
+            hasBeenShown = true
+            return
+        }
+        
+        hasBeenShown = value
     }
     
     private func configure() {

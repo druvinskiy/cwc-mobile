@@ -21,11 +21,11 @@ extension Floatable where Self: UIViewController {
     }
     
     func sendFloatingViewUp(numberToSubtractFrom: CGFloat = -90) {
-        guard FloatingContainerView.hasNotBeenShown else { return }
+        guard !FloatingContainerView.hasBeenShown else { return }
         
         setupFloatingView()
         guard let floatingContainerView = view.subviews.first(where: { $0 is FloatingContainerView }) as? FloatingContainerView else { return }
         floatingContainerView.sendUp(numberToSubtractFrom: numberToSubtractFrom)
-        FloatingContainerView.hasNotBeenShown = false
+        FloatingContainerView.hasBeenShown(true)
     }
 }

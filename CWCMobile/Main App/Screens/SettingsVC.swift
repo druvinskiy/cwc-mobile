@@ -52,6 +52,13 @@ class SettingsVC: UITableViewController {
         case .general:
             let general = GeneralOptions(rawValue: indexPath.row)
             cell.sectionType = general
+            
+            switch general {
+            case .showSwipeMessage:
+                cell.switchControl.isOn = FloatingContainerView.isEnabled
+            default:
+                break
+            }
         }
         
         return cell

@@ -38,7 +38,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         
         collectionView.reloadData()
         
-        FloatingContainerView.hasNotBeenShown = true
+        FloatingContainerView.hasBeenShown(false)
         
         DispatchQueue.main.async { [weak self] in
             self?.navigationController?.navigationBar.sizeToFit()

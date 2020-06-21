@@ -20,7 +20,6 @@ class SettingsCell: UITableViewCell {
     
     lazy var switchControl: UISwitch = {
         let sc = UISwitch()
-        sc.isOn = true
         sc.onTintColor = Theme.chrisBlue
         sc.translatesAutoresizingMaskIntoConstraints = false
         sc.addTarget(self, action: #selector(handleSwitchAction), for: .valueChanged)
@@ -42,10 +41,6 @@ class SettingsCell: UITableViewCell {
     }
     
     @objc func handleSwitchAction (sender: UISwitch) {
-        if sender.isOn {
-            print("Turned on")
-        } else {
-            print("Turned off")
-        }
+        FloatingContainerView.isEnabled = sender.isOn
     }
 }
