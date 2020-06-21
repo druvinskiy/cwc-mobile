@@ -29,6 +29,6 @@ struct PhotoConstants {
         
         static let numAllowedPhotos = 3
         static let alertTitle = "Photo Limit Reached"
-        static let alertMessage = "You may only save a maximum of \(numAllowedPhotos) images in this sample \(AppName.photo.rawValue).\n\nConsider enrolling in the iOS Foundations course to build your own version of the app."
+        static let alertMessage = "You may only save a maximum of \(numAllowedPhotos) images in this sample \(AppName.photo.rawValue).\n\nConsider enrolling in the iOS Databases course to build your own version of the app."
     }
 }
