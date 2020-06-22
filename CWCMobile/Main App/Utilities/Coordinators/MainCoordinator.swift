@@ -44,6 +44,7 @@ class MainCoordinator: NSObject, Coordinator {
             specificAppVC = NewsViewController.instantiate()
         case .photo:
             setupPhotoApp()
+            return
         case .guidebook:
             navigationController.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
             return
@@ -83,6 +84,8 @@ class MainCoordinator: NSObject, Coordinator {
         
         guard LocalStorageService.loadUser() != nil else {
             specificAppVC = LoginViewController.instantiate()
+            specificAppVC.coordinator = self
+            navigationController.pushViewController(specificAppVC, animated: true)
             return
         }
         
