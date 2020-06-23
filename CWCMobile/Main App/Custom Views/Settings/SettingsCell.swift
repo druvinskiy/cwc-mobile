@@ -8,30 +8,34 @@
 
 import UIKit
 
-protocol SettingsCellDelegate: AnyObject {
-    func handleSwitchAction(isEnabled: Bool, cell: SettingsCell)
+protocol SwitchSettingsCellDelegate: AnyObject {
+    func handleSwitchAction(item: GeneralItem)
 }
 
 class SettingsCell: UITableViewCell {
+    static let generalSettingsCellId = "generalSettingsCellId"
     
-    weak var delegate: SettingsCellDelegate?
-    
-    var sectionType: SectionType? {
+    var cellModel: GeneralSetting! {
         didSet {
-            guard let sectionType = sectionType else {return}
-            textLabel?.text = sectionType.description
-            switchControl.isHidden = !sectionType.containsSwitch
-            
-            if sectionType.containsSwitch {
-                selectionStyle = .none
-            }
+            textLabel?.text = cellModel.description
+        }
+    }
+}
+
+class SwitchSettingsCell: UITableViewCell {
+    weak var delegate: SwitchSettingsCellDelegate?
+    static let switchSettingsCellId = "switchSettingsCellId"
+    
+    var cellModel: SwitchSetting! {
+        didSet {
+            textLabel?.text = cellModel.description
+            switchControl.isOn = cellModel.isOn
         }
     }
     
     lazy var switchControl: UISwitch = {
         let sc = UISwitch()
         sc.onTintColor = Theme.chrisBlue
-        sc.translatesAutoresizingMaskIntoConstraints = false
         sc.addTarget(self, action: #selector(handleSwitchAction), for: .valueChanged)
         
         return sc
@@ -41,15 +45,16 @@ class SettingsCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         addSubview(switchControl)
-        switchControl.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        switchControl.rightAnchor.constraint(equalTo: rightAnchor, constant: -12).isActive = true
+        switchControl.centerYInSuperview()
+        switchControl.anchor(top: nil, leading: nil, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 12))
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func handleSwitchAction (sender: UISwitch) {
-        delegate?.handleSwitchAction(isEnabled: sender.isOn, cell: self)
+    @objc func handleSwitchAction(sender: UISwitch) {
+        cellModel.isOn = sender.isOn
+        delegate?.handleSwitchAction(item: GeneralItem.showOnboarding(cellModel))
     }
 }

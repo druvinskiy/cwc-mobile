@@ -34,3 +34,16 @@ struct Keys {
     static let onboardingKey = "onboarding"
     static let floatingViewKey = "floatingView"
 }
+
+struct Settings {
+    static func loadSettingsSections() -> [SettingsSection] {
+        return [
+            SettingsSection(title: "General", cells: [
+                GeneralItem.showOnboarding(.init(description: "Replay Walkthrough")),
+                GeneralItem.showSwipeMessage(.init(description: "Show \"Swipe Down\" Message", isOn: MainLocalStorageService.isFloatingViewEnabled()))
+            ])
+        ]
+    }
+}
+
+//Connect with us on Social Media

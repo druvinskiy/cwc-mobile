@@ -51,6 +51,7 @@
 		B87C8E69249EC2AB008DF3E9 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */; };
 		B87C8E6B249FE896008DF3E9 /* MainLocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */; };
 		B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */; };
+		B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */; };
 		B87ECF7C247E0028005E2356 /* AppCellBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */; };
 		B87ECF7E247E00B4005E2356 /* ImageAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */; };
 		B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF80247F57F8005E2356 /* AppsDataSource.swift */; };
@@ -150,6 +151,7 @@
 		B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLocalStorageService.swift; sourceTree = "<group>"; };
 		B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingsCellDelegate.swift; sourceTree = "<group>"; };
+		B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSetting.swift; sourceTree = "<group>"; };
 		B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellBackgroundView.swift; sourceTree = "<group>"; };
 		B87ECF7D247E00B4005E2356 /* ImageAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAppCell.swift; sourceTree = "<group>"; };
 		B87ECF80247F57F8005E2356 /* AppsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDataSource.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				B82A95BB2478D169006063BC /* Page.swift */,
 				B8E2B09E247B66C400605EC3 /* App.swift */,
+				B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -762,6 +765,7 @@
 				B8D393AE2485CF3100ED8646 /* PhotoCell.swift in Sources */,
 				B8D393AA2485CF3100ED8646 /* SettingsViewController.swift in Sources */,
 				B82A95C72479F7BC006063BC /* CWCPageContol.swift in Sources */,
+				B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */,
 				B86EDB8A24832C0300E020D8 /* Article.swift in Sources */,
 				B87ECF89247F63A1005E2356 /* WarViewController.swift in Sources */,
 				B82A95BE2479E016006063BC /* Constants.swift in Sources */,
