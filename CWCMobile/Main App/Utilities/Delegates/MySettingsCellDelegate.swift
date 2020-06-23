@@ -9,12 +9,6 @@
 import UIKit
 
 class MySettingsCellDelegate: SwitchSettingsCellDelegate {
-    let tableView: UITableView
-    
-    init(tableView: UITableView) {
-        self.tableView = tableView
-    }
-    
     func handleSwitchAction(item: GeneralItem) {
         switch item {
         case .showOnboarding(let setting):

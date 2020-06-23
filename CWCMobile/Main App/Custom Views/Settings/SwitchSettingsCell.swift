@@ -1,9 +1,9 @@
 //
-//  SettingsCell.swift
-//  SettingsTemplate
+//  SwitchSettingsCell.swift
+//  CWCMobile
 //
-//  Created by Stephen Dowless on 2/10/19.
-//  Copyright © 2019 Stephan Dowless. All rights reserved.
+//  Created by David Ruvinskiy on 6/23/20.
+//  Copyright © 2020 David Ruvinskiy. All rights reserved.
 //
 
 import UIKit
@@ -12,19 +12,9 @@ protocol SwitchSettingsCellDelegate: AnyObject {
     func handleSwitchAction(item: GeneralItem)
 }
 
-class SettingsCell: UITableViewCell {
-    static let generalSettingsCellId = "generalSettingsCellId"
-    
-    var cellModel: GeneralSetting! {
-        didSet {
-            textLabel?.text = cellModel.description
-        }
-    }
-}
-
 class SwitchSettingsCell: UITableViewCell {
     weak var delegate: SwitchSettingsCellDelegate?
-    static let switchSettingsCellId = "switchSettingsCellId"
+    static let switchCellId = "switchCellId"
     
     var cellModel: SwitchSetting! {
         didSet {
