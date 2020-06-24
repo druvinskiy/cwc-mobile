@@ -50,8 +50,6 @@
 		B87C8E6B249FE896008DF3E9 /* MainLocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */; };
 		B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */; };
 		B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */; };
-		B87C8E8E24A2BD25008DF3E9 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E8D24A2BD25008DF3E9 /* SettingsSection.swift */; };
-		B87C8E9024A2BD94008DF3E9 /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E8F24A2BD94008DF3E9 /* SettingsDataSource.swift */; };
 		B87C8E9224A2BE12008DF3E9 /* SwitchSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E9124A2BE12008DF3E9 /* SwitchSettingsCell.swift */; };
 		B87C8E9424A2C25D008DF3E9 /* GeneralSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E9324A2C25D008DF3E9 /* GeneralSettingsCell.swift */; };
 		B87ECF7C247E0028005E2356 /* AppCellBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */; };
@@ -152,8 +150,6 @@
 		B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLocalStorageService.swift; sourceTree = "<group>"; };
 		B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingsCellDelegate.swift; sourceTree = "<group>"; };
 		B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSetting.swift; sourceTree = "<group>"; };
-		B87C8E8D24A2BD25008DF3E9 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsSection.swift; path = ../../../../../.Trash/SettingsSection.swift; sourceTree = "<group>"; };
-		B87C8E8F24A2BD94008DF3E9 /* SettingsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsDataSource.swift; path = "../../../../../../Desktop/CWCMobile copy/CWCMobile/Main App/Utilities/Datasources/SettingsDataSource.swift"; sourceTree = "<group>"; };
 		B87C8E9124A2BE12008DF3E9 /* SwitchSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSettingsCell.swift; sourceTree = "<group>"; };
 		B87C8E9324A2C25D008DF3E9 /* GeneralSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsCell.swift; sourceTree = "<group>"; };
 		B87ECF7B247E0028005E2356 /* AppCellBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellBackgroundView.swift; sourceTree = "<group>"; };
@@ -251,7 +247,6 @@
 				B82A95BB2478D169006063BC /* Page.swift */,
 				B8E2B09E247B66C400605EC3 /* App.swift */,
 				B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */,
-				B87C8E8D24A2BD25008DF3E9 /* SettingsSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,7 +411,6 @@
 		B87ECF7F247F57AC005E2356 /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
-				B87C8E8F24A2BD94008DF3E9 /* SettingsDataSource.swift */,
 				B8E2B090247AF41B00605EC3 /* OnboardingDataSource.swift */,
 				B87ECF80247F57F8005E2356 /* AppsDataSource.swift */,
 			);
@@ -774,7 +768,6 @@
 				B82A95C72479F7BC006063BC /* CWCPageContol.swift in Sources */,
 				B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */,
 				B87C8E9424A2C25D008DF3E9 /* GeneralSettingsCell.swift in Sources */,
-				B87C8E8E24A2BD25008DF3E9 /* SettingsSection.swift in Sources */,
 				B86EDB8A24832C0300E020D8 /* Article.swift in Sources */,
 				B87ECF89247F63A1005E2356 /* WarViewController.swift in Sources */,
 				B82A95BE2479E016006063BC /* Constants.swift in Sources */,
@@ -818,7 +811,6 @@
 				B8E2B099247B09F200605EC3 /* MainCoordinator.swift in Sources */,
 				B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */,
 				B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */,
-				B87C8E9024A2BD94008DF3E9 /* SettingsDataSource.swift in Sources */,
 				B8E2B097247B08F700605EC3 /* Storyboarded.swift in Sources */,
 				B8C129B22496951300FA319D /* Floatable.swift in Sources */,
 				B86EDB7F2483279F00E020D8 /* ResultViewController.swift in Sources */,
