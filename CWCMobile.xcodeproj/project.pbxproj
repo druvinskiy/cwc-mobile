@@ -104,7 +104,6 @@
 		B8E4C725248F20A60074CC2A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E4C724248F20A50074CC2A /* Login.storyboard */; };
 		DB7017712485442F0071FF47 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7017702485442F0071FF47 /* WebKit.framework */; };
 		DBDC99AD249CF87500543A05 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC99AC249CF87500543A05 /* TransitionView.swift */; };
-		DBE46B4F24A360860003792E /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE46B4E24A360860003792E /* SettingsSection.swift */; };
 		DBE46B5124A360AD0003792E /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE46B5024A360AD0003792E /* SettingsDataSource.swift */; };
 /* End PBXBuildFile section */
 
@@ -156,8 +155,6 @@
 		B87C8E6A249FE896008DF3E9 /* MainLocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLocalStorageService.swift; sourceTree = "<group>"; };
 		B87C8E6D24A01829008DF3E9 /* MySettingsCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingsCellDelegate.swift; sourceTree = "<group>"; };
 		B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSetting.swift; sourceTree = "<group>"; };
-		B87C8E8D24A2BD25008DF3E9 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsSection.swift; path = ../../../../../.Trash/SettingsSection.swift; sourceTree = "<group>"; };
-		B87C8E8F24A2BD94008DF3E9 /* SettingsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
 		B87C8E9124A2BE12008DF3E9 /* SwitchSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSettingsCell.swift; sourceTree = "<group>"; };
 		B87C8E9324A2C25D008DF3E9 /* GeneralSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsCell.swift; sourceTree = "<group>"; };
 		B87C8E9524A2C979008DF3E9 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
@@ -211,7 +208,6 @@
 		B8E4C724248F20A50074CC2A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DB7017702485442F0071FF47 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		DBDC99AC249CF87500543A05 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
-		DBE46B4E24A360860003792E /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		DBE46B5024A360AD0003792E /* SettingsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
 		F606A965A2CC5B32D4F134A3 /* Pods-CWCMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWCMobile.release.xcconfig"; path = "Target Support Files/Pods-CWCMobile/Pods-CWCMobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,7 +255,6 @@
 				B82A95BB2478D169006063BC /* Page.swift */,
 				B8E2B09E247B66C400605EC3 /* App.swift */,
 				B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */,
-				DBE46B4E24A360860003792E /* SettingsSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -783,12 +778,10 @@
 				B87C8E9224A2BE12008DF3E9 /* SwitchSettingsCell.swift in Sources */,
 				B8D393AA2485CF3100ED8646 /* SettingsViewController.swift in Sources */,
 				B82A95C72479F7BC006063BC /* CWCPageContol.swift in Sources */,
-				DBE46B4F24A360860003792E /* SettingsSection.swift in Sources */,
 				B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */,
 				B87C8E9424A2C25D008DF3E9 /* GeneralSettingsCell.swift in Sources */,
 				B87C8E9824A2FB94008DF3E9 /* ImageSettingCell.swift in Sources */,
 				B87C8E9624A2C979008DF3E9 /* SettingsHeaderView.swift in Sources */,
-				B87C8E8E24A2BD25008DF3E9 /* SettingsSection.swift in Sources */,
 				B86EDB8A24832C0300E020D8 /* Article.swift in Sources */,
 				B87ECF89247F63A1005E2356 /* WarViewController.swift in Sources */,
 				B82A95BE2479E016006063BC /* Constants.swift in Sources */,
