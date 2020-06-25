@@ -32,6 +32,8 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
         
         if let setting = setting as? GeneralItem {
             switch setting {
+            case .courses(let cellModel):
+                cell = createURLImageSettingCell(with: cellModel, tableView: tableView)
             case .showOnboarding(let cellModel):
                 cell = createGeneralSettingsCell(with: cellModel, tableView: tableView)
             case .showSwipeMessage(let cellModel):
@@ -39,6 +41,23 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
             }
         }
         
+        if let setting = setting as? SocialItem {
+            switch setting {
+            case .twitter(let cellModel),
+                 .youtube(let cellModel),
+                 .instagram(let cellModel),
+                 .facebook(let cellModel):
+                
+                cell = createURLImageSettingCell(with: cellModel, tableView: tableView)
+            }
+        }
+        
+        return cell
+    }
+    
+    func createURLImageSettingCell(with cellModel: URLImageSetting, tableView: UITableView) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: URLImageSettingCell.imageCellId) as? URLImageSettingCell else { return UITableViewCell() }
+        cell.urlCellModel = cellModel
         return cell
     }
     

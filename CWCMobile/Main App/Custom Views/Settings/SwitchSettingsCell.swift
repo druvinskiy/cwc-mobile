@@ -12,7 +12,7 @@ protocol SwitchSettingsCellDelegate: AnyObject {
     func handleSwitchAction(item: GeneralItem)
 }
 
-class SwitchSettingsCell: UITableViewCell {
+class SwitchSettingsCell: BaseSettingsCell {
     weak var delegate: SwitchSettingsCellDelegate?
     static let switchCellId = "switchCellId"
     

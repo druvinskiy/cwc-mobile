@@ -35,3 +35,13 @@ class ImageSetting: GeneralSetting {
         super.init(description: description)
     }
 }
+
+class URLImageSetting: ImageSetting {
+    let url: URL?
+    
+    init(description: String, image: UIImage, url: URL?) {
+        self.url = url
+        
+        super.init(description: description, image: image)
+    }
+}

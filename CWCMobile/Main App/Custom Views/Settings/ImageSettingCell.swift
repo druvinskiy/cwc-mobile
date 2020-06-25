@@ -1,5 +1,5 @@
 //
-//  GeneralSettingsCell.swift
+//  ImageSettingCell.swift
 //  CWCMobile
 //
 //  Created by David Ruvinskiy on 6/23/20.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class GeneralSettingsCell: BaseSettingsCell {
-    static let generalCellId = "generalCellId"
+class ImageSettingCell: BaseSettingsCell {
+    static let imageCellId = "imageCellId"
     
-    var cellModel: GeneralSetting! {
+    var imageCellModel: ImageSetting! {
         didSet {
-            textLabel?.text = cellModel.description
+            textLabel?.text = imageCellModel.description
+            imageView?.image = imageCellModel.image
         }
     }
     
@@ -25,5 +26,13 @@ class GeneralSettingsCell: BaseSettingsCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class URLImageSettingCell: ImageSettingCell {
+    var urlCellModel: URLImageSetting! {
+        didSet {
+            super.imageCellModel = urlCellModel
+        }
     }
 }

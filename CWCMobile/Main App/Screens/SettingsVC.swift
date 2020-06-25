@@ -29,6 +29,7 @@ class SettingsVC: UITableViewController {
         
         tableView.register(GeneralSettingsCell.self, forCellReuseIdentifier: GeneralSettingsCell.generalCellId)
         tableView.register(SwitchSettingsCell.self, forCellReuseIdentifier: SwitchSettingsCell.switchCellId)
+        tableView.register(URLImageSettingCell.self, forCellReuseIdentifier: URLImageSettingCell.imageCellId)
     }
     
     // MARK: - TableView Methods
@@ -40,9 +41,37 @@ class SettingsVC: UITableViewController {
             switch setting {
             case .showOnboarding:
                 coordinator?.replayWalkthroughPressed()
-            default:
+            case .courses(let cellModel):
+                UIApplication.shared.open(cellModel.url)
+            case .showSwipeMessage:
                 break
             }
         }
+        
+        if let setting = setting as? SocialItem {
+            switch setting {
+            case .twitter(let cellModel),
+                 .youtube(let cellModel),
+                 .instagram(let cellModel),
+                 .facebook(let cellModel):
+                
+                UIApplication.shared.open(cellModel.url)
+            }
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return SettingsHeaderView(settingsSection: sections[section])
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+}
+
+extension UIApplication {
+    func open(_ url: URL?) {
+        guard let url = url else { return }
+        UIApplication.shared.open(url)
     }
 }

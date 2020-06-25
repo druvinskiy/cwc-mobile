@@ -1,26 +1,22 @@
 //
-//  GeneralSettingsCell.swift
+//  BaseSettingsCell.swift
 //  CWCMobile
 //
-//  Created by David Ruvinskiy on 6/23/20.
+//  Created by David Ruvinskiy on 6/24/20.
 //  Copyright © 2020 David Ruvinskiy. All rights reserved.
 //
 
 import UIKit
 
-class GeneralSettingsCell: BaseSettingsCell {
-    static let generalCellId = "generalCellId"
+class BaseSettingsCell: UITableViewCell {
     
-    var cellModel: GeneralSetting! {
-        didSet {
-            textLabel?.text = cellModel.description
-        }
-    }
+    fileprivate let cellFontSize: CGFloat = 18
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        accessoryType = .disclosureIndicator
+        textLabel?.font = .systemFont(ofSize: cellFontSize)
+        selectionStyle = .none
     }
     
     required init?(coder: NSCoder) {

@@ -115,7 +115,7 @@ class MainCoordinator: NSObject, Coordinator {
         navigationController.setNavigationBarHidden(true, animated: true)
         navigationController.pushViewController(appsVC, animated: true)
         
-        let settingsButton = UIBarButtonItem(image: #imageLiteral(resourceName: "settings").withTintColor(Theme.chrisBlue!), style: .plain, target: self, action: #selector(handleSettings))
+        let settingsButton = UIBarButtonItem(image: #imageLiteral(resourceName: "settings").withTintColor(Theme.chrisBlue), style: .plain, target: self, action: #selector(handleSettings))
         appsVC.navigationItem.rightBarButtonItem = settingsButton
     }
     
