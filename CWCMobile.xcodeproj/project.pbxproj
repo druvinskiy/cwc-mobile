@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29CBF161DC57735B8ECE7736 /* Pods_CWCMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7C1E606D937341D6436093 /* Pods_CWCMobile.framework */; };
+		B81BF99024A4D15800B433F8 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BF98F24A4D15800B433F8 /* SettingsSection.swift */; };
 		B82A95BA2478D0F3006063BC /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95B92478D0F3006063BC /* PageCell.swift */; };
 		B82A95BC2478D169006063BC /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95BB2478D169006063BC /* Page.swift */; };
 		B82A95BE2479E016006063BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95BD2479E016006063BC /* Constants.swift */; };
@@ -110,6 +111,7 @@
 /* Begin PBXFileReference section */
 		3F7C1E606D937341D6436093 /* Pods_CWCMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWCMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		810A435545B1FB048D25BB62 /* Pods-CWCMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWCMobile.debug.xcconfig"; path = "Target Support Files/Pods-CWCMobile/Pods-CWCMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		B81BF98F24A4D15800B433F8 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		B82A95B92478D0F3006063BC /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		B82A95BB2478D169006063BC /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		B82A95BD2479E016006063BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				B82A95BB2478D169006063BC /* Page.swift */,
 				B8E2B09E247B66C400605EC3 /* App.swift */,
 				B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */,
+				B81BF98F24A4D15800B433F8 /* SettingsSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -822,6 +825,7 @@
 				B8D393A52485CF3100ED8646 /* CameraViewController.swift in Sources */,
 				B83ED0BB24995789008F4ABD /* AlertVC.swift in Sources */,
 				B82A95BC2478D169006063BC /* Page.swift in Sources */,
+				B81BF99024A4D15800B433F8 /* SettingsSection.swift in Sources */,
 				B87ECF7E247E00B4005E2356 /* ImageAppCell.swift in Sources */,
 				B8E2B09D247B470D00605EC3 /* AppsVC.swift in Sources */,
 				B8E2B099247B09F200605EC3 /* MainCoordinator.swift in Sources */,
