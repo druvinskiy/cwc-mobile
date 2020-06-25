@@ -29,10 +29,10 @@ class ImageSettingCell: BaseSettingsCell {
     }
 }
 
-class URLImageSettingCell: ImageSettingCell {
-    var urlCellModel: URLImageSetting! {
+class SocialSettingCell: ImageSettingCell {
+    var socialCellModel: SocialSetting! {
         didSet {
-            super.imageCellModel = urlCellModel
+            super.imageCellModel = socialCellModel
         }
     }
 }

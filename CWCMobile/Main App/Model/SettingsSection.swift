@@ -29,14 +29,14 @@ struct SettingsSection {
 }
 
 enum GeneralItem: CellItem {
-    case courses(URLImageSetting)
+    case courses(SocialSetting)
     case showOnboarding(GeneralSetting)
     case showSwipeMessage(SwitchSetting)
 }
 
 enum SocialItem: CellItem {
-    case twitter(URLImageSetting)
-    case youtube(URLImageSetting)
-    case instagram(URLImageSetting)
-    case facebook(URLImageSetting)
+    case twitter(SocialSetting)
+    case youtube(SocialSetting)
+    case instagram(SocialSetting)
+    case facebook(SocialSetting)
 }

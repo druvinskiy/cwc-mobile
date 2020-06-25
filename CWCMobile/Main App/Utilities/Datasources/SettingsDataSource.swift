@@ -33,7 +33,7 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
         if let setting = setting as? GeneralItem {
             switch setting {
             case .courses(let cellModel):
-                cell = createURLImageSettingCell(with: cellModel, tableView: tableView)
+                cell = createSocialSettingsCell(with: cellModel, tableView: tableView)
             case .showOnboarding(let cellModel):
                 cell = createGeneralSettingsCell(with: cellModel, tableView: tableView)
             case .showSwipeMessage(let cellModel):
@@ -48,16 +48,16 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
                  .instagram(let cellModel),
                  .facebook(let cellModel):
                 
-                cell = createURLImageSettingCell(with: cellModel, tableView: tableView)
+                cell = createSocialSettingsCell(with: cellModel, tableView: tableView)
             }
         }
         
         return cell
     }
     
-    func createURLImageSettingCell(with cellModel: URLImageSetting, tableView: UITableView) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: URLImageSettingCell.imageCellId) as? URLImageSettingCell else { return UITableViewCell() }
-        cell.urlCellModel = cellModel
+    func createSocialSettingsCell(with cellModel: SocialSetting, tableView: UITableView) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SocialSettingCell.imageCellId) as? SocialSettingCell else { return UITableViewCell() }
+        cell.socialCellModel = cellModel
         return cell
     }
     

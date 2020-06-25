@@ -45,3 +45,17 @@ class URLImageSetting: ImageSetting {
         super.init(description: description, image: image)
     }
 }
+
+class SocialSetting: ImageSetting {
+    fileprivate let socialNetworkUrl: SocialNetworkUrl
+    
+    init(description: String, image: UIImage, socialNetworkUrl: SocialNetworkUrl) {
+        self.socialNetworkUrl = socialNetworkUrl
+        
+        super.init(description: description, image: image)
+    }
+    
+    func openPage() {
+        socialNetworkUrl.openPage()
+    }
+}

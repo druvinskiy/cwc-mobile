@@ -39,24 +39,25 @@ struct Settings {
     static func loadSettingsSections() -> [SettingsSection] {
         return [
             SettingsSection(title: "General", cells: [
-                GeneralItem.courses(.init(description: "Browse our Courses", image: #imageLiteral(resourceName: "smallerLogo"), url: URL.courses)),
+                GeneralItem.courses(.init(description: "Browse our Courses", image: #imageLiteral(resourceName: "smallerLogo"), socialNetworkUrl: .courses)),
                 GeneralItem.showOnboarding(.init(description: "Replay Walkthrough")),
                 GeneralItem.showSwipeMessage(.init(description: "Show \"Swipe Down\" Message", isOn: MainLocalStorageService.isFloatingViewEnabled()))
             ]),
             SettingsSection(title: "Connect with us on Social Media", cells: [
-                SocialItem.twitter(.init(description: "Twitter", image: #imageLiteral(resourceName: "twitter"), url: URL.twitter)),
-                SocialItem.youtube(.init(description: "YouTube", image: #imageLiteral(resourceName: "youtube"), url: URL.youtube)),
-                SocialItem.instagram(.init(description: "Instagram", image: #imageLiteral(resourceName: "instagram"), url: URL.instagram)),
-                SocialItem.facebook(.init(description: "Facebook", image: #imageLiteral(resourceName: "facebook"), url: URL.facebook))
+                SocialItem.twitter(.init(description: "Twitter", image: #imageLiteral(resourceName: "twitter"), socialNetworkUrl: .twitter)),
+                SocialItem.youtube(.init(description: "YouTube", image: #imageLiteral(resourceName: "youtube"), socialNetworkUrl: .youtube)),
+                SocialItem.instagram(.init(description: "Instagram", image: #imageLiteral(resourceName: "instagram"), socialNetworkUrl: .instagram)),
+                SocialItem.facebook(.init(description: "Facebook", image: #imageLiteral(resourceName: "facebook"), socialNetworkUrl: .facebook))
+                
             ])
         ]
     }
 }
 
-extension URL {
-    static let twitter = URL(string: "https://twitter.com/CodeWithChris")
-    static let youtube = URL(string: "https://www.youtube.com/user/CodeWithChris")
-    static let instagram = URL(string: "https://www.instagram.com/codewithchris")
-    static let facebook = URL(string: "https://www.facebook.com/CodeWithChris/")
-    static let courses = URL(string: "https://codewithchris.com/courses/")
+extension SocialNetworkUrl {
+    static let twitter = SocialNetworkUrl(scheme: "twitter:///user?screen_name=CodeWithChris", page: "https://twitter.com/CodeWithChris")
+    static let youtube = SocialNetworkUrl(scheme: "youtube://CodeWithChris", page: "https://www.youtube.com/user/CodeWithChris")
+    static let instagram = SocialNetworkUrl(scheme: "instagram://user?username=codewithchris", page: "https://www.instagram.com/codewithchris")
+    static let facebook = SocialNetworkUrl(scheme: "", page: "https://www.facebook.com/CodeWithChris")
+    static let courses = SocialNetworkUrl(scheme: "", page: "https://codewithchris.com/courses")
 }
