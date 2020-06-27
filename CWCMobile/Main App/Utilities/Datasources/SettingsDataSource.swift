@@ -86,7 +86,7 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
     }
     
     func createProfileSettingCell(with cellModel: ImageSetting, tableView: UITableView) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: GeneralSettingsCell.generalCellId) as? ImageSettingCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ImageSettingCell.imageCellId) as? ImageSettingCell else { return UITableViewCell() }
         cell.imageCellModel = cellModel
         return cell
     }

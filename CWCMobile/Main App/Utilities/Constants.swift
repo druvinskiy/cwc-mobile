@@ -44,10 +44,10 @@ struct Settings {
                 GeneralItem.showSwipeMessage(.init(description: "Show \"Swipe Down\" Message", isOn: MainLocalStorageService.isFloatingViewEnabled()))
             ]),
             SettingsSection(title: "Connect with us on Social Media", cells: [
-                SocialItem.twitter(.init(description: "Twitter", image: #imageLiteral(resourceName: "twitter"), url: URL.twitter)),
-                SocialItem.youtube(.init(description: "YouTube", image: #imageLiteral(resourceName: "youtube"), url: URL.youtube)),
-                SocialItem.instagram(.init(description: "Instagram", image: #imageLiteral(resourceName: "instagram"), url: URL.instagram)),
-                SocialItem.facebook(.init(description: "Facebook", image: #imageLiteral(resourceName: "facebook"), url: URL.facebook))
+                SocialItem.twitter(.init(description: "Twitter", image: #imageLiteral(resourceName: "twitter"), socialNetworkUrl: .twitter)),
+                SocialItem.youtube(.init(description: "YouTube", image: #imageLiteral(resourceName: "youtube"), socialNetworkUrl: .youtube)),
+                SocialItem.instagram(.init(description: "Instagram", image: #imageLiteral(resourceName: "instagram"), socialNetworkUrl: .instagram)),
+                SocialItem.facebook(.init(description: "Facebook", image: #imageLiteral(resourceName: "facebook"), socialNetworkUrl: .facebook))
             ]),
             SettingsSection(title: "App Coding Credits", cells: [
                 ProfileItem.profile1(.init(description: "David Ruvinskiy", image: #imageLiteral(resourceName: "DavidR"))),
