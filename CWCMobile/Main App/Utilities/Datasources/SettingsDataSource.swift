@@ -52,6 +52,16 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
             }
         }
         
+        if let setting = setting as? ProfileItem {
+            switch setting {
+            case .profile1(let cellModel),
+                 .profile2(let cellModel),                 
+                 .profile3(let cellModel):
+                
+                cell = createProfileSettingCell(with: cellModel, tableView: tableView)
+            }
+        }
+        
         return cell
     }
     
@@ -73,5 +83,11 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
         cell.cellModel = cellModel
         return cell
         
+    }
+    
+    func createProfileSettingCell(with cellModel: ImageSetting, tableView: UITableView) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: GeneralSettingsCell.generalCellId) as? ImageSettingCell else { return UITableViewCell() }
+        cell.imageCellModel = cellModel
+        return cell
     }
 }

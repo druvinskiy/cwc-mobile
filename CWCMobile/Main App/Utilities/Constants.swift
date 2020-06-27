@@ -48,6 +48,10 @@ struct Settings {
                 SocialItem.youtube(.init(description: "YouTube", image: #imageLiteral(resourceName: "youtube"), url: URL.youtube)),
                 SocialItem.instagram(.init(description: "Instagram", image: #imageLiteral(resourceName: "instagram"), url: URL.instagram)),
                 SocialItem.facebook(.init(description: "Facebook", image: #imageLiteral(resourceName: "facebook"), url: URL.facebook))
+            ]),
+            SettingsSection(title: "App Coding Credits", cells: [
+                ProfileItem.profile1(.init(description: "David Ruvinskiy", image: #imageLiteral(resourceName: "DavidR"))),
+                ProfileItem.profile2(.init(description: "Chris Parker", image: #imageLiteral(resourceName: "ChrisP")))
             ])
         ]
     }

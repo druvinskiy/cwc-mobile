@@ -58,6 +58,17 @@ class SettingsVC: UITableViewController {
                 UIApplication.shared.open(cellModel.url)
             }
         }
+        
+        if let setting = setting as? ProfileItem {
+            switch setting {
+            case .profile1:
+                break
+            case .profile2:
+                break
+            case .profile3:
+                break
+            }
+        }
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

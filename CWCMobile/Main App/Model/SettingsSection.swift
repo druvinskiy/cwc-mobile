@@ -40,3 +40,9 @@ enum SocialItem: CellItem {
     case instagram(URLImageSetting)
     case facebook(URLImageSetting)
 }
+
+enum ProfileItem: CellItem {
+    case profile1(ImageSetting)
+    case profile2(ImageSetting)
+    case profile3(ImageSetting)
+}
