@@ -1,16 +1,16 @@
 {
   "images" : [
     {
+      "filename" : "ChrisP-48.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ChrisP-48.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ChrisP-96.png",
+      "filename" : "ChrisP-128.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
