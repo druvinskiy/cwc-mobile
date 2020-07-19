@@ -75,8 +75,8 @@
 		B87ECFC22480CD01005E2356 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = B87ECFBD2480CD01005E2356 /* shuffle.wav */; };
 		B87ECFC32480CD01005E2356 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = B87ECFBE2480CD01005E2356 /* dingwrong.wav */; };
 		B87ECFC42480CD01005E2356 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECFBF2480CD01005E2356 /* SoundManager.swift */; };
+		B8ACEB7724C49A360028AEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8ACEB7624C49A360028AEED /* GoogleService-Info.plist */; };
 		B8C129B22496951300FA319D /* Floatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C129B12496951300FA319D /* Floatable.swift */; };
-		B8D3938A2485CC2500ED8646 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8D393892485CC2500ED8646 /* GoogleService-Info.plist */; };
 		B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D3938C2485CEC200ED8646 /* Photo.storyboard */; };
 		B8D393932485CEF400ED8646 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D3938F2485CEF300ED8646 /* LocalStorageService.swift */; };
 		B8D393942485CEF400ED8646 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D393902485CEF300ED8646 /* UserService.swift */; };
@@ -181,8 +181,8 @@
 		B87ECFBD2480CD01005E2356 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
 		B87ECFBE2480CD01005E2356 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
 		B87ECFBF2480CD01005E2356 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		B8ACEB7624C49A360028AEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8C129B12496951300FA319D /* Floatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floatable.swift; sourceTree = "<group>"; };
-		B8D393892485CC2500ED8646 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8D3938C2485CEC200ED8646 /* Photo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
 		B8D3938F2485CEF300ED8646 /* LocalStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		B8D393902485CEF300ED8646 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -359,7 +359,7 @@
 				B87ECF85247F633F005E2356 /* War */,
 				B87ECF84247F61F3005E2356 /* Main App */,
 				B82CADFC2478C9290051C711 /* Info.plist */,
-				B8D393892485CC2500ED8646 /* GoogleService-Info.plist */,
+				B8ACEB7624C49A360028AEED /* GoogleService-Info.plist */,
 			);
 			path = CWCMobile;
 			sourceTree = "<group>";
@@ -659,7 +659,6 @@
 			files = (
 				B86EDB8324832BDF00E020D8 /* top-headlines.json in Resources */,
 				B87ECFC22480CD01005E2356 /* shuffle.wav in Resources */,
-				B8D3938A2485CC2500ED8646 /* GoogleService-Info.plist in Resources */,
 				B87ECF87247F6359005E2356 /* War.storyboard in Resources */,
 				B82A95C02479E255006063BC /* Colors.xcassets in Resources */,
 				B87ECFB12480CC6E005E2356 /* Match.storyboard in Resources */,
@@ -669,6 +668,7 @@
 				B86EDB8D24832C2D00E020D8 /* News.storyboard in Resources */,
 				B83ED0B72497DF8F008F4ABD /* CreateProfile.storyboard in Resources */,
 				B82CADF82478C9290051C711 /* Assets.xcassets in Resources */,
+				B8ACEB7724C49A360028AEED /* GoogleService-Info.plist in Resources */,
 				B83ED0B524970915008F4ABD /* Detail.storyboard in Resources */,
 				B87ECFC32480CD01005E2356 /* dingwrong.wav in Resources */,
 				B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */,

@@ -22,7 +22,7 @@ class MainCoordinator: NSObject, Coordinator {
     func start() {
         configureNavigationController()
         
-        let firstLaunch = FirstLaunch.alwaysFirst()
+        let firstLaunch = FirstLaunch(userDefaults: .standard, key: Keys.onboardingKey)
         if firstLaunch.isFirstLaunch { displayOnboarding(addTransitionView: true) } else { displayApps() }
     }
     

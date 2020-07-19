@@ -48,11 +48,11 @@ struct Settings {
                 SocialItem.youtube(.init(description: "YouTube", image: #imageLiteral(resourceName: "youtube"), socialNetworkUrl: .youtube)),
                 SocialItem.instagram(.init(description: "Instagram", image: #imageLiteral(resourceName: "instagram"), socialNetworkUrl: .instagram)),
                 SocialItem.facebook(.init(description: "Facebook", image: #imageLiteral(resourceName: "facebook"), socialNetworkUrl: .facebook))
-            ]),
-            SettingsSection(title: "App Coding Credits", cells: [
-                ProfileItem.profile1(.init(description: "David Ruvinskiy", image: #imageLiteral(resourceName: "DavidR"))),
-                ProfileItem.profile2(.init(description: "Chris Parker", image: #imageLiteral(resourceName: "ChrisP")))
             ])
+//            SettingsSection(title: "App Coding Credits", cells: [
+//                ProfileItem.profile1(.init(description: "David Ruvinskiy", image: #imageLiteral(resourceName: "DavidR"))),
+//                ProfileItem.profile2(.init(description: "Chris Parker", image: #imageLiteral(resourceName: "ChrisP")))
+//            ])
         ]
     }
 }
