@@ -20,7 +20,12 @@ class BaseAppCell: UICollectionViewCell {
     let courseLabel = UILabel(text: "", font: .boldSystemFont(ofSize: 20))
     let nameLabel = UILabel(text: "", font: .boldSystemFont(ofSize: 28))
     let logoImageView = UIImageView(image: #imageLiteral(resourceName: "logo"))
-    let descriptionLabel = UILabel(text: "", font: .systemFont(ofSize: 16), numberOfLines: 3)
+    
+    let tapLabel: UILabel = {
+        let label = UILabel(text: "Tap to Try This App", font: .boldSystemFont(ofSize: 20))
+        label.textAlignment = .center
+        return label
+    }()
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -64,7 +69,7 @@ class BaseAppCell: UICollectionViewCell {
             courseLabel,
             nameLabel,
             imageContainerView,
-            descriptionLabel
+            tapLabel
         ], spacing: 8)
         
         addSubview(stackView)
@@ -74,7 +79,7 @@ class BaseAppCell: UICollectionViewCell {
         
         nameLabel.textColor = .white
         courseLabel.textColor = .white
-        descriptionLabel.textColor = .white
+        tapLabel.textColor = .white
         
         courseLabel.layer.shadowColor = UIColor.black.cgColor
         courseLabel.layer.shadowRadius = 2.0
