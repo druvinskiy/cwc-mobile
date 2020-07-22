@@ -22,7 +22,7 @@ class MatchViewController: SwipingAppController, UICollectionViewDelegate, UICol
     var firstFlippedCardIndex:IndexPath?
     
     var timer:Timer?
-    var milliseconds:Float = 30 * 1000 // 10 seconds
+    var milliseconds:Float = 60 * 1000 // 60 seconds
     
     @objc func canRotate() {}
     

@@ -92,5 +92,11 @@ class BaseAppCell: UICollectionViewCell {
         nameLabel.layer.shadowOpacity = 1.0
         nameLabel.layer.shadowOffset = CGSize(width: 2.5, height: 2.5)
         nameLabel.layer.masksToBounds = false
+        
+        tapLabel.layer.shadowColor = UIColor.black.cgColor
+        tapLabel.layer.shadowRadius = 2.0
+        tapLabel.layer.shadowOpacity = 1.0
+        tapLabel.layer.shadowOffset = CGSize(width: 2, height: 2)
+        tapLabel.layer.masksToBounds = false
     }
 }
