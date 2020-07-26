@@ -8,8 +8,11 @@
 
 import UIKit
 
+// swiftlint:disable all
+
 class AppsDataSource: NSObject, UICollectionViewDataSource {
     var items = App.loadApps()
+    let videos = (Bundle.main.decode("videos.json") as VideoData).videos
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -33,5 +36,12 @@ class AppsDataSource: NSObject, UICollectionViewDataSource {
     
     func app(at index: Int) -> App {
         return items[index]
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath) as! VideosPageHeader
+        header.videosHeaderHorizontalController.videos = videos
+        header.videosHeaderHorizontalController.collectionView.reloadData()
+        return header
     }
 }

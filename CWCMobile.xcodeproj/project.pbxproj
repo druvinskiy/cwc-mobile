@@ -75,6 +75,14 @@
 		B87ECFC22480CD01005E2356 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = B87ECFBD2480CD01005E2356 /* shuffle.wav */; };
 		B87ECFC32480CD01005E2356 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = B87ECFBE2480CD01005E2356 /* dingwrong.wav */; };
 		B87ECFC42480CD01005E2356 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECFBF2480CD01005E2356 /* SoundManager.swift */; };
+		B898B67724CB4927009666E6 /* VideosPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B67624CB4927009666E6 /* VideosPageHeader.swift */; };
+		B898B67924CB499C009666E6 /* VideosHeaderHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B67824CB499C009666E6 /* VideosHeaderHorizontalController.swift */; };
+		B898B67B24CB49E3009666E6 /* HorizontalSnappingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B67A24CB49E3009666E6 /* HorizontalSnappingController.swift */; };
+		B898B67D24CCBD4A009666E6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B67C24CCBD4A009666E6 /* Video.swift */; };
+		B898B67F24CCBE7B009666E6 /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B67E24CCBE7B009666E6 /* VideoData.swift */; };
+		B898B68124CCC0B4009666E6 /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B68024CCC0B4009666E6 /* Bundle+Decodable.swift */; };
+		B898B68324CCC485009666E6 /* VideosHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B68224CCC485009666E6 /* VideosHeaderCell.swift */; };
+		B898B68524CCC61E009666E6 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = B898B68424CCC61E009666E6 /* videos.json */; };
 		B8ACEB7724C49A360028AEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8ACEB7624C49A360028AEED /* GoogleService-Info.plist */; };
 		B8C129B22496951300FA319D /* Floatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C129B12496951300FA319D /* Floatable.swift */; };
 		B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D3938C2485CEC200ED8646 /* Photo.storyboard */; };
@@ -181,6 +189,14 @@
 		B87ECFBD2480CD01005E2356 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
 		B87ECFBE2480CD01005E2356 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
 		B87ECFBF2480CD01005E2356 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		B898B67624CB4927009666E6 /* VideosPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosPageHeader.swift; sourceTree = "<group>"; };
+		B898B67824CB499C009666E6 /* VideosHeaderHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosHeaderHorizontalController.swift; sourceTree = "<group>"; };
+		B898B67A24CB49E3009666E6 /* HorizontalSnappingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSnappingController.swift; sourceTree = "<group>"; };
+		B898B67C24CCBD4A009666E6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		B898B67E24CCBE7B009666E6 /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
+		B898B68024CCC0B4009666E6 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
+		B898B68224CCC485009666E6 /* VideosHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosHeaderCell.swift; sourceTree = "<group>"; };
+		B898B68424CCC61E009666E6 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		B8ACEB7624C49A360028AEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8C129B12496951300FA319D /* Floatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floatable.swift; sourceTree = "<group>"; };
 		B8D3938C2485CEC200ED8646 /* Photo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
@@ -261,6 +277,8 @@
 				B87C8E6F24A17E47008DF3E9 /* GeneralSetting.swift */,
 				B81BF98F24A4D15800B433F8 /* SettingsSection.swift */,
 				B81BF99124A4D9BE00B433F8 /* SocialNetworkUrl.swift */,
+				B898B67C24CCBD4A009666E6 /* Video.swift */,
+				B898B67E24CCBE7B009666E6 /* VideoData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +290,7 @@
 				B82A95CA247A1236006063BC /* UIViews+Convenience.swift */,
 				B83ED0B82499572A008F4ABD /* UIViewController+Ext.swift */,
 				B87C8E60249E9CAC008DF3E9 /* UITableView+Ext.swift */,
+				B898B68024CCC0B4009666E6 /* Bundle+Decodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,6 +298,7 @@
 		B82A95B52478D001006063BC /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				B898B67524CB4912009666E6 /* Videos */,
 				B87C8E62249E9D82008DF3E9 /* Settings */,
 				B8E2B0A1247B68E600605EC3 /* Apps */,
 				B82A95C32479F667006063BC /* Onboarding */,
@@ -301,6 +321,7 @@
 		B82A95B72478D022006063BC /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				B898B68424CCC61E009666E6 /* videos.json */,
 				B82CADEE2478C9260051C711 /* AppDelegate.swift */,
 				B82CADF02478C9260051C711 /* SceneDelegate.swift */,
 				B82CADF42478C9260051C711 /* Main.storyboard */,
@@ -463,6 +484,8 @@
 			children = (
 				B87ECFAD2480C55F005E2356 /* SwipingAppController.swift */,
 				B83ED0BA24995789008F4ABD /* AlertVC.swift */,
+				B898B67824CB499C009666E6 /* VideosHeaderHorizontalController.swift */,
+				B898B67A24CB49E3009666E6 /* HorizontalSnappingController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -490,6 +513,15 @@
 				B87ECFBE2480CD01005E2356 /* dingwrong.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		B898B67524CB4912009666E6 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				B898B67624CB4927009666E6 /* VideosPageHeader.swift */,
+				B898B68224CCC485009666E6 /* VideosHeaderCell.swift */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		B8D3938B2485CEAE00ED8646 /* Photo */ = {
@@ -674,6 +706,7 @@
 				B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */,
 				B87ECFC12480CD01005E2356 /* cardflip.wav in Resources */,
 				B87ECFC02480CD01005E2356 /* dingcorrect.wav in Resources */,
+				B898B68524CCC61E009666E6 /* videos.json in Resources */,
 				B82CADF62478C9260051C711 /* Main.storyboard in Resources */,
 				B86EDB7B2483279F00E020D8 /* QuestionData.json in Resources */,
 			);
@@ -785,6 +818,7 @@
 				B8D393AA2485CF3100ED8646 /* SettingsViewController.swift in Sources */,
 				B82A95C72479F7BC006063BC /* CWCPageContol.swift in Sources */,
 				B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */,
+				B898B67F24CCBE7B009666E6 /* VideoData.swift in Sources */,
 				B87C8E9424A2C25D008DF3E9 /* GeneralSettingsCell.swift in Sources */,
 				B81BF99224A4D9BE00B433F8 /* SocialNetworkUrl.swift in Sources */,
 				B87C8E9824A2FB94008DF3E9 /* ImageSettingCell.swift in Sources */,
@@ -793,17 +827,21 @@
 				B87ECF89247F63A1005E2356 /* WarViewController.swift in Sources */,
 				B82A95BE2479E016006063BC /* Constants.swift in Sources */,
 				B87ECF83247F5944005E2356 /* CWCAppView.swift in Sources */,
+				B898B68324CCC485009666E6 /* VideosHeaderCell.swift in Sources */,
 				B8E2B093247AF72500605EC3 /* OnboardingVC.swift in Sources */,
 				B87C8E69249EC2AB008DF3E9 /* SettingsCoordinator.swift in Sources */,
+				B898B67724CB4927009666E6 /* VideosPageHeader.swift in Sources */,
 				B82A95C9247A1186006063BC /* CWCOnboardingButton.swift in Sources */,
 				B8E2B09B247B457000605EC3 /* StartPageCell.swift in Sources */,
 				B82A95C52479F6B0006063BC /* CWCOnboardingView.swift in Sources */,
 				B86EDB7D2483279F00E020D8 /* QuizModel.swift in Sources */,
 				B8D393942485CEF400ED8646 /* UserService.swift in Sources */,
 				B8D393A72485CF3100ED8646 /* LoginViewController.swift in Sources */,
+				B898B67D24CCBD4A009666E6 /* Video.swift in Sources */,
 				B840684124A4566900196092 /* BaseSettingsCell.swift in Sources */,
 				B8E2B0A8247B6AA800605EC3 /* VerticalStackView.swift in Sources */,
 				B8D393AB2485CF3100ED8646 /* PhotoUser.swift in Sources */,
+				B898B67B24CB49E3009666E6 /* HorizontalSnappingController.swift in Sources */,
 				B83ED0B92499572A008F4ABD /* UIViewController+Ext.swift in Sources */,
 				B86EDB802483279F00E020D8 /* StateManager.swift in Sources */,
 				B8D393952485CEF400ED8646 /* ImageCacheService.swift in Sources */,
@@ -819,6 +857,7 @@
 				B86EDB9324832C4400E020D8 /* NewsViewController.swift in Sources */,
 				DBDC99AD249CF87500543A05 /* TransitionView.swift in Sources */,
 				B86EDB9024832C3B00E020D8 /* CacheManager.swift in Sources */,
+				B898B68124CCC0B4009666E6 /* Bundle+Decodable.swift in Sources */,
 				B87ECFB32480CCC2005E2356 /* MatchViewController.swift in Sources */,
 				B8E2B09F247B66C400605EC3 /* App.swift in Sources */,
 				B86EDB8824832C0300E020D8 /* ArticleService.swift in Sources */,
@@ -833,6 +872,7 @@
 				B87ECF7E247E00B4005E2356 /* ImageAppCell.swift in Sources */,
 				B8E2B09D247B470D00605EC3 /* AppsVC.swift in Sources */,
 				B8E2B099247B09F200605EC3 /* MainCoordinator.swift in Sources */,
+				B898B67924CB499C009666E6 /* VideosHeaderHorizontalController.swift in Sources */,
 				B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */,
 				B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */,
 				B8E2B097247B08F700605EC3 /* Storyboarded.swift in Sources */,

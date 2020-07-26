@@ -15,6 +15,10 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     var appView = CWCAppView()
     var transitionView = TransitionView()
     
+    let headerId = "headerId"
+    
+    var videos = [Video]()
+    
     init(coordinator: MainCoordinator?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
         self.coordinator = coordinator
@@ -28,6 +32,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         super.viewDidLoad()
         
         self.title = "Apps"
+        loadVideos()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,7 +74,14 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     func setupCollectionView() {
         collectionView.register(ImageAppCell.self, forCellWithReuseIdentifier: ImageApp.CellType.image.rawValue)
         collectionView.register(ColorAppCell.self, forCellWithReuseIdentifier: ImageApp.CellType.color.rawValue)
+        collectionView.register(VideosPageHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        
         collectionView.dataSource = dataSource
+    }
+    
+    func loadVideos() {
+        let result = Bundle.main.decode("videos.json") as VideoData
+        videos = result.videos
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -85,6 +97,10 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .init(top: 32, left: 0, bottom: 32, right: 0)
+        return .init(top: 32, left: 0, bottom: 32, right: 16)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return .init(width: view.frame.width, height: 300)
     }
 }
