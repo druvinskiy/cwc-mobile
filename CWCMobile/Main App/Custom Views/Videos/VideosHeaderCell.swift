@@ -32,8 +32,20 @@ class VideosHeaderCell: UICollectionViewCell {
         
         addSubview(stackView)
         stackView.fillSuperview(padding: .init(top: 16, left: 0, bottom: 0, right: 0))
-        layer.cornerRadius = 16
+//        layer.cornerRadius = 16
         clipsToBounds = true
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        titleLabel.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
+        
+        imageView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 198).isActive = true
     }
     
     required init?(coder: NSCoder) {
