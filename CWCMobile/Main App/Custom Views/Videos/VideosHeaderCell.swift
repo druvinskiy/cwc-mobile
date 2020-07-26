@@ -42,10 +42,12 @@ class VideosHeaderCell: UICollectionViewCell {
         titleLabel.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
         
+        let imageViewHeight: CGFloat = DeviceTypes.isiPhoneSE2 || DeviceTypes.isiPhone8Zoomed ? 174 : 196
+        
         imageView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 198).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: imageViewHeight).isActive = true
     }
     
     required init?(coder: NSCoder) {
