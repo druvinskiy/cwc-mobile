@@ -36,6 +36,7 @@ class VideosHeaderHorizontalController: HorizontalSnappingController, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        print(view.frame.width, view.frame.height)
         return .init(width: view.frame.width - 64, height: view.frame.height)
     }
     
