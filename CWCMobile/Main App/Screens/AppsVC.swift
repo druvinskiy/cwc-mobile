@@ -101,6 +101,6 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: view.frame.width / 1.4)
+        return .init(width: view.frame.width, height: view.frame.width / 1.5)
     }
 }
