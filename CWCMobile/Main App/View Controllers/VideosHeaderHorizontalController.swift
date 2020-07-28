@@ -40,6 +40,6 @@ class VideosHeaderHorizontalController: HorizontalSnappingController, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 32
+        return 10
     }
 }

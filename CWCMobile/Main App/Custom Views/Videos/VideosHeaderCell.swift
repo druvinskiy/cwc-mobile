@@ -16,14 +16,16 @@ class VideosHeaderCell: UICollectionViewCell {
             imageView.image = UIImage(named: video.videoThumbnail)
         }
     }
-    let titleLabel = UILabel(text: "Keeping up with friends is faster than ever", font: .systemFont(ofSize: 24))
-    let imageView = UIImageView(cornerRadius: 8)
+    
+    let titleLabel = UILabel(text: "Keeping up with friends is faster than ever", font: .systemFont(ofSize: 24), numberOfLines: 2)
+    let imageView: UIImageView = {
+        let iv = UIImageView(cornerRadius: 16)
+        iv.contentMode = .scaleAspectFill
+        return iv
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        titleLabel.numberOfLines = 2
-        titleLabel.textColor = Theme.chrisBlue
         
         let stackView = VerticalStackView(arrangedSubviews: [
             titleLabel,
@@ -32,22 +34,12 @@ class VideosHeaderCell: UICollectionViewCell {
         
         addSubview(stackView)
         stackView.fillSuperview(padding: .init(top: 16, left: 0, bottom: 0, right: 0))
-//        layer.cornerRadius = 16
-        clipsToBounds = true
         
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        titleLabel.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
+        titleLabel.anchor(top: stackView.topAnchor, leading: stackView.leadingAnchor, bottom: nil, trailing: stackView.trailingAnchor)
         
         let imageViewHeight: CGFloat = DeviceTypes.isiPhoneSE2 || DeviceTypes.isiPhone8Zoomed ? 174 : 196
         
-        imageView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: imageViewHeight).isActive = true
+        imageView.anchor(top: nil, leading: stackView.leadingAnchor, bottom: stackView.bottomAnchor, trailing: stackView.trailingAnchor, size: .init(width: 0, height: imageViewHeight))
     }
     
     required init?(coder: NSCoder) {
