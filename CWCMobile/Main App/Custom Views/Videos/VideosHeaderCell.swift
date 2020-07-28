@@ -37,7 +37,7 @@ class VideosHeaderCell: UICollectionViewCell {
         
         titleLabel.anchor(top: stackView.topAnchor, leading: stackView.leadingAnchor, bottom: nil, trailing: stackView.trailingAnchor)
         
-        let imageViewHeight: CGFloat = DeviceTypes.isiPhoneSE2 || DeviceTypes.isiPhone8Zoomed ? 174 : 196
+        let imageViewHeight: CGFloat = DeviceTypes.isiPhoneSE2 || DeviceTypes.isiPhone8Zoomed || DeviceTypes.isiPhone11Pro ? 174 : 196
         
         imageView.anchor(top: nil, leading: stackView.leadingAnchor, bottom: stackView.bottomAnchor, trailing: stackView.trailingAnchor, size: .init(width: 0, height: imageViewHeight))
     }
