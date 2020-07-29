@@ -91,7 +91,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if indexPath.section == 0 {
-            return  .init(width: view.frame.width, height: view.frame.width / multiplier)
+            return  .init(width: view.frame.width, height: view.frame.width * multiplier)
         }
         
         return .init(width: view.frame.width - 64, height: 500)
@@ -109,5 +109,5 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         return .init(width: view.frame.width, height: 40)
     }
     
-    let multiplier: CGFloat = 2.2
+    let multiplier: CGFloat = 0.47
 }
