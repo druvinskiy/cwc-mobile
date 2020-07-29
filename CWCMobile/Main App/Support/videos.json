@@ -1,12 +1,12 @@
 {
    "videos":[
       {
-         "title":"How to Make an App for Beginners (2020) - Lesson 1",
+         "title":"How to Make an App for Beginners - Lesson 1",
          "videoThumbnail":"Video_1",
          "videoUrl":"https://www.youtube.com/embed/jniJeamcIUU"
       },
       {
-         "title":"Auto Layout Tutorial (2020) - Lesson 2",
+         "title":"Auto Layout Tutorial - Lesson 2",
          "videoThumbnail":"Video_2",
          "videoUrl":"https://www.youtube.com/embed/emojd8GFB0o"
       },
@@ -16,137 +16,137 @@
          "videoUrl":"https://www.youtube.com/embed/2tqkuGETgXg"
       },
       {
-         "title":"UIStackView Tutorial (2020) - Lesson 3",
+         "title":"UIStackView Tutorial - Lesson 3",
          "videoThumbnail":"Video_4",
          "videoUrl":"https://www.youtube.com/embed/eF9Ut-VpdAI"
       },
       {
-         "title":"Your First User Interface (2020) - Lesson 4",
+         "title":"Your First User Interface - Lesson 4",
          "videoThumbnail":"Video_5",
          "videoUrl":"https://www.youtube.com/embed/2CsFQZBKGT8"
       },
       {
-         "title":"Swift Tutorial Basics (2020) - Lesson 5",
+         "title":"Swift Basics - Lesson 5",
          "videoThumbnail":"Video_6",
          "videoUrl":"https://www.youtube.com/embed/lFyqd9xrRTY"
       },
       {
-         "title":"Swift Tutorial Basics (Part 2) - Lesson 6",
+         "title":"Swift Basics (Part 2) - Lesson 6",
          "videoThumbnail":"Video_7",
          "videoUrl":"https://www.youtube.com/embed/HBshpfGYpmM"
       },
       {
-         "title":"Swift Tutorial Basics (Part 3) - Lesson 7",
+         "title":"Swift Basics (Part 3) - Lesson 7",
          "videoThumbnail":"Video_8",
          "videoUrl":"https://www.youtube.com/embed/8j8PeENQdqU"
       },
       {
-         "title":"IBOutlet Properties and IBAction Methods (2020) - Lesson 8",
+         "title":"IBOutlet Properties and IBAction Methods - Lesson 8",
          "videoThumbnail":"Video_9",
          "videoUrl":"https://www.youtube.com/embed/GTaPQp_KFsI"
       },
       {
-         "title":"Handling User Interaction (2020) - Lesson 9",
+         "title":"Handling User Interaction - Lesson 9",
          "videoThumbnail":"Video_10",
          "videoUrl":"https://www.youtube.com/embed/Y2zMP6Pu9Rg"
       },
       {
-         "title":"Coding Logic with IF Statements (2020) - Lesson 10",
+         "title":"Coding Logic with IF Statements - Lesson 10",
          "videoThumbnail":"Video_11",
          "videoUrl":"https://www.youtube.com/embed/Afp-qjZHZvs"
       },
       {
-         "title":"Swift: Intro (2020) - Lesson 11",
+         "title":"Intro - Lesson 11",
          "videoThumbnail":"Video_12",
          "videoUrl":"https://www.youtube.com/embed/r2swa148uA0"
       },
       {
-         "title":"Swift: UIKit and Apple Documentation (2020) - Lesson 12",
+         "title":"UIKit and Apple Documentation - Lesson 12",
          "videoThumbnail":"Video_13",
          "videoUrl":"https://www.youtube.com/embed/oIKgTzB4-vs"
       },
       {
-         "title":"Swift: Subclassing and Inheritance (2020) - Lesson 13",
+         "title":"Subclassing and Inheritance - Lesson 13",
          "videoThumbnail":"Video_14",
          "videoUrl":"https://www.youtube.com/embed/NOSzzWQn03Y"
       },
       {
-         "title":"Swift: Arrays (2020) - Lesson 14",
+         "title":"Arrays - Lesson 14",
          "videoThumbnail":"Video_15",
          "videoUrl":"https://www.youtube.com/embed/339QXSMEGYQ"
       },
       {
-         "title":"Swift: Optionals (2020) - Lesson 15",
+         "title":"Optionals - Lesson 15",
          "videoThumbnail":"Video_16",
          "videoUrl":"https://www.youtube.com/embed/omLs2CDG-5A"
       },
       {
-         "title":"Swift: Dictionaries (2020) - Lesson 16",
+         "title":"Dictionaries - Lesson 16",
          "videoThumbnail":"Video_17",
          "videoUrl":"https://www.youtube.com/embed/DZkCQ4q-qV0"
       },
       {
-         "title":"Swift: Loops (2020) - Lesson 17",
+         "title":"Loops - Lesson 17",
          "videoThumbnail":"Video_18",
          "videoUrl":"https://www.youtube.com/embed/X9ywwPRcpII"
       },
       {
-         "title":"The Card Game: Intro (2020) - Lesson 18",
+         "title":"The Card Game: Intro - Lesson 18",
          "videoThumbnail":"Video_19",
          "videoUrl":"https://www.youtube.com/embed/YHUN1btBtyY"
       },
       {
-         "title":"The Card Game: The MVC Design Pattern (2020) - Lesson 19",
+         "title":"The Card Game: The MVC Design Pattern - Lesson 19",
          "videoThumbnail":"Video_20",
          "videoUrl":"https://www.youtube.com/embed/ThLRaJ4dmuM"
       },
       {
-         "title":"The Card Game: Project Setup (2020) - Lesson 20",
+         "title":"The Card Game: Project Setup - Lesson 20",
          "videoThumbnail":"Video_21",
          "videoUrl":"https://www.youtube.com/embed/M0CqCuN-OHo"
       },
       {
-         "title":"The Card Game: Custom Classes (2020) - Lesson 21",
+         "title":"The Card Game: Custom Classes - Lesson 21",
          "videoThumbnail":"Video_22",
          "videoUrl":"https://www.youtube.com/embed/goi26Yp41A4"
       },
       {
-         "title":"The Card Game: Protocols and Delegates (2020) - Lesson 22",
+         "title":"The Card Game: Protocols and Delegates - Lesson 22",
          "videoThumbnail":"Video_23",
          "videoUrl":"https://www.youtube.com/embed/iJ5kJi-sC1M"
       },
       {
-         "title":"The Card Game: Implementing the Protocols and Delegates Pattern (2020) - Lesson 23",
+         "title":"The Card Game: Implementing the Protocols and Delegates Pattern - Lesson 23",
          "videoThumbnail":"Video_24",
          "videoUrl":"https://www.youtube.com/embed/YQiJyNEI87I"
       },
       {
-         "title":"The Card Game: Xcode Best Practices (2020) - Lesson 24",
+         "title":"The Card Game: Xcode Best Practices - Lesson 24",
          "videoThumbnail":"Video_25",
          "videoUrl":"https://www.youtube.com/embed/AIanZjUiFzA"
       },
       {
-         "title":"The Card Game: Debugging your App (2020) - Lesson 25",
+         "title":"The Card Game: Debugging your App - Lesson 25",
          "videoThumbnail":"Video_26",
          "videoUrl":"https://www.youtube.com/embed/6MDvI_8PpZI"
       },
       {
-         "title":"The Card Game: Card Flipping (2020) - Lesson 26",
+         "title":"The Card Game: Card Flipping - Lesson 26",
          "videoThumbnail":"Video_27",
          "videoUrl":"https://www.youtube.com/embed/Mt5Ifim1BBs"
       },
       {
-         "title":"The Card Game: Game Logic (2020) - Lesson 27",
+         "title":"The Card Game: Game Logic - Lesson 27",
          "videoThumbnail":"Video_28",
          "videoUrl":"https://www.youtube.com/embed/YH2ouLMMN9I"
       },
       {
-         "title":"The Card Game: Win Condition (2020) - Lesson 28",
+         "title":"The Card Game: Win Condition - Lesson 28",
          "videoThumbnail":"Video_29",
          "videoUrl":"https://www.youtube.com/embed/6gsGmcdSYFQ"
       },
       {
-         "title":"The Card Game: Adding Sounds (2020) - Lesson 29",
+         "title":"The Card Game: Adding Sounds - Lesson 29",
          "videoThumbnail":"Video_30",
          "videoUrl":"https://www.youtube.com/embed/4aJudDL6cSw"
       }

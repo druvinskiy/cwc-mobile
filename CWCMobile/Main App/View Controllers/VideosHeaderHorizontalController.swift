@@ -22,6 +22,7 @@ class VideosHeaderHorizontalController: HorizontalSnappingController, UICollecti
         collectionView.register(VideosHeaderCell.self, forCellWithReuseIdentifier: cellId)
         
         collectionView.contentInset = .init(top: 0, left: 16, bottom: 0, right: 16)
+        collectionView.showsHorizontalScrollIndicator = false
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

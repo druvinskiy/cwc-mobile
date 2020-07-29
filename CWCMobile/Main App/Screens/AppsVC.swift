@@ -100,7 +100,9 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         return .init(top: 32, left: 0, bottom: 32, right: 16)
     }
     
+    let multiplier: CGFloat = 2.2
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: view.frame.width / 1.5)
+        return .init(width: view.frame.width, height: view.frame.width / multiplier)
     }
 }
