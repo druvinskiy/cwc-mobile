@@ -72,7 +72,7 @@ class SettingsVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return SettingsHeaderView(settingsSection: sections[section])
+        return HeaderView(settingsSection: sections[section])
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsHeaderView: UIView {
+class HeaderView: UICollectionReusableView {
     
     let title: UILabel  = {
         let label = UILabel(text: "", font: .boldSystemFont(ofSize: 20))
@@ -19,6 +19,11 @@ class SettingsHeaderView: UIView {
     init(settingsSection: SettingsSection) {
         title.text = settingsSection.title
         super.init(frame: .zero)
+        configure()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         configure()
     }
     

@@ -15,10 +15,17 @@ class AppsDataSource: NSObject, UICollectionViewDataSource {
     let videos = (Bundle.main.decode("videos.json") as VideoData).videos
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return section == 0 ? 1 : items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if indexPath.section == 0 {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "headerId", for: indexPath) as? VideoGroupCell else { return UICollectionViewCell() }
+            cell.horizontalController.videos = videos
+            cell.horizontalController.collectionView.reloadData()
+            return cell
+        }
         
         let cellType = items[indexPath.item].cellType.rawValue
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType, for: indexPath) as? BaseAppCell else { return UICollectionViewCell() }
@@ -34,14 +41,17 @@ class AppsDataSource: NSObject, UICollectionViewDataSource {
         return cell
     }
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
     func app(at index: Int) -> App {
         return items[index]
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath) as! VideosPageHeader
-        header.videosHeaderHorizontalController.videos = videos
-        header.videosHeaderHorizontalController.collectionView.reloadData()
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "foo", for: indexPath) as? HeaderView else { return UICollectionReusableView() }
+        header.title.text = "Foo"
         return header
     }
 }

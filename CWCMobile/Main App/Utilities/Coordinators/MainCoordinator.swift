@@ -58,7 +58,6 @@ class MainCoordinator: NSObject, Coordinator {
     
     func didSwipeDown() {
         navigationController.setNavigationBarHidden(false, animated: false)
-        navigationController.navigationBar.prefersLargeTitles = true
         navigationController.popToViewController(appsVC, animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
             self?.navigationController.navigationBar.sizeToFit()
@@ -111,7 +110,6 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     fileprivate func configureNavigationController() {
-        navigationController.navigationBar.prefersLargeTitles = true
         navigationController.setNavigationBarHidden(true, animated: true)
         navigationController.pushViewController(appsVC, animated: true)
         

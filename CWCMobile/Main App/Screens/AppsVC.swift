@@ -30,8 +30,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Apps"
+        title = "CodeWithChris Hub"
         loadVideos()
     }
     
@@ -74,7 +73,8 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     func setupCollectionView() {
         collectionView.register(ImageAppCell.self, forCellWithReuseIdentifier: ImageApp.CellType.image.rawValue)
         collectionView.register(ColorAppCell.self, forCellWithReuseIdentifier: ImageApp.CellType.color.rawValue)
-        collectionView.register(VideosPageHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView.register(VideoGroupCell.self, forCellWithReuseIdentifier: headerId)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "foo")
         
         collectionView.dataSource = dataSource
     }
@@ -89,7 +89,12 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: view.frame.width - 64, height: 500)
+        
+        if indexPath.section == 0 {
+            return  .init(width: view.frame.width, height: view.frame.width / multiplier)
+        }
+        
+        return .init(width: view.frame.width - 64, height: 500)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -97,12 +102,12 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .init(top: 32, left: 0, bottom: 32, right: 16)
+        return .init(top: 16, left: 0, bottom: 16, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return .init(width: view.frame.width, height: 40)
     }
     
     let multiplier: CGFloat = 2.2
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: view.frame.width / multiplier)
-    }
 }
