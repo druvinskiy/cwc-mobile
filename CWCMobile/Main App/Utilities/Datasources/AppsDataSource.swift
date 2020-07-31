@@ -11,6 +11,8 @@ import UIKit
 class AppsDataSource: NSObject, UICollectionViewDataSource {
     fileprivate let sections = MainApp.loadSections()
     
+    var videoDidSelectHandler: ((Video) -> Void)?
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         let cellItems = sections[section].cellItems
@@ -27,6 +29,13 @@ class AppsDataSource: NSObject, UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoGroupCell.cellId, for: indexPath) as? VideoGroupCell {
             cell.horizontalController.videos = cellItems
             cell.horizontalController.collectionView.reloadData()
+            
+            cell.horizontalController.didSelectHandler = { [weak self] video in
+                guard let self = self else { return }
+                
+                self.videoDidSelectHandler?(video)
+            }
+            
             return cell
         }
         

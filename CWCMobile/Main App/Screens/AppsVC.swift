@@ -20,6 +20,12 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     init(coordinator: MainCoordinator?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
         self.coordinator = coordinator
+        
+        dataSource.videoDidSelectHandler = { [weak self] video in
+            guard let self = self else { return }
+            
+            self.coordinator?.didSelectVideo(video: video)
+        }
     }
     
     required init?(coder: NSCoder) {

@@ -14,6 +14,8 @@ class VideosHorizontalController: HorizontalSnappingController, UICollectionView
     
     var videos = [Video]()
     
+    var didSelectHandler: ((Video) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,5 +44,10 @@ class VideosHorizontalController: HorizontalSnappingController, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let video = videos[indexPath.item]
+        didSelectHandler?(video)
     }
 }

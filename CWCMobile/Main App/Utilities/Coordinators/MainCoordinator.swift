@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class MainCoordinator: NSObject, Coordinator {
     internal var childCoordinators = [Coordinator]()
@@ -73,6 +74,14 @@ class MainCoordinator: NSObject, Coordinator {
             childCoordinators.remove(at: index)
             break
         }
+    }
+    
+    func didSelectVideo(video: Video) {
+        guard let url = URL(string: video.videoUrl) else { return }
+        
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.preferredControlTintColor = .systemGreen
+        navigationController.pushViewController(safariVC, animated: true)
     }
     
     // MARK: - Fileprivate
