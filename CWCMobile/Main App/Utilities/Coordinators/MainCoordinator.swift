@@ -80,8 +80,8 @@ class MainCoordinator: NSObject, Coordinator {
         guard let url = URL(string: video.videoUrl) else { return }
         
         let safariVC = SFSafariViewController(url: url)
-        safariVC.preferredControlTintColor = .systemGreen
-        navigationController.pushViewController(safariVC, animated: true)
+        safariVC.preferredControlTintColor = Theme.chrisBlue
+        navigationController.present(safariVC, animated: true)
     }
     
     // MARK: - Fileprivate
