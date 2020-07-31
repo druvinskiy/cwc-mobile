@@ -12,6 +12,8 @@ class VideoGroupCell: UICollectionViewCell {
     
     let horizontalController = VideosHorizontalController()
     
+    static let cellId = "videoGroupCell"
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         

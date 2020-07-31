@@ -9,6 +9,9 @@
 import UIKit
 
 class ImageAppCell: BaseAppCell {
+    
+    static let imageCellId = "imageCellId"
+    
     var imageApp: ImageApp! {
         didSet {
             backgroundImageView.image = imageApp.backgroundImage

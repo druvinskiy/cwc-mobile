@@ -15,9 +15,7 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     var appView = CWCAppView()
     var transitionView = TransitionView()
     
-    let headerId = "headerId"
-    
-    var videos = [Video]()
+    fileprivate let sections = MainApp.loadSections()
     
     init(coordinator: MainCoordinator?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
@@ -31,7 +29,6 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "CodeWithChris Hub"
-        loadVideos()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,27 +68,29 @@ class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func setupCollectionView() {
-        collectionView.register(ImageAppCell.self, forCellWithReuseIdentifier: ImageApp.CellType.image.rawValue)
-        collectionView.register(ColorAppCell.self, forCellWithReuseIdentifier: ImageApp.CellType.color.rawValue)
-        collectionView.register(VideoGroupCell.self, forCellWithReuseIdentifier: headerId)
-        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "foo")
+        collectionView.register(ImageAppCell.self, forCellWithReuseIdentifier: ImageAppCell.imageCellId)
+        collectionView.register(ColorAppCell.self, forCellWithReuseIdentifier: ColorAppCell.colorCellId)
+        collectionView.register(VideoGroupCell.self, forCellWithReuseIdentifier: VideoGroupCell.cellId)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderView.reuseId)
         
         collectionView.dataSource = dataSource
     }
     
-    func loadVideos() {
-        let result = Bundle.main.decode("videos.json") as VideoData
-        videos = result.videos
-    }
-    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        coordinator?.didSelectApp(app: dataSource.app(at: indexPath.item))
+        
+        let item = sections[indexPath.section].cellItem(at: indexPath.row)
+        
+        if let appItem = item as? AppItem {
+            coordinator?.didSelectApp(app: appItem.getApp())
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        if indexPath.section == 0 {
-            return  .init(width: view.frame.width, height: view.frame.width * multiplier)
+        let item = sections[indexPath.section].cellItem(at: indexPath.row)
+        
+        if item is Video {
+            return .init(width: view.frame.width, height: view.frame.width * multiplier)
         }
         
         return .init(width: view.frame.width - 64, height: 500)

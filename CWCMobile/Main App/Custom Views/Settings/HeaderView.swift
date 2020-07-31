@@ -10,7 +10,9 @@ import UIKit
 
 class HeaderView: UICollectionReusableView {
     
-    let title: UILabel  = {
+    static let reuseId = "headerView"
+    
+    var title: UILabel  = {
         let label = UILabel(text: "", font: .boldSystemFont(ofSize: 20))
         label.textColor = .white
         return label

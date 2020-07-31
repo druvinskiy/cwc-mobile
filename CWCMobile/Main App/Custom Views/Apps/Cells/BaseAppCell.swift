@@ -21,6 +21,8 @@ class BaseAppCell: UICollectionViewCell {
     let nameLabel = UILabel(text: "", font: .boldSystemFont(ofSize: 28))
     let logoImageView = UIImageView(image: #imageLiteral(resourceName: "logo"))
     
+    static let appCellId = "appCellId"
+    
     let tapLabel: UILabel = {
         let label = UILabel(text: "Tap to Try This App", font: .boldSystemFont(ofSize: 20))
         label.textAlignment = .center

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Video: Decodable {
+struct Video: Decodable, MainCellItem {
     let title: String
     let videoThumbnail: String
     let videoUrl: String

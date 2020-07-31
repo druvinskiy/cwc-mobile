@@ -10,6 +10,8 @@ import UIKit
 
 class ColorAppCell: BaseAppCell {
     
+    static let colorCellId = "colorCellId"
+    
     var colorApp: ColorApp! {
         didSet {
             backgroundColor = colorApp.backgroundColor
