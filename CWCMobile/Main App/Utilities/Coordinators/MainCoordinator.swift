@@ -78,10 +78,7 @@ class MainCoordinator: NSObject, Coordinator {
     
     func didSelectVideo(video: Video) {
         guard let url = URL(string: video.videoUrl) else { return }
-        
-        let safariVC = SFSafariViewController(url: url)
-        safariVC.preferredControlTintColor = Theme.chrisBlue
-        navigationController.present(safariVC, animated: true)
+        UIApplication.shared.open(url)
     }
     
     // MARK: - Fileprivate
