@@ -12,7 +12,7 @@ import SafariServices
 class MainCoordinator: NSObject, Coordinator {
     internal var childCoordinators = [Coordinator]()
     internal var navigationController: UINavigationController
-    fileprivate lazy var appsVC = AppsVC(coordinator: self)
+    fileprivate lazy var appsVC = DaysVC(coordinator: self)
     fileprivate var specificAppVC = SwipingAppController()
     
     init(navigationController: UINavigationController) {
@@ -118,8 +118,21 @@ class MainCoordinator: NSObject, Coordinator {
     fileprivate func configureNavigationController() {
         navigationController.setNavigationBarHidden(true, animated: true)
         navigationController.pushViewController(appsVC, animated: true)
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.prefersLargeTitles = true
         
-        let settingsButton = UIBarButtonItem(image: #imageLiteral(resourceName: "settings").withTintColor(Theme.chrisBlue), style: .plain, target: self, action: #selector(handleSettings))
+        if #available(iOS 13.0, *) {
+            let navBarAppearance = UINavigationBarAppearance()
+            navBarAppearance.configureWithOpaqueBackground()
+            navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+            navBarAppearance.backgroundColor = Theme.chrisBlueNavigation
+            navigationController.navigationBar.standardAppearance = navBarAppearance
+            navigationController.navigationBar.scrollEdgeAppearance = navBarAppearance
+        }
+        
+        let settingsButton = UIBarButtonItem(image: #imageLiteral(resourceName: "settings").withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(handleSettings))
+        settingsButton.tintColor = .white
         appsVC.navigationItem.rightBarButtonItem = settingsButton
     }
     

@@ -6,10 +6,10 @@
 //  Copyright © 2020 David Ruvinskiy. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-struct Video: Decodable, MainCellItem {
+struct Video {
     let title: String
-    let videoThumbnail: String
+    let thumbnail: UIImage
     let videoUrl: String
 }

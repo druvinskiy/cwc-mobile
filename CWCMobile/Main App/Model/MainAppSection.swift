@@ -27,28 +27,3 @@ struct MainAppSection {
         return cellItems.count
     }
 }
-
-enum AppItem: MainCellItem {
-    case war(ImageApp)
-    case match(ImageApp)
-    case quiz(ImageApp)
-    case news(ColorApp)
-    case photo(ColorApp)
-    case guidebook(ColorApp)
-    
-    func getApp() -> App {
-        switch self {
-        case .guidebook(let app),
-             .news(let app),
-             .photo(let app):
-            
-            return app
-        case .match(let app),
-             .quiz(let app),
-             .war(let app):
-            
-            return app
-            
-        }
-    }
-}

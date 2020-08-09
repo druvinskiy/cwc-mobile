@@ -10,6 +10,9 @@ import UIKit
 
 class Theme {
     static let chrisBlue = UIColor(named: "Chris Blue") ?? UIColor.blue
+    static let chrisBlueNavigation = UIColor(named: "Chris Blue Navigation") ?? UIColor.blue
+    static let rowLight = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
+    static let rowDark = UIColor(red: 0.88, green: 0.88, blue: 0.88, alpha: 1.0)
 }
 
 enum AppName: String {
@@ -54,17 +57,10 @@ struct Settings {
 }
 
 struct MainApp {
-    static func loadSections() -> [MainAppSection] {
+    static func loadDays() -> [Day] {
         return [
-            MainAppSection(title: "Beginner Series Videos", cells: (Bundle.main.decode("videos.json") as VideoData).videos),
-            MainAppSection(title: "Sample Apps", cells: [
-                AppItem.war(.init(courseName: .fundamentals, appName: .war, image: #imageLiteral(resourceName: "war"), backgroundImage: #imageLiteral(resourceName: "warBackground"))),
-                AppItem.match(.init(courseName: .fundamentals, appName: .match, image: #imageLiteral(resourceName: "match"), backgroundImage: #imageLiteral(resourceName: "matchBackground"))),
-                AppItem.quiz(.init(courseName: .fundamentals, appName: .quiz, image: #imageLiteral(resourceName: "quizNoPurple"), backgroundImage: #imageLiteral(resourceName: "quizBackground"))),
-                AppItem.news(.init(courseName: .fundamentals, appName: .news, image: #imageLiteral(resourceName: "newsNoBackGround"), backgroundColor: #colorLiteral(red: 0.08994158357, green: 0.3607954979, blue: 0.5560376644, alpha: 1))),
-                AppItem.photo(.init(courseName: .database, appName: .photo, image: #imageLiteral(resourceName: "photoNoBackground"), backgroundColor: .darkGray)),
-                AppItem.guidebook(.init(courseName: .database, appName: .guidebook, image: #imageLiteral(resourceName: "guidebookNoBackground"), backgroundColor: .darkGray))
-            ])
+            .init(subtitle: "Xcode Essentials", description: "In this video, I’ll tell you what you need to learn and give you a tour of Xcode.", video: .init(title: "How to Make an App for Beginners - Lesson 1", thumbnail: #imageLiteral(resourceName: "Video_1"), videoUrl: "https://www.youtube.com/watch?v=jniJeamcIUU"), app: nil),
+            .init(subtitle: "All About Auto Layout", description: "Jumping right in, you’ll learn how to build layouts.", video: .init(title: "Auto Layout Tutorial - Lesson 2", thumbnail: #imageLiteral(resourceName: "Video_2"), videoUrl: "https://www.youtube.com/watch?v=emojd8GFB0o"), app: nil)
         ]
     }
 }

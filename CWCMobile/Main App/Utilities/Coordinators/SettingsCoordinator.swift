@@ -27,6 +27,7 @@ class SettingsCoordinator: Coordinator {
         let settingsNavigationController = UINavigationController(rootViewController: settingsVC)
         settingsNavigationController.navigationBar.prefersLargeTitles = true
         settingsNavigationController.modalPresentationStyle = .fullScreen
+        UINavigationBar.appearance().tintColor = Theme.chrisBlue
         
         navigationController.present(settingsNavigationController, animated: true)
     }
@@ -39,6 +40,7 @@ class SettingsCoordinator: Coordinator {
     // MARK: - Fileprivate
     
     @objc fileprivate func dismiss() {
+        UINavigationBar.appearance().tintColor = UIColor.white
         navigationController.dismiss(animated: true)
         parentCoordinator?.childDidFinish(self)
     }

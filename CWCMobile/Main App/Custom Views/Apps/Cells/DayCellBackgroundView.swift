@@ -1,5 +1,5 @@
 //
-//  AppCellBackgroundView.swift
+//  DayCellBackgroundView.swift
 //  CWCMobile
 //
 //  Created by David Ruvinskiy on 5/26/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppCellBackgroundView: UIView {
+class DayCellBackgroundView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
