@@ -64,7 +64,7 @@ struct MainApp {
             
             .init(subtitle: "All About Auto Layout", description: "Jumping right in, you’ll learn how to build layouts.", video: .init(title: "Auto Layout Tutorial - Lesson 2", thumbnail: #imageLiteral(resourceName: "Video_2"), videoUrl: "https://www.youtube.com/watch?v=emojd8GFB0o"), app: nil),
             
-            .init(subtitle: "Auto Layout Bonus Training", description: "Additional information on Auto Layout not covered in Lesson 2.", video: .init(title: "Auto Layout Bonus - Lesson 2A", thumbnail: #imageLiteral(resourceName: "Video_3"), videoUrl: "https://www.youtube.com/watch?v=2tqkuGETgXg"), app: nil),
+//            .init(subtitle: "Auto Layout Bonus Training", description: "Additional information on Auto Layout not covered in Lesson 2.", video: .init(title: "Auto Layout Bonus - Lesson 2A", thumbnail: #imageLiteral(resourceName: "Video_3"), videoUrl: "https://www.youtube.com/watch?v=2tqkuGETgXg"), app: nil),
             
             .init(subtitle: "How To Use Stack Views", description: "Learn how to use Stack View elements to build layouts much more easily.", video: .init(title: "UIStackView Tutorial - Lesson 3", thumbnail: #imageLiteral(resourceName: "Video_4"), videoUrl: "https://www.youtube.com/watch?v=eF9Ut-VpdAI"), app: nil),
             

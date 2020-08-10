@@ -14,7 +14,7 @@ class DayCell: UICollectionViewCell {
             numberLabel.text = "Day \(day.number)"
             subtitleLabel.text = day.subtitle
             thumbnailImageView.image = day.video.thumbnail
-            tapLabel.text = day.description
+            descriptionLabel.text = day.description
             
             let color = (day.number % 2 == 0) ? Theme.rowLight : Theme.rowDark
             backgroundColor = color
@@ -28,8 +28,8 @@ class DayCell: UICollectionViewCell {
     
     static let dayCellId = "dayCellId"
     
-    let tapLabel: UILabel = {
-        let label = UILabel(text: "Tap Me", font: .boldSystemFont(ofSize: 20), numberOfLines: 0)
+    let descriptionLabel: UILabel = {
+        let label = UILabel(text: "Tap Me", font: .boldSystemFont(ofSize: 18), numberOfLines: 0)
         label.textAlignment = .center
         return label
     }()
@@ -76,7 +76,7 @@ class DayCell: UICollectionViewCell {
             numberLabel,
             subtitleLabel,
             imageContainerView,
-            tapLabel
+            descriptionLabel
         ], spacing: 8)
         
         addSubview(stackView)
@@ -86,6 +86,6 @@ class DayCell: UICollectionViewCell {
         
         subtitleLabel.textColor = .darkText
         numberLabel.textColor = Theme.chrisBlue
-        tapLabel.textColor = .darkText
+        descriptionLabel.textColor = .darkText
     }
 }
