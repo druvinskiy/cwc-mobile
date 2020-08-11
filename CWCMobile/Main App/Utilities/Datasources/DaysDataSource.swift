@@ -1,5 +1,5 @@
 //
-//  AppsDataSource.swift
+//  DaysDataSource.swift
 //  CWCMobile
 //
 //  Created by David Ruvinskiy on 5/27/20.
@@ -8,8 +8,12 @@
 
 import UIKit
 
-class AppsDataSource: NSObject, UICollectionViewDataSource {
-    fileprivate let days = MainApp.loadDays()
+class DaysDataSource: NSObject, UICollectionViewDataSource {
+    let days: [Day]
+    
+    init(days: [Day]) {
+        self.days = days
+    }
     
     var videoDidSelectHandler: ((Video) -> Void)?
     
@@ -21,7 +25,7 @@ class AppsDataSource: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DayCell.dayCellId, for: indexPath) as? DayCell else { return UICollectionViewCell() }
-        var day = days[indexPath.row]
+        let day = days[indexPath.row]
         
         day.number = indexPath.row + 1
         cell.day = day

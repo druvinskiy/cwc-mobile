@@ -10,6 +10,5 @@ import UIKit
 
 struct Video {
     let title: String
-    let thumbnail: UIImage
     let videoUrl: String
 }

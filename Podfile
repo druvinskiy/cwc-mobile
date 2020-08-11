@@ -12,5 +12,6 @@ target 'CWCMobile' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'youtube-ios-player-helper'
 
 end

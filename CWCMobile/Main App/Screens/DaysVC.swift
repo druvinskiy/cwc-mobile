@@ -11,11 +11,11 @@ import UIKit
 class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     weak var coordinator: MainCoordinator?
-    var dataSource = AppsDataSource()
     var appView = CWCAppView()
     var transitionView = TransitionView()
     
-    fileprivate let sections = MainApp.loadDays()
+    fileprivate let days = MainApp.loadDays()
+    lazy var dataSource = DaysDataSource(days: days)
     
     init(coordinator: MainCoordinator?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
@@ -76,6 +76,11 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     func setupCollectionView() {
         collectionView.register(DayCell.self, forCellWithReuseIdentifier: DayCell.dayCellId)
         collectionView.dataSource = dataSource
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let day = days[indexPath.row]
+        coordinator?.didSelectDay(day: day)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

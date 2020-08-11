@@ -380,6 +380,7 @@ PODS:
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
   - SwiftLint (0.39.2)
+  - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -387,6 +388,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI
   - SwiftLint
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
@@ -415,6 +417,7 @@ SPEC REPOS:
     - PromisesObjC
     - SDWebImage
     - SwiftLint
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -442,7 +445,8 @@ SPEC CHECKSUMS:
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: 2f3c59356a3dde38cec0a6c87000a42f77b2c4c9
+PODFILE CHECKSUM: 3f7d497dd281b8d063751aaf1d9bbe9591cb2857
 
 COCOAPODS: 1.9.3

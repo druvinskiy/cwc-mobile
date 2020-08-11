@@ -31,6 +31,11 @@ class MainCoordinator: NSObject, Coordinator {
         navigationController.dismiss(animated: true)
     }
     
+    func didSelectDay(day: Day) {
+        let dayDetailVC = DayDetailVC(day: day)
+        navigationController.pushViewController(dayDetailVC, animated: true)
+    }
+    
     func didSelectApp(app: App) {
         let appName = AppName(rawValue: app.name)
         

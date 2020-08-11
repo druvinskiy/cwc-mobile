@@ -10,7 +10,6 @@
 		29CBF161DC57735B8ECE7736 /* Pods_CWCMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7C1E606D937341D6436093 /* Pods_CWCMobile.framework */; };
 		B81BF99024A4D15800B433F8 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BF98F24A4D15800B433F8 /* SettingsSection.swift */; };
 		B81BF99224A4D9BE00B433F8 /* SocialNetworkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BF99124A4D9BE00B433F8 /* SocialNetworkUrl.swift */; };
-		B81F8CF824D4E2A5004A8ABB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B81F8CF724D4E2A5004A8ABB /* GoogleService-Info.plist */; };
 		B82A95BA2478D0F3006063BC /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95B92478D0F3006063BC /* PageCell.swift */; };
 		B82A95BC2478D169006063BC /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95BB2478D169006063BC /* Page.swift */; };
 		B82A95BE2479E016006063BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95BD2479E016006063BC /* Constants.swift */; };
@@ -32,6 +31,9 @@
 		B83ED0C12499A512008F4ABD /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83ED0C02499A512008F4ABD /* FirstLaunch.swift */; };
 		B840684124A4566900196092 /* BaseSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840684024A4566900196092 /* BaseSettingsCell.swift */; };
 		B84CACC024DE1C8D00C09E9D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84CACBF24DE1C8D00C09E9D /* Day.swift */; };
+		B8512E6C24E0F8E600525636 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8512E6B24E0F8E600525636 /* GoogleService-Info.plist */; };
+		B8512E6E24E1870200525636 /* DayDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8512E6D24E1870200525636 /* DayDetailVC.swift */; };
+		B8512E7024E1880600525636 /* DayVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8512E6F24E1880600525636 /* DayVideoCell.swift */; };
 		B86EDB742483276C00E020D8 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86EDB732483276C00E020D8 /* Quiz.storyboard */; };
 		B86EDB7B2483279F00E020D8 /* QuestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = B86EDB752483279F00E020D8 /* QuestionData.json */; };
 		B86EDB7C2483279F00E020D8 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EDB762483279F00E020D8 /* QuizViewController.swift */; };
@@ -60,7 +62,7 @@
 		B87C8E9624A2C979008DF3E9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E9524A2C979008DF3E9 /* HeaderView.swift */; };
 		B87C8E9824A2FB94008DF3E9 /* ImageSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C8E9724A2FB94008DF3E9 /* ImageSettingCell.swift */; };
 		B87ECF7C247E0028005E2356 /* DayCellBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF7B247E0028005E2356 /* DayCellBackgroundView.swift */; };
-		B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF80247F57F8005E2356 /* AppsDataSource.swift */; };
+		B87ECF81247F57F8005E2356 /* DaysDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF80247F57F8005E2356 /* DaysDataSource.swift */; };
 		B87ECF83247F5944005E2356 /* CWCAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF82247F5944005E2356 /* CWCAppView.swift */; };
 		B87ECF87247F6359005E2356 /* War.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87ECF86247F6359005E2356 /* War.storyboard */; };
 		B87ECF89247F63A1005E2356 /* WarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECF88247F63A1005E2356 /* WarViewController.swift */; };
@@ -117,7 +119,6 @@
 		810A435545B1FB048D25BB62 /* Pods-CWCMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWCMobile.debug.xcconfig"; path = "Target Support Files/Pods-CWCMobile/Pods-CWCMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		B81BF98F24A4D15800B433F8 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		B81BF99124A4D9BE00B433F8 /* SocialNetworkUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUrl.swift; sourceTree = "<group>"; };
-		B81F8CF724D4E2A5004A8ABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B82A95B92478D0F3006063BC /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		B82A95BB2478D169006063BC /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		B82A95BD2479E016006063BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -141,6 +142,9 @@
 		B83ED0C02499A512008F4ABD /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
 		B840684024A4566900196092 /* BaseSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSettingsCell.swift; sourceTree = "<group>"; };
 		B84CACBF24DE1C8D00C09E9D /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		B8512E6B24E0F8E600525636 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8512E6D24E1870200525636 /* DayDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailVC.swift; sourceTree = "<group>"; };
+		B8512E6F24E1880600525636 /* DayVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayVideoCell.swift; sourceTree = "<group>"; };
 		B86EDB732483276C00E020D8 /* Quiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		B86EDB752483279F00E020D8 /* QuestionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionData.json; sourceTree = "<group>"; };
 		B86EDB762483279F00E020D8 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -169,7 +173,7 @@
 		B87C8E9524A2C979008DF3E9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		B87C8E9724A2FB94008DF3E9 /* ImageSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSettingCell.swift; sourceTree = "<group>"; };
 		B87ECF7B247E0028005E2356 /* DayCellBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellBackgroundView.swift; sourceTree = "<group>"; };
-		B87ECF80247F57F8005E2356 /* AppsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDataSource.swift; sourceTree = "<group>"; };
+		B87ECF80247F57F8005E2356 /* DaysDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysDataSource.swift; sourceTree = "<group>"; };
 		B87ECF82247F5944005E2356 /* CWCAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWCAppView.swift; sourceTree = "<group>"; };
 		B87ECF86247F6359005E2356 /* War.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = War.storyboard; sourceTree = "<group>"; };
 		B87ECF88247F63A1005E2356 /* WarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarViewController.swift; sourceTree = "<group>"; };
@@ -290,7 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				B87C8E62249E9D82008DF3E9 /* Settings */,
-				B8E2B0A1247B68E600605EC3 /* Apps */,
+				B8E2B0A1247B68E600605EC3 /* Days */,
 				B82A95C32479F667006063BC /* Onboarding */,
 				B83ED0BC249957EE008F4ABD /* AlertContainerView.swift */,
 				DBDC99AC249CF87500543A05 /* TransitionView.swift */,
@@ -304,6 +308,7 @@
 				B8E2B092247AF72500605EC3 /* OnboardingVC.swift */,
 				B8E2B09C247B470D00605EC3 /* DaysVC.swift */,
 				B87C8E5E249E9B84008DF3E9 /* SettingsVC.swift */,
+				B8512E6D24E1870200525636 /* DayDetailVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -370,7 +375,7 @@
 				B87ECF85247F633F005E2356 /* War */,
 				B87ECF84247F61F3005E2356 /* Main App */,
 				B82CADFC2478C9290051C711 /* Info.plist */,
-				B81F8CF724D4E2A5004A8ABB /* GoogleService-Info.plist */,
+				B8512E6B24E0F8E600525636 /* GoogleService-Info.plist */,
 			);
 			path = CWCMobile;
 			sourceTree = "<group>";
@@ -441,7 +446,7 @@
 			children = (
 				DBE46B5024A360AD0003792E /* SettingsDataSource.swift */,
 				B8E2B090247AF41B00605EC3 /* OnboardingDataSource.swift */,
-				B87ECF80247F57F8005E2356 /* AppsDataSource.swift */,
+				B87ECF80247F57F8005E2356 /* DaysDataSource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -567,14 +572,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B8E2B0A1247B68E600605EC3 /* Apps */ = {
+		B8E2B0A1247B68E600605EC3 /* Days */ = {
 			isa = PBXGroup;
 			children = (
 				B8E2B0A2247B68EE00605EC3 /* Cells */,
 				B87ECF82247F5944005E2356 /* CWCAppView.swift */,
 				B87ECFAA24805DA2005E2356 /* FloatingContainerView.swift */,
 			);
-			path = Apps;
+			path = Days;
 			sourceTree = "<group>";
 		};
 		B8E2B0A2247B68EE00605EC3 /* Cells */ = {
@@ -582,6 +587,7 @@
 			children = (
 				B87ECF7B247E0028005E2356 /* DayCellBackgroundView.swift */,
 				B8E2B0A5247B699F00605EC3 /* DayCell.swift */,
+				B8512E6F24E1880600525636 /* DayVideoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -683,7 +689,7 @@
 				B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */,
 				B87ECFC12480CD01005E2356 /* cardflip.wav in Resources */,
 				B87ECFC02480CD01005E2356 /* dingcorrect.wav in Resources */,
-				B81F8CF824D4E2A5004A8ABB /* GoogleService-Info.plist in Resources */,
+				B8512E6C24E0F8E600525636 /* GoogleService-Info.plist in Resources */,
 				B82CADF62478C9260051C711 /* Main.storyboard in Resources */,
 				B86EDB7B2483279F00E020D8 /* QuestionData.json in Resources */,
 			);
@@ -842,10 +848,12 @@
 				B8D393A52485CF3100ED8646 /* CameraViewController.swift in Sources */,
 				B83ED0BB24995789008F4ABD /* AlertVC.swift in Sources */,
 				B82A95BC2478D169006063BC /* Page.swift in Sources */,
+				B8512E6E24E1870200525636 /* DayDetailVC.swift in Sources */,
+				B8512E7024E1880600525636 /* DayVideoCell.swift in Sources */,
 				B81BF99024A4D15800B433F8 /* SettingsSection.swift in Sources */,
 				B8E2B09D247B470D00605EC3 /* DaysVC.swift in Sources */,
 				B8E2B099247B09F200605EC3 /* MainCoordinator.swift in Sources */,
-				B87ECF81247F57F8005E2356 /* AppsDataSource.swift in Sources */,
+				B87ECF81247F57F8005E2356 /* DaysDataSource.swift in Sources */,
 				B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */,
 				B8E2B097247B08F700605EC3 /* Storyboarded.swift in Sources */,
 				B8C129B22496951300FA319D /* Floatable.swift in Sources */,

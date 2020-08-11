@@ -13,7 +13,7 @@ class DayCell: UICollectionViewCell {
         didSet {
             numberLabel.text = "Day \(day.number)"
             subtitleLabel.text = day.subtitle
-            thumbnailImageView.image = day.video.thumbnail
+            thumbnailImageView.image = UIImage(named: "Video_\(day.number)")
             descriptionLabel.text = day.description
             
             let color = (day.number % 2 == 0) ? Theme.rowLight : Theme.rowDark

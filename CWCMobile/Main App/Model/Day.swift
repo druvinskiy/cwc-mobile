@@ -8,10 +8,17 @@
 
 import Foundation
 
-struct Day {
+class Day {
     var number = 1
     let subtitle: String
     let description: String
     let video: Video
     let app: App?
+    
+    init(subtitle: String, description: String, video: Video, app: App?) {
+        self.subtitle = subtitle
+        self.description = description
+        self.video = video
+        self.app = app
+    }
 }
