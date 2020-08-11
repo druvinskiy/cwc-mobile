@@ -12,7 +12,7 @@ import SafariServices
 class MainCoordinator: NSObject, Coordinator {
     internal var childCoordinators = [Coordinator]()
     internal var navigationController: UINavigationController
-    fileprivate lazy var appsVC = DaysVC(coordinator: self)
+    fileprivate lazy var daysVC = DaysVC(coordinator: self)
     fileprivate var specificAppVC = SwipingAppController()
     
     init(navigationController: UINavigationController) {
@@ -32,8 +32,10 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func didSelectDay(day: Day) {
-        let dayDetailVC = DayDetailVC(day: day)
-        navigationController.pushViewController(dayDetailVC, animated: true)
+        let child = DayDetailCoordinator(navigationController: navigationController, day: day)
+        child.parentCoordinator = self
+        childCoordinators.append(child)
+        child.start()
     }
     
     func didSelectApp(app: App) {
@@ -64,7 +66,7 @@ class MainCoordinator: NSObject, Coordinator {
     
     func didSwipeDown() {
         navigationController.setNavigationBarHidden(false, animated: false)
-        navigationController.popToViewController(appsVC, animated: true)
+        navigationController.popToViewController(daysVC, animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
             self?.navigationController.navigationBar.sizeToFit()
         }
@@ -122,9 +124,10 @@ class MainCoordinator: NSObject, Coordinator {
     
     fileprivate func configureNavigationController() {
         navigationController.setNavigationBarHidden(true, animated: true)
-        navigationController.pushViewController(appsVC, animated: true)
+        navigationController.pushViewController(daysVC, animated: true)
         navigationController.navigationBar.isTranslucent = false
         navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.delegate = self
         
         if #available(iOS 13.0, *) {
             let navBarAppearance = UINavigationBarAppearance()
@@ -138,11 +141,27 @@ class MainCoordinator: NSObject, Coordinator {
         
         let settingsButton = UIBarButtonItem(image: #imageLiteral(resourceName: "settings").withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(handleSettings))
         settingsButton.tintColor = .white
-        appsVC.navigationItem.rightBarButtonItem = settingsButton
+        daysVC.navigationItem.rightBarButtonItem = settingsButton
     }
     
     fileprivate func displayApps() {
         navigationController.setNavigationBarHidden(false, animated: true)
-        appsVC.removeTransitionView()
+        daysVC.removeTransitionView()
+    }
+}
+
+extension MainCoordinator: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
+            return
+        }
+        
+        if navigationController.viewControllers.contains(fromViewController) {
+            return
+        }
+        
+        if let daysDetailVC = fromViewController as? DayDetailVC {
+            childDidFinish(daysDetailVC.coordinator)
+        }
     }
 }

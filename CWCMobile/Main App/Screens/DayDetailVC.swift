@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import AVKit
 
 class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: DayDetailCoordinator?
     var day: Day
     
     @objc func canRotate() {}
@@ -49,14 +48,6 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        guard let videoURL = URL(string: day.video.videoUrl) else { return }
-        
-        let player = AVPlayer(url: videoURL)
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        player.play()
-
-        present(playerViewController, animated: true)
+        coordinator?.didSelectVideo()
     }
 }
