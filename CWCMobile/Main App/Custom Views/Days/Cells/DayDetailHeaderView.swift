@@ -14,13 +14,23 @@ class DayDetailHeaderView: UICollectionReusableView {
     
     var title: UILabel  = {
         let label = UILabel(text: "", font: .boldSystemFont(ofSize: 20), numberOfLines: 0)
+        label.textColor = .darkText
         return label
     }()
     
-    init(settingsSection: SettingsSection) {
-        title.text = settingsSection.title
-        super.init(frame: .zero)
-        configure()
+    var section: DayDetailSection! {
+        didSet {
+            title.text = section.title
+            
+            let items = section.cells
+            
+            if items.isEmpty {
+                backgroundColor = Theme.chrisBlue
+                title.textColor = .white
+            } else {
+                backgroundColor = (section.number % 2 == 0) ? Theme.rowLight : Theme.rowDark
+            }
+        }
     }
     
     override init(frame: CGRect) {

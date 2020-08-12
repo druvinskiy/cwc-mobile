@@ -50,7 +50,7 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
             return .zero
         }
         
-        if items is [String] {
+        if items is [AnswerItem] {
             return .init(top: 10, left: 0, bottom: 10, right: 0)
         }
         
@@ -72,7 +72,7 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
             }
         }
         
-        if let item = item as? String {
+        if let item = item as? AnswerItem {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AnswerCell.answerCellId, for: indexPath) as? AnswerCell else { return UICollectionViewCell() }
             cell.answerLabel.text = item
             return cell
@@ -115,19 +115,11 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        let items = sections[indexPath.section].cells
-        
         guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DayDetailHeaderView.reuseId, for: indexPath) as? DayDetailHeaderView else { return UICollectionReusableView() }
-        headerView.title.text = sections[indexPath.section].title
+        let section = sections[indexPath.section]
         
-        if items.isEmpty {
-            headerView.backgroundColor = Theme.chrisBlue
-            headerView.title.textColor = .white
-            return headerView
-        }
-        
-        headerView.backgroundColor = (indexPath.section % 2 == 0) ? Theme.rowLight : Theme.rowDark
-        headerView.title.textColor = .darkText
+        section.number = indexPath.section
+        headerView.section = sections[indexPath.section]
         
         return headerView
     }

@@ -13,6 +13,7 @@ protocol DayDetailCellItem {}
 class DayDetailSection {
     let title: String
     fileprivate(set) var cells: [DayDetailCellItem]
+    var number = 0
     
     init(title: String, cells: [DayDetailCellItem]) {
         self.title = title
