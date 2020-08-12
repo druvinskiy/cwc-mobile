@@ -11,9 +11,9 @@ import UIKit
 class Theme {
     static let chrisBlue = UIColor(named: "Chris Blue") ?? UIColor.blue
     static let chrisBlueNavigation = UIColor(named: "Chris Blue Navigation") ?? UIColor.blue
+    static let chrisBlueLight = UIColor(named: "Chris Blue Light") ?? UIColor.blue
     static let rowLight = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
     static let rowDark = UIColor(red: 0.88, green: 0.88, blue: 0.88, alpha: 1.0)
-    static let rowSeparator = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1.0)
 }
 
 enum AppName: String {
@@ -68,9 +68,9 @@ struct DayDetails {
         
         let questions = day.questions
         
-        for question in questions {
-            let section = DayDetailSection(title: question.question ?? "", cells: question.answers ?? [])
-            
+        for (index, question) in questions.enumerated() {
+            let questionNumber = index + 1
+            let section = DayDetailSection(title: "\(questionNumber). \(question.question ?? "")", cells: question.answers ?? [])
             sections.append(section)
         }
         
@@ -79,27 +79,37 @@ struct DayDetails {
 }
 
 struct MainApp {
+    private static var days = [Day]()
+    
     static func loadDays() -> [Day] {
-        return [
-            // MARK: - Lessons 1 to 10 (including the Bonus 2A)
+        loadDays1To10()
+        loadDays11To17()
+        loadDays18To29()
+        
+        return days
+    }
+    
+    // MARK: - Lessons 1 to 10 (including the Bonus 2A)
+    fileprivate static func loadDays1To10() {
+        days += [
             .init(subtitle: "Xcode Essentials", description: "In this video, I’ll tell you what you need to learn and give you a tour of Xcode.", video: .init(title: "How to Make an App for Beginners - Lesson 1", videoUrl: "https://www.filepicker.io/api/file/i6zqRnBESB2YJgZBBHXg"), app: nil, questions: [
                 
                 .init(question: "What software do we use to develop iOS apps?", answers: [
-                    "A: XSwift",
+                    "XSwift",
                     "B: Xcode",
                     "C: XApp"
                 ], correctAnswerIndex: 2, feedback: ""),
                 
                 .init(question: "What programming language are we learning in this course?", answers: [
-                    "A: Swift",
-                    "B: Java",
-                    "C: Objective-C"
+                    "Swift",
+                    "Java",
+                    "Objective-C"
                 ], correctAnswerIndex: 0, feedback: ""),
                 
                 .init(question: "What file do we use to configure the screen that the user sees?", answers: [
-                    "A: Main.storyboard",
-                    "B: View.swift",
-                    "C: Storyboard.main"
+                    "Main.storyboard",
+                    "View.swift",
+                    "Storyboard.main"
                 ], correctAnswerIndex: 0, feedback: "")
                 
             ]),
@@ -122,9 +132,13 @@ struct MainApp {
             
             .init(subtitle: "Handling User Interaction", description: "Learn how to capture and handle taps from the user.", video: .init(title: "Handling User Interaction - Lesson 9", videoUrl: "https://www.filepicker.io/api/file/6sbQxqdoQ9mKg9Jgnm8C"), app: nil),
             
-            .init(subtitle: "Writing The Logic", description: "Learn how to write code that THINKS!", video: .init(title: "Coding Logic with IF Statements - Lesson 10", videoUrl: "https://www.filepicker.io/api/file/AhwmMq2SrmEWMQxue4xW"), app: nil),
-            
-            // MARK: - Lessons 11 to 17
+            .init(subtitle: "Writing The Logic", description: "Learn how to write code that THINKS!", video: .init(title: "Coding Logic with IF Statements - Lesson 10", videoUrl: "https://www.filepicker.io/api/file/AhwmMq2SrmEWMQxue4xW"), app: nil)
+        ]
+    }
+    
+    // MARK: - Lessons 11 to 17
+    fileprivate static func loadDays11To17() {
+        days += [
             .init(subtitle: "What You’ll Learn Next", description: "Continue building your Swift skills, learn some critical concepts, build more complex apps and express more complex logic with your Swift code.", video: .init(title: "Intro - Lesson 11", videoUrl: "https://cdn.fs.teachablecdn.com/ZGv8P9D0QKGNNwZVlUEe"), app: nil),
             
             .init(subtitle: "Where to Get Help on UIKit Classes", description: "Learn 4 different techniques to find documentation and help on UIKit classes and methods.", video: .init(title: "UIKit and Apple Documentation - Lesson 12", videoUrl: "https://cdn.fs.teachablecdn.com/aHhlvrcQWWePdBvXIbip"), app: nil),
@@ -137,9 +151,13 @@ struct MainApp {
             
             .init(subtitle: "Dictionaries", description: "You’ve learned about Arrays. Dictionaries are another often used and highly useful tool to keep track of collections of data!", video: .init(title: "Dictionaries - Lesson 16", videoUrl: "https://cdn.fs.teachablecdn.com/R8DPdJVzTdSu404EFCXS"), app: nil),
             
-            .init(subtitle: "Loops", description: "Loops come in handy to let you go through each item in the collection and execute some code for each!", video: .init(title: "Loops - Lesson 17", videoUrl: "https://cdn.fs.teachablecdn.com/KmYqcGaDTMatAb2Z87Sa"), app: nil),
-            
-            // MARK: - Lessons 18 to 29
+            .init(subtitle: "Loops", description: "Loops come in handy to let you go through each item in the collection and execute some code for each!", video: .init(title: "Loops - Lesson 17", videoUrl: "https://cdn.fs.teachablecdn.com/KmYqcGaDTMatAb2Z87Sa"), app: nil)
+        ]
+    }
+    
+    // MARK: - Lessons 18 to 29
+    fileprivate static func loadDays18To29() {
+        days += [
             .init(subtitle: "Previewing What You’ll Build", description: "In this lesson, I’ll show you the app you’ll build as well as all of the new skills you’ll learn!", video: .init(title: "The Card Game: Intro - Lesson 18", videoUrl: "https://cdn.fs.teachablecdn.com/JHUgUDsCS5ipUik6BQA1"), app: nil),
             
             .init(subtitle: "Model View Controller", description: "Learn about a KEY design pattern that will help you write reusable and code that is easily maintained.", video: .init(title: "The Card Game: The MVC Design Pattern - Lesson 19", videoUrl: "https://cdn.fs.teachablecdn.com/Vi6vmyC0ThqlGsYb2Pn5"), app: nil),

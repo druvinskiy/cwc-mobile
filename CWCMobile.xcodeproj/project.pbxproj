@@ -77,14 +77,14 @@
 		B87ECFC22480CD01005E2356 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = B87ECFBD2480CD01005E2356 /* shuffle.wav */; };
 		B87ECFC32480CD01005E2356 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = B87ECFBE2480CD01005E2356 /* dingwrong.wav */; };
 		B87ECFC42480CD01005E2356 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECFBF2480CD01005E2356 /* SoundManager.swift */; };
+		B8841AC124E45D4F0022DEFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8841AC024E45D4F0022DEFA /* GoogleService-Info.plist */; };
 		B898B67D24CCBD4A009666E6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B67C24CCBD4A009666E6 /* Video.swift */; };
 		B898B68124CCC0B4009666E6 /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B68024CCC0B4009666E6 /* Bundle+Decodable.swift */; };
-		B8B62EEA24E318CB00645BCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8B62EE924E318CB00645BCC /* GoogleService-Info.plist */; };
 		B8B62EEC24E3240100645BCC /* DayDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EEB24E3240100645BCC /* DayDetailCoordinator.swift */; };
 		B8B62EEF24E33D4F00645BCC /* DayDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EEE24E33D4F00645BCC /* DayDetailSection.swift */; };
 		B8B62EF224E35E8100645BCC /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EF124E35E8100645BCC /* String+Ext.swift */; };
 		B8B62EF424E35F8200645BCC /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EF324E35F8200645BCC /* AnswerCell.swift */; };
-		B8B62EF624E3967C00645BCC /* DayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EF524E3967C00645BCC /* DayHeaderView.swift */; };
+		B8B62EF624E3967C00645BCC /* DayDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EF524E3967C00645BCC /* DayDetailHeaderView.swift */; };
 		B8C129B22496951300FA319D /* Floatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C129B12496951300FA319D /* Floatable.swift */; };
 		B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D3938C2485CEC200ED8646 /* Photo.storyboard */; };
 		B8D393932485CEF400ED8646 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D3938F2485CEF300ED8646 /* LocalStorageService.swift */; };
@@ -192,14 +192,14 @@
 		B87ECFBD2480CD01005E2356 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
 		B87ECFBE2480CD01005E2356 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
 		B87ECFBF2480CD01005E2356 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		B8841AC024E45D4F0022DEFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B898B67C24CCBD4A009666E6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		B898B68024CCC0B4009666E6 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
-		B8B62EE924E318CB00645BCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8B62EEB24E3240100645BCC /* DayDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailCoordinator.swift; sourceTree = "<group>"; };
 		B8B62EEE24E33D4F00645BCC /* DayDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailSection.swift; sourceTree = "<group>"; };
 		B8B62EF124E35E8100645BCC /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		B8B62EF324E35F8200645BCC /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
-		B8B62EF524E3967C00645BCC /* DayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHeaderView.swift; sourceTree = "<group>"; };
+		B8B62EF524E3967C00645BCC /* DayDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailHeaderView.swift; sourceTree = "<group>"; };
 		B8C129B12496951300FA319D /* Floatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floatable.swift; sourceTree = "<group>"; };
 		B8D3938C2485CEC200ED8646 /* Photo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
 		B8D3938F2485CEF300ED8646 /* LocalStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
@@ -382,7 +382,7 @@
 				B87ECF85247F633F005E2356 /* War */,
 				B87ECF84247F61F3005E2356 /* Main App */,
 				B82CADFC2478C9290051C711 /* Info.plist */,
-				B8B62EE924E318CB00645BCC /* GoogleService-Info.plist */,
+				B8841AC024E45D4F0022DEFA /* GoogleService-Info.plist */,
 			);
 			path = CWCMobile;
 			sourceTree = "<group>";
@@ -615,7 +615,7 @@
 				B8E2B0A5247B699F00605EC3 /* DayCell.swift */,
 				B8512E6F24E1880600525636 /* DayVideoCell.swift */,
 				B8B62EF324E35F8200645BCC /* AnswerCell.swift */,
-				B8B62EF524E3967C00645BCC /* DayHeaderView.swift */,
+				B8B62EF524E3967C00645BCC /* DayDetailHeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -717,7 +717,7 @@
 				B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */,
 				B87ECFC12480CD01005E2356 /* cardflip.wav in Resources */,
 				B87ECFC02480CD01005E2356 /* dingcorrect.wav in Resources */,
-				B8B62EEA24E318CB00645BCC /* GoogleService-Info.plist in Resources */,
+				B8841AC124E45D4F0022DEFA /* GoogleService-Info.plist in Resources */,
 				B82CADF62478C9260051C711 /* Main.storyboard in Resources */,
 				B86EDB7B2483279F00E020D8 /* QuestionData.json in Resources */,
 			);
@@ -877,7 +877,7 @@
 				B86EDB7C2483279F00E020D8 /* QuizViewController.swift in Sources */,
 				B82A95CB247A1236006063BC /* UIViews+Convenience.swift in Sources */,
 				B8D393A52485CF3100ED8646 /* CameraViewController.swift in Sources */,
-				B8B62EF624E3967C00645BCC /* DayHeaderView.swift in Sources */,
+				B8B62EF624E3967C00645BCC /* DayDetailHeaderView.swift in Sources */,
 				B83ED0BB24995789008F4ABD /* AlertVC.swift in Sources */,
 				B82A95BC2478D169006063BC /* Page.swift in Sources */,
 				B8512E6E24E1870200525636 /* DayDetailVC.swift in Sources */,

@@ -12,7 +12,10 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     weak var coordinator: DayDetailCoordinator?
     fileprivate let sections: [DayDetailSection]
     
+    let day: Day
+    
     init(day: Day) {
+        self.day = day
         self.sections = DayDetails.loadSections(with: day)
         
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
@@ -24,12 +27,12 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = #colorLiteral(red: 0.9489166141, green: 0.9490789771, blue: 0.9489063621, alpha: 1)
-        navigationController?.navigationBar.tintColor = .white
+        collectionView.backgroundColor = .white
+        title = "Day \(day.number)"
         
         collectionView.register(DayVideoCell.self, forCellWithReuseIdentifier: DayVideoCell.videoCellId)
         collectionView.register(AnswerCell.self, forCellWithReuseIdentifier: AnswerCell.answerCellId)
-        collectionView.register(DayHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: DayHeaderView.reuseId)
+        collectionView.register(DayDetailHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: DayDetailHeaderView.reuseId)
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -38,6 +41,20 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections[section].itemsCount()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let items = sections[section].cells
+        
+        if items.isEmpty {
+            return .zero
+        }
+        
+        if items is [String] {
+            return .init(top: 10, left: 0, bottom: 10, right: 0)
+        }
+        
+        return .zero
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -57,7 +74,7 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
         
         if let item = item as? String {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AnswerCell.answerCellId, for: indexPath) as? AnswerCell else { return UICollectionViewCell() }
-            cell.label.text = item
+            cell.answerLabel.text = item
             return cell
         }
         
@@ -100,7 +117,7 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
         
         let items = sections[indexPath.section].cells
         
-        guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DayHeaderView.reuseId, for: indexPath) as? DayHeaderView else { return UICollectionReusableView() }
+        guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DayDetailHeaderView.reuseId, for: indexPath) as? DayDetailHeaderView else { return UICollectionReusableView() }
         headerView.title.text = sections[indexPath.section].title
         
         if items.isEmpty {

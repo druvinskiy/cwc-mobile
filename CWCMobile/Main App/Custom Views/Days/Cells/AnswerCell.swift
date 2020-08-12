@@ -11,19 +11,25 @@ import UIKit
 class AnswerCell: UICollectionViewCell {
     static let answerCellId = "answerCellId"
     
-    let label = UILabel(text: "Test", font: .boldSystemFont(ofSize: 20))
+    let answerLabel: UILabel = {
+        let label = UILabel(text: "Test", font: .boldSystemFont(ofSize: 18))
+        return label
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        addSubview(label)
-        label.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 20, left: 20, bottom: 0, right: 0))
-        label.textColor = .black
-        
         let view = UIView()
         addSubview(view)
-        view.backgroundColor = Theme.rowSeparator
-        view.anchor(top: nil, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 0, left: 20, bottom: 0, right: 0), size: .init(width: 0, height: 1))
+        view.backgroundColor = Theme.chrisBlueLight
+        view.layer.cornerRadius = 8
+        view.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 2, left: 10, bottom: 2, right: 10))
+        
+        view.addSubview(answerLabel)
+        answerLabel.centerYInSuperview()
+        answerLabel.textColor = .darkText
+        answerLabel.anchor(top: nil, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 16))
+        
     }
     
     required init?(coder: NSCoder) {

@@ -1,5 +1,5 @@
 //
-//  DayHeaderView.swift
+//  DayDetailHeaderView.swift
 //  CWCMobile
 //
 //  Created by David Ruvinskiy on 8/11/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DayHeaderView: UICollectionReusableView {
+class DayDetailHeaderView: UICollectionReusableView {
     
     static let reuseId = "headerView"
     
@@ -35,6 +35,6 @@ class DayHeaderView: UICollectionReusableView {
     private func configure() {
         addSubview(title)
         title.centerYInSuperview()
-        title.anchor(top: nil, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 0))
+        title.anchor(top: nil, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 16))
     }
 }

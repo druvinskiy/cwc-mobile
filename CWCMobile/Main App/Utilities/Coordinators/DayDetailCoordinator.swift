@@ -24,6 +24,7 @@ class DayDetailCoordinator: Coordinator {
     func start() {
         let dayDetailVC = DayDetailVC(day: day)
         dayDetailVC.coordinator = self
+        navigationController.navigationBar.tintColor = .white
         navigationController.pushViewController(dayDetailVC, animated: true)
     }
     
