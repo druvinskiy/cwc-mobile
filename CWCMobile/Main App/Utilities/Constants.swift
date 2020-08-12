@@ -56,15 +56,56 @@ struct Settings {
     }
 }
 
+struct DayDetails {
+    static func loadSections(with day: Day) -> [DayDetailSection] {
+        var sections = [
+            DayDetailSection(title: "", cells: [
+                VideoItem.video(day)
+            ]),
+            DayDetailSection(title: "Answer the following quiz questions:", cells: [])
+        ]
+        
+        let questions = day.questions
+        
+        for question in questions {
+            let section = DayDetailSection(title: question.question ?? "", cells: question.answers ?? [])
+            
+            sections.append(section)
+        }
+        
+        return sections
+    }
+}
+
 struct MainApp {
     static func loadDays() -> [Day] {
         return [
             // MARK: - Lessons 1 to 10 (including the Bonus 2A)
-            .init(subtitle: "Xcode Essentials", description: "In this video, I’ll tell you what you need to learn and give you a tour of Xcode.", video: .init(title: "How to Make an App for Beginners - Lesson 1", videoUrl: "https://www.filepicker.io/api/file/i6zqRnBESB2YJgZBBHXg"), app: nil),
+            .init(subtitle: "Xcode Essentials", description: "In this video, I’ll tell you what you need to learn and give you a tour of Xcode.", video: .init(title: "How to Make an App for Beginners - Lesson 1", videoUrl: "https://www.filepicker.io/api/file/i6zqRnBESB2YJgZBBHXg"), app: nil, questions: [
+                
+                .init(question: "What software do we use to develop iOS apps?", answers: [
+                    "XSwift",
+                    "Xcode",
+                    "XApp"
+                ], correctAnswerIndex: 2, feedback: ""),
+                
+                .init(question: "What programming language are we learning in this course?", answers: [
+                    "Swift",
+                    "Java",
+                    "Objective-C"
+                ], correctAnswerIndex: 0, feedback: ""),
+                
+                .init(question: "What file do we use to configure the screen that the user sees?", answers: [
+                    "Main.storyboard",
+                    "View.swift",
+                    "Storyboard.main"
+                ], correctAnswerIndex: 0, feedback: "")
+                
+            ]),
             
             .init(subtitle: "All About Auto Layout", description: "Jumping right in, you’ll learn how to build layouts.", video: .init(title: "Auto Layout Tutorial - Lesson 2", videoUrl: "https://www.filepicker.io/api/file/eUfbxiyFSzWhkRdDve6i"), app: nil),
             
-//            .init(subtitle: "Auto Layout Bonus Training", description: "Additional information on Auto Layout not covered in Lesson 2.", video: .init(title: "Auto Layout Bonus - Lesson 2A", thumbnail: #imageLiteral(resourceName: "Video_3"), videoUrl: "https://www.youtube.com/watch?v=2tqkuGETgXg"), app: nil),
+            //            .init(subtitle: "Auto Layout Bonus Training", description: "Additional information on Auto Layout not covered in Lesson 2.", video: .init(title: "Auto Layout Bonus - Lesson 2A", thumbnail: #imageLiteral(resourceName: "Video_3"), videoUrl: "https://www.youtube.com/watch?v=2tqkuGETgXg"), app: nil),
             
             .init(subtitle: "How To Use Stack Views", description: "Learn how to use Stack View elements to build layouts much more easily.", video: .init(title: "UIStackView Tutorial - Lesson 3", videoUrl: "https://www.filepicker.io/api/file/vdGXXl2RYanrVDAnFfU3"), app: nil),
             
@@ -132,3 +173,5 @@ extension SocialNetworkUrl {
     static let facebook = SocialNetworkUrl(scheme: "", page: "https://www.facebook.com/CodeWithChris")
     static let courses = SocialNetworkUrl(scheme: "", page: "https://codewithchris.com/courses")
 }
+
+

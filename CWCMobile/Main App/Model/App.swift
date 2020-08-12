@@ -19,21 +19,3 @@ class App {
         self.image = image
     }
 }
-
-class ColorApp: App {
-    let backgroundColor: UIColor
-    
-    init(courseName: CourseName, appName: AppName, image: UIImage, backgroundColor: UIColor) {
-        self.backgroundColor = backgroundColor
-        super.init(courseName: courseName, appName: appName, image: image)
-    }
-}
-
-class ImageApp: App {
-    let backgroundImage: UIImage
-    
-    init(courseName: CourseName, appName: AppName, image: UIImage, backgroundImage: UIImage) {
-        self.backgroundImage = backgroundImage
-        super.init(courseName: courseName, appName: appName, image: image)
-    }
-}

@@ -14,11 +14,20 @@ class Day {
     let description: String
     let video: Video
     let app: App?
+    var questions = [Question]()
     
     init(subtitle: String, description: String, video: Video, app: App?) {
         self.subtitle = subtitle
         self.description = description
         self.video = video
         self.app = app
+    }
+    
+    init(subtitle: String, description: String, video: Video, app: App?, questions: [Question]) {
+        self.subtitle = subtitle
+        self.description = description
+        self.video = video
+        self.app = app
+        self.questions = questions
     }
 }
