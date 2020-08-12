@@ -22,8 +22,8 @@ class AnswerCell: UICollectionViewCell {
         
         let view = UIView()
         addSubview(view)
-        view.backgroundColor = .black
-        view.anchor(top: nil, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, size: .init(width: 0, height: 1))
+        view.backgroundColor = Theme.rowSeparator
+        view.anchor(top: nil, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 0, left: 20, bottom: 0, right: 0), size: .init(width: 0, height: 1))
     }
     
     required init?(coder: NSCoder) {

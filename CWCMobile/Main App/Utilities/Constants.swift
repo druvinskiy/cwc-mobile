@@ -13,6 +13,7 @@ class Theme {
     static let chrisBlueNavigation = UIColor(named: "Chris Blue Navigation") ?? UIColor.blue
     static let rowLight = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
     static let rowDark = UIColor(red: 0.88, green: 0.88, blue: 0.88, alpha: 1.0)
+    static let rowSeparator = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1.0)
 }
 
 enum AppName: String {
@@ -84,21 +85,21 @@ struct MainApp {
             .init(subtitle: "Xcode Essentials", description: "In this video, I’ll tell you what you need to learn and give you a tour of Xcode.", video: .init(title: "How to Make an App for Beginners - Lesson 1", videoUrl: "https://www.filepicker.io/api/file/i6zqRnBESB2YJgZBBHXg"), app: nil, questions: [
                 
                 .init(question: "What software do we use to develop iOS apps?", answers: [
-                    "XSwift",
-                    "Xcode",
-                    "XApp"
+                    "A: XSwift",
+                    "B: Xcode",
+                    "C: XApp"
                 ], correctAnswerIndex: 2, feedback: ""),
                 
                 .init(question: "What programming language are we learning in this course?", answers: [
-                    "Swift",
-                    "Java",
-                    "Objective-C"
+                    "A: Swift",
+                    "B: Java",
+                    "C: Objective-C"
                 ], correctAnswerIndex: 0, feedback: ""),
                 
                 .init(question: "What file do we use to configure the screen that the user sees?", answers: [
-                    "Main.storyboard",
-                    "View.swift",
-                    "Storyboard.main"
+                    "A: Main.storyboard",
+                    "B: View.swift",
+                    "C: Storyboard.main"
                 ], correctAnswerIndex: 0, feedback: "")
                 
             ]),
@@ -173,5 +174,3 @@ extension SocialNetworkUrl {
     static let facebook = SocialNetworkUrl(scheme: "", page: "https://www.facebook.com/CodeWithChris")
     static let courses = SocialNetworkUrl(scheme: "", page: "https://codewithchris.com/courses")
 }
-
-
