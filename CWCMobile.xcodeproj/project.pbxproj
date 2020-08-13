@@ -88,6 +88,7 @@
 		B8B62EF424E35F8200645BCC /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EF324E35F8200645BCC /* AnswerCell.swift */; };
 		B8B62EF624E3967C00645BCC /* DayDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EF524E3967C00645BCC /* DayDetailHeaderView.swift */; };
 		B8C129B22496951300FA319D /* Floatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C129B12496951300FA319D /* Floatable.swift */; };
+		B8C9016E24E4ED7900BA4FE8 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C9016D24E4ED7900BA4FE8 /* Result.storyboard */; };
 		B8D3938D2485CEC200ED8646 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D3938C2485CEC200ED8646 /* Photo.storyboard */; };
 		B8D393932485CEF400ED8646 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D3938F2485CEF300ED8646 /* LocalStorageService.swift */; };
 		B8D393942485CEF400ED8646 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D393902485CEF300ED8646 /* UserService.swift */; };
@@ -205,6 +206,7 @@
 		B8B62EF324E35F8200645BCC /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		B8B62EF524E3967C00645BCC /* DayDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailHeaderView.swift; sourceTree = "<group>"; };
 		B8C129B12496951300FA319D /* Floatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floatable.swift; sourceTree = "<group>"; };
+		B8C9016D24E4ED7900BA4FE8 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		B8D3938C2485CEC200ED8646 /* Photo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
 		B8D3938F2485CEF300ED8646 /* LocalStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		B8D393902485CEF300ED8646 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				B86EDB792483279F00E020D8 /* ResultViewController.swift */,
 				B86EDB7A2483279F00E020D8 /* StateManager.swift */,
 				B86EDB762483279F00E020D8 /* QuizViewController.swift */,
+				B8C9016D24E4ED7900BA4FE8 /* Result.storyboard */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -721,6 +724,7 @@
 				B87ECFB12480CC6E005E2356 /* Match.storyboard in Resources */,
 				B87C8E5D249AE4FF008DF3E9 /* LaunchScreen.storyboard in Resources */,
 				B86EDB742483276C00E020D8 /* Quiz.storyboard in Resources */,
+				B8C9016E24E4ED7900BA4FE8 /* Result.storyboard in Resources */,
 				B8E4C725248F20A60074CC2A /* Login.storyboard in Resources */,
 				B86EDB8D24832C2D00E020D8 /* News.storyboard in Resources */,
 				B83ED0B72497DF8F008F4ABD /* CreateProfile.storyboard in Resources */,

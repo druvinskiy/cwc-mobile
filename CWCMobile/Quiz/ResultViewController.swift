@@ -14,7 +14,7 @@ protocol ResultViewControllerProtocol: AnyObject {
      func resultViewDismissed()
 }
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, Storyboarded {
 
     @IBOutlet weak var dialogView: UIView!
     
@@ -73,6 +73,10 @@ class ResultViewController: UIViewController {
             self.feedbackLabel.alpha = 1
             
         }, completion: nil)
+    }
+    
+    func setPopup(with answer: Answer) {
+        setPopup(withTitle: answer.title, withMessage: answer.feedback, withAction: answer.action)
     }
     
     @IBAction func dismissTapped(_ sender: UIButton) {
