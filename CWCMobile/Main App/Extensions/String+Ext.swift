@@ -8,6 +8,4 @@
 
 import Foundation
 
-typealias AnswerItem = String
-
 extension String: DayDetailCellItem {}

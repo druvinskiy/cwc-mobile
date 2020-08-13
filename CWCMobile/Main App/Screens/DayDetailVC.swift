@@ -50,7 +50,7 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
             return .zero
         }
         
-        if items is [AnswerItem] {
+        if items is [Answer] {
             return .init(top: 10, left: 0, bottom: 10, right: 0)
         }
         
@@ -72,9 +72,10 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
             }
         }
         
-        if let item = item as? AnswerItem {
+        if let item = item as? Answer {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AnswerCell.answerCellId, for: indexPath) as? AnswerCell else { return UICollectionViewCell() }
-            cell.answerLabel.text = item
+            
+            cell.answerLabel.text = item.text
             return cell
         }
         
@@ -93,7 +94,12 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        coordinator?.didSelectVideo()
+        
+        let items = sections[indexPath.section].cells
+        if items is [VideoItem] { coordinator?.didSelectVideo() }
+        
+        guard let answers = sections[indexPath.section].cells as? [Answer] else { return }
+        coordinator?.didSelectAnswer(answer: answers[indexPath.row])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

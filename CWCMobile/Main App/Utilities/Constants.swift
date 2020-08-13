@@ -70,7 +70,7 @@ struct DayDetails {
         
         for (index, question) in questions.enumerated() {
             let questionNumber = index + 1
-            let section = DayDetailSection(title: "\(questionNumber). \(question.question ?? "")", cells: question.answers ?? [])
+            let section = DayDetailSection(title: "\(questionNumber). \(question.question)", cells: questions[index].answers)
             sections.append(section)
         }
         
@@ -95,23 +95,22 @@ struct MainApp {
             .init(subtitle: "Xcode Essentials", description: "In this video, I’ll tell you what you need to learn and give you a tour of Xcode.", video: .init(title: "How to Make an App for Beginners - Lesson 1", videoUrl: "https://www.filepicker.io/api/file/i6zqRnBESB2YJgZBBHXg"), app: nil, questions: [
                 
                 .init(question: "What software do we use to develop iOS apps?", answers: [
-                    "XSwift",
-                    "B: Xcode",
-                    "C: XApp"
-                ], correctAnswerIndex: 2, feedback: ""),
+                    .init(text: "XSwift", feedback: "Feedback"),
+                    .init(text: "Xcode", isCorrect: true),
+                    .init(text: "XApp")
+                ]),
                 
                 .init(question: "What programming language are we learning in this course?", answers: [
-                    "Swift",
-                    "Java",
-                    "Objective-C"
-                ], correctAnswerIndex: 0, feedback: ""),
+                    .init(text: "Swift", feedback: "Feedback", isCorrect: true),
+                    .init(text: "Java"),
+                    .init(text: "Objective-C")
+                ]),
                 
                 .init(question: "What file do we use to configure the screen that the user sees?", answers: [
-                    "Main.storyboard",
-                    "View.swift",
-                    "Storyboard.main"
-                ], correctAnswerIndex: 0, feedback: "")
-                
+                    .init(text: "Main.storyboard", feedback: "Feedback", isCorrect: true),
+                    .init(text: "View.swift"),
+                    .init(text: "Storyboard.main")
+                ])
             ]),
             
             .init(subtitle: "All About Auto Layout", description: "Jumping right in, you’ll learn how to build layouts.", video: .init(title: "Auto Layout Tutorial - Lesson 2", videoUrl: "https://www.filepicker.io/api/file/eUfbxiyFSzWhkRdDve6i"), app: nil),

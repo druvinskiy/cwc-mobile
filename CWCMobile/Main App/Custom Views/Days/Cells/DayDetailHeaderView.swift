@@ -12,11 +12,7 @@ class DayDetailHeaderView: UICollectionReusableView {
     
     static let reuseId = "headerView"
     
-    var title: UILabel  = {
-        let label = UILabel(text: "", font: .boldSystemFont(ofSize: 20), numberOfLines: 0)
-        label.textColor = .darkText
-        return label
-    }()
+    var title: UILabel = UILabel(text: "", font: .boldSystemFont(ofSize: 20), numberOfLines: 0)
     
     var section: DayDetailSection! {
         didSet {
@@ -29,6 +25,7 @@ class DayDetailHeaderView: UICollectionReusableView {
                 title.textColor = .white
             } else {
                 backgroundColor = (section.number % 2 == 0) ? Theme.rowLight : Theme.rowDark
+                title.textColor = .darkText
             }
         }
     }

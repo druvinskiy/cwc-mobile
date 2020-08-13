@@ -78,6 +78,8 @@
 		B87ECFC32480CD01005E2356 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = B87ECFBE2480CD01005E2356 /* dingwrong.wav */; };
 		B87ECFC42480CD01005E2356 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87ECFBF2480CD01005E2356 /* SoundManager.swift */; };
 		B8841AC124E45D4F0022DEFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8841AC024E45D4F0022DEFA /* GoogleService-Info.plist */; };
+		B8841AC324E4A7D10022DEFA /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8841AC224E4A7D10022DEFA /* Answer.swift */; };
+		B8841AC824E4C8D40022DEFA /* DayDetailQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8841AC724E4C8D40022DEFA /* DayDetailQuestion.swift */; };
 		B898B67D24CCBD4A009666E6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B67C24CCBD4A009666E6 /* Video.swift */; };
 		B898B68124CCC0B4009666E6 /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898B68024CCC0B4009666E6 /* Bundle+Decodable.swift */; };
 		B8B62EEC24E3240100645BCC /* DayDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62EEB24E3240100645BCC /* DayDetailCoordinator.swift */; };
@@ -193,6 +195,8 @@
 		B87ECFBE2480CD01005E2356 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
 		B87ECFBF2480CD01005E2356 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		B8841AC024E45D4F0022DEFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8841AC224E4A7D10022DEFA /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		B8841AC724E4C8D40022DEFA /* DayDetailQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailQuestion.swift; sourceTree = "<group>"; };
 		B898B67C24CCBD4A009666E6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		B898B68024CCC0B4009666E6 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
 		B8B62EEB24E3240100645BCC /* DayDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailCoordinator.swift; sourceTree = "<group>"; };
@@ -462,6 +466,7 @@
 		B87ECF84247F61F3005E2356 /* Main App */ = {
 			isa = PBXGroup;
 			children = (
+				B8841AC424E4A8250022DEFA /* Controllers */,
 				B87ECFAC2480C541005E2356 /* View Controllers */,
 				B82A95B32478CFE9006063BC /* Model */,
 				B82A95B42478CFF5006063BC /* Extensions */,
@@ -516,6 +521,13 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		B8841AC424E4A8250022DEFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B8B62EED24E33A9F00645BCC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,7 +541,9 @@
 			isa = PBXGroup;
 			children = (
 				B8B62EEE24E33D4F00645BCC /* DayDetailSection.swift */,
+				B8841AC224E4A7D10022DEFA /* Answer.swift */,
 				B84CACBF24DE1C8D00C09E9D /* Day.swift */,
+				B8841AC724E4C8D40022DEFA /* DayDetailQuestion.swift */,
 			);
 			path = Days;
 			sourceTree = "<group>";
@@ -879,9 +893,11 @@
 				B8D393A52485CF3100ED8646 /* CameraViewController.swift in Sources */,
 				B8B62EF624E3967C00645BCC /* DayDetailHeaderView.swift in Sources */,
 				B83ED0BB24995789008F4ABD /* AlertVC.swift in Sources */,
+				B8841AC824E4C8D40022DEFA /* DayDetailQuestion.swift in Sources */,
 				B82A95BC2478D169006063BC /* Page.swift in Sources */,
 				B8512E6E24E1870200525636 /* DayDetailVC.swift in Sources */,
 				B8512E7024E1880600525636 /* DayVideoCell.swift in Sources */,
+				B8841AC324E4A7D10022DEFA /* Answer.swift in Sources */,
 				B81BF99024A4D15800B433F8 /* SettingsSection.swift in Sources */,
 				B8E2B09D247B470D00605EC3 /* DaysVC.swift in Sources */,
 				B8E2B099247B09F200605EC3 /* MainCoordinator.swift in Sources */,

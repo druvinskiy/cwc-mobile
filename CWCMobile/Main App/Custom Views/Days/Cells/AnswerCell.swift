@@ -13,26 +13,33 @@ class AnswerCell: UICollectionViewCell {
     
     let answerLabel: UILabel = {
         let label = UILabel(text: "Test", font: .boldSystemFont(ofSize: 18))
+        label.textColor = .darkText
         return label
+    }()
+    
+    let answerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = Theme.chrisBlueLight
+        view.layer.cornerRadius = 8
+        return view
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let view = UIView()
-        addSubview(view)
-        view.backgroundColor = Theme.chrisBlueLight
-        view.layer.cornerRadius = 8
-        view.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 2, left: 10, bottom: 2, right: 10))
-        
-        view.addSubview(answerLabel)
-        answerLabel.centerYInSuperview()
-        answerLabel.textColor = .darkText
-        answerLabel.anchor(top: nil, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 16))
-        
+        configure()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure() {
+        addSubview(answerView)
+        answerView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 2, left: 10, bottom: 2, right: 10))
+        
+        answerView.addSubview(answerLabel)
+        answerLabel.centerYInSuperview()
+        answerLabel.anchor(top: nil, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 20, bottom: 0, right: 20))
     }
 }

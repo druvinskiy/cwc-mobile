@@ -38,4 +38,8 @@ class DayDetailCoordinator: Coordinator {
 
         navigationController.present(playerViewController, animated: true)
     }
+    
+    func didSelectAnswer(answer: Answer) {
+        
+    }
 }
