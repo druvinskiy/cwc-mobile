@@ -66,6 +66,12 @@ class ResultViewController: UIViewController, Storyboarded {
         feedbackLabel.text = withMessage
         dismissButton.setTitle(withAction, for: .normal)
         
+        if withTitle == "Correct!" {
+            resultLabel.textColor = UIColor.green
+        } else {
+            resultLabel.textColor = UIColor.red
+        }
+        
         //Fade in the labels
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
             
