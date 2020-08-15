@@ -117,6 +117,8 @@
 		B8E4C725248F20A60074CC2A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E4C724248F20A50074CC2A /* Login.storyboard */; };
 		DB03E0D924D4492500A53D0C /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = DB03E0D824D4492500A53D0C /* videos.json */; };
 		DB7017712485442F0071FF47 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7017702485442F0071FF47 /* WebKit.framework */; };
+		DB73A5FB24E6CF1400FE9D28 /* AnswerResponseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73A5FA24E6CF1400FE9D28 /* AnswerResponseContainerView.swift */; };
+		DB73A5FD24E7609F00FE9D28 /* AnswerResponsePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */; };
 		DBDC99AD249CF87500543A05 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC99AC249CF87500543A05 /* TransitionView.swift */; };
 		DBE46B5124A360AD0003792E /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE46B5024A360AD0003792E /* SettingsDataSource.swift */; };
 /* End PBXBuildFile section */
@@ -235,6 +237,8 @@
 		B8E4C724248F20A50074CC2A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DB03E0D824D4492500A53D0C /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		DB7017702485442F0071FF47 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DB73A5FA24E6CF1400FE9D28 /* AnswerResponseContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerResponseContainerView.swift; sourceTree = "<group>"; };
+		DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerResponsePopupVC.swift; sourceTree = "<group>"; };
 		DBDC99AC249CF87500543A05 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
 		DBE46B5024A360AD0003792E /* SettingsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
 		F606A965A2CC5B32D4F134A3 /* Pods-CWCMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWCMobile.release.xcconfig"; path = "Target Support Files/Pods-CWCMobile/Pods-CWCMobile.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 				B8E2B09C247B470D00605EC3 /* DaysVC.swift */,
 				B87C8E5E249E9B84008DF3E9 /* SettingsVC.swift */,
 				B8512E6D24E1870200525636 /* DayDetailVC.swift */,
+				DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -621,6 +626,7 @@
 				B8E2B0A2247B68EE00605EC3 /* Cells */,
 				B87ECF82247F5944005E2356 /* CWCAppView.swift */,
 				B87ECFAA24805DA2005E2356 /* FloatingContainerView.swift */,
+				DB73A5FA24E6CF1400FE9D28 /* AnswerResponseContainerView.swift */,
 			);
 			path = Days;
 			sourceTree = "<group>";
@@ -850,6 +856,7 @@
 				B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */,
 				B87C8E9424A2C25D008DF3E9 /* GeneralSettingsCell.swift in Sources */,
 				B84CACC024DE1C8D00C09E9D /* Day.swift in Sources */,
+				DB73A5FD24E7609F00FE9D28 /* AnswerResponsePopupVC.swift in Sources */,
 				B81BF99224A4D9BE00B433F8 /* SocialNetworkUrl.swift in Sources */,
 				B87C8E9824A2FB94008DF3E9 /* ImageSettingCell.swift in Sources */,
 				B87C8E9624A2C979008DF3E9 /* HeaderView.swift in Sources */,
@@ -857,6 +864,7 @@
 				B87ECF89247F63A1005E2356 /* WarViewController.swift in Sources */,
 				B82A95BE2479E016006063BC /* Constants.swift in Sources */,
 				B87ECF83247F5944005E2356 /* CWCAppView.swift in Sources */,
+				DB73A5FB24E6CF1400FE9D28 /* AnswerResponseContainerView.swift in Sources */,
 				B8E2B093247AF72500605EC3 /* OnboardingVC.swift in Sources */,
 				B87C8E69249EC2AB008DF3E9 /* SettingsCoordinator.swift in Sources */,
 				B82A95C9247A1186006063BC /* CWCOnboardingButton.swift in Sources */,

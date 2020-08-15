@@ -40,10 +40,10 @@ class DayDetailCoordinator: Coordinator {
     }
     
     func didSelectAnswer(answer: Answer) {
-        let resultVC = ResultViewController.instantiate()
-        resultVC.modalPresentationStyle = .overCurrentContext
-        navigationController.present(resultVC, animated: true) {
-            resultVC.setPopup(with: answer)
+        let answerPopupVC = AnswerResponsePopupVC()
+        answerPopupVC.modalPresentationStyle = .overCurrentContext
+        navigationController.present(answerPopupVC, animated: true) {
+            answerPopupVC.setPopup(with: answer)
         }
     }
 }
