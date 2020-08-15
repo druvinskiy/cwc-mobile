@@ -8,7 +8,6 @@
 
 import UIKit
 
-// swiftlint:disable all
 class AnswerResponsePopupVC: UIViewController {
     
     let containerView = AnswerResponseContainerView()
@@ -17,7 +16,7 @@ class AnswerResponsePopupVC: UIViewController {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 20)
+        label.font = .boldSystemFont(ofSize: 36)
         return label
     }()
     
@@ -92,17 +91,11 @@ class AnswerResponsePopupVC: UIViewController {
         dismissButton.alpha = 0
     }
     
-    func setPopup(withTitle: String, withMessage: String, withAction: String) {
-        
-        titleLabel.text = withTitle
-        feedbackLabel.text = withMessage
-        dismissButton.setTitle(withAction, for: .normal)
-        
-        if withTitle == "Correct!" {
-            titleLabel.textColor = UIColor.green
-        } else {
-            titleLabel.textColor = UIColor.red
-        }
+    func setPopup(with answer: Answer) {
+        titleLabel.text = answer.title
+        feedbackLabel.text = answer.feedback
+        dismissButton.setTitle(answer.action, for: .normal)
+        titleLabel.textColor = answer.isCorrect ? .green : .red
         
         //Fade in the labels
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
@@ -113,19 +106,15 @@ class AnswerResponsePopupVC: UIViewController {
             
         }, completion: nil)
     }
-    
-    func setPopup(with answer: Answer) {
-        setPopup(withTitle: answer.title, withMessage: answer.feedback, withAction: answer.action)
-    }
 
     @objc func dismissVC() {
         
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
             self.containerView.alpha = 0
-        }) { (completion) in
+        }, completion: { _ in
             self.titleLabel.text = ""
             self.feedbackLabel.text = ""
             self.dismiss(animated: true)
-        }
+        })
     }
 }
