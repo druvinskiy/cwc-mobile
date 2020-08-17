@@ -8,26 +8,24 @@
 
 import Foundation
 
-class Day {
-    var number = 1
+class Day: Codable {
+    var number = -1
     let subtitle: String
     let description: String
     let video: Video
     let app: App?
     var questions = [DayDetailQuestion]()
     
-    init(subtitle: String, description: String, video: Video, app: App?) {
-        self.subtitle = subtitle
-        self.description = description
-        self.video = video
-        self.app = app
+    init(day: DecodeDay) {
+        self.subtitle = day.subtitle
+        self.description = day.description
+        self.video = day.video
+        self.app = day.app
+        self.questions = day.questions
     }
     
-    init(subtitle: String, description: String, video: Video, app: App?, questions: [DayDetailQuestion]) {
-        self.subtitle = subtitle
-        self.description = description
-        self.video = video
-        self.app = app
-        self.questions = questions
+    static func loadDays() -> [Day] {
+        let result = Bundle.main.decode("days.json") as DayData
+        return result.days.map({ Day(day: $0) })
     }
 }

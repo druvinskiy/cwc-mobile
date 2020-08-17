@@ -81,10 +81,6 @@ class ResultViewController: UIViewController, Storyboarded {
         }, completion: nil)
     }
     
-    func setPopup(with answer: Answer) {
-        setPopup(withTitle: answer.title, withMessage: answer.feedback, withAction: answer.action)
-    }
-    
     @IBAction func dismissTapped(_ sender: UIButton) {
         
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {

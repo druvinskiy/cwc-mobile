@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DayDetailQuestion {
+struct DayDetailQuestion: Codable {
     var question = ""
     var answers = [Answer]()
     

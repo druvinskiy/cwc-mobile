@@ -1,0 +1,1445 @@
+{
+   "days": [
+      {
+         "subtitle": "Xcode Essentials",
+         "description": "In this video, I'll tell you what you need to learn and give you a tour of Xcode.",
+         "video": {
+            "title": "How to Make an App for Beginners - Lesson 1",
+            "videoUrl": "https://www.filepicker.io/api/file/i6zqRnBESB2YJgZBBHXg"
+         },
+         "questions": [
+            {
+               "question": "What software do we use to develop iOS apps?",
+               "answers": [
+                  {
+                     "text": "XSwift",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Xcode",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "XApp",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What programming language are we learning in this course?",
+               "answers": [
+                  {
+                     "text": "Swift",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Java",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Objective-C",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What file do we use to configure the screen that the user sees?",
+               "answers": [
+                  {
+                     "text": "Main.storyboard",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "View.swift",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Storyboard.main",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "All About Auto Layout",
+         "description": "Jumping right in, you'll learn how to build layouts.",
+         "video": {
+            "title": "Auto Layout Tutorial - Lesson 2",
+            "videoUrl": "https://www.filepicker.io/api/file/eUfbxiyFSzWhkRdDve6i"
+         },
+         "questions": [
+            {
+               "question": "What are Auto Layout constraints, and why do we use them when positioning elements on screen?",
+               "answers": [
+                  {
+                     "text": "Auto Layout constraints are rules that tell Xcode the location and size of our elements relative to other elements. We use constraints to ensure that our user interface looks good on multiple devices.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Auto Layout constraints are systems that tell us whether our user interface is pretty or not. We use constraints to prevent us from having to decide if our user interface looks good on our own.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Auto Layout constraints are an old way of creating user interfaces that were replaced by frames. We used constraints to tell Xcode the exact X and Y coordinates, as well as the exact width and height, for our elements.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What will happen if we add two conflicting constraints to an element?",
+               "answers": [
+                  {
+                     "text": "Xcode will display a message when we run our app, asking us which constraints we want to keep and which we want to break.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Xcode will choose one of the constraints to break, leading to unintended behaviour when we run our app.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Nothing will happen. Xcode is smart enough to know how we want our user interface to look like even if we add conflicting constraints.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What is the Safe Area?",
+               "answers": [
+                  {
+                     "text": "The Safe Area makes sure that the elements you add to your view will not be obscured by the notch or the home indicator.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "The Safe Area is a place in Xcode to write code that will never have any errors.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "The Safe Area is a type of element that tells the user of your app where it is safe to click.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "How To Use Stack Views",
+         "description": "Learn how to use Stack View elements to build layouts much more easily.",
+         "video": {
+            "title": "UIStackView Tutorial - Lesson 3",
+            "videoUrl": "https://www.filepicker.io/api/file/vdGXXl2RYanrVDAnFfU3"
+         },
+         "questions": [
+            {
+               "question": "What is a StackView?",
+               "answers": [
+                  {
+                     "text": "A term that describes when multiple elements are stacked on top of one another.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A user interface element that arranges other user interface elements inside of it in a stacked layout.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Both A and B",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What are the two types of StackViews in Xcode?",
+               "answers": [
+                  {
+                     "text": "A Horizontal StackView and and a Vertical StackView.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A left/right StackView and an up/down StackView.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "There are more than two types of StackViews in Xcode.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What is the preferred way to add elements to a StackView?",
+               "answers": [
+                  {
+                     "text": "Drag elements into our StackView using our view.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Use our voice to tell Xcode to add elements.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Drag elements into our StackView using the Document Outline.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Assembling the War User Interface",
+         "description": "Put your skills to the test by building the UI for our War Card Game.",
+         "video": {
+            "title": "Your First User Interface - Lesson 4",
+            "videoUrl": "https://www.filepicker.io/api/file/PEZGClXNTPmXRPYKW0Ak"
+         },
+         "questions": [
+            {
+               "question": "Where do we add images to our project in Xcode?",
+               "answers": [
+                  {
+                     "text": "Assets.xcassets",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Pictures.xcassets",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Images.xcassets",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What are size classes?",
+               "answers": [
+                  {
+                     "text": "Size classes are categories of screen sizes that you can target your Auto Layout constraints against.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Size class is another name for Auto Layout constraints that deal with the height and width of user interface elements.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Both A & B",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "We add three of the same image to Xcode because",
+               "answers": [
+                  {
+                     "text": "Xcode will use the correct sized image depending on the resolution of the user's screen.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "the user might accidentally delete one of the images.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Xcode requires us to have a backup of all of our images.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Learn Swift Basics (Part 1)",
+         "description": "Get hands on with the Swift programming language.",
+         "video": {
+            "title": "Swift Basics - Lesson 5",
+            "videoUrl": "https://www.filepicker.io/api/file/Yti3LhvjRSKfOZRQReS5"
+         },
+         "questions": [
+            {
+               "question": "How do we add a comment to our Swift code?",
+               "answers": [
+                  {
+                     "text": "Use two forward slashes (//)",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Use two backslashes (\\\\)",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Use one number sign (#)",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What’s the difference between a variable and a constant?",
+               "answers": [
+                  {
+                     "text": "We can't reassign data to a variable after the first assignment of data to it.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "We can't reassign data to a constant after the first assignment of data to it.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A constant must initially be assigned data when it's declared.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What happens when you don’t specify a data type for your variable when you declare it?",
+               "answers": [
+                  {
+                     "text": "The variable will be able to store any data type.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "The variable will infer the data type from the first piece of data you assign to it.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "The variable will be unusable.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Learn Swift Basics (Part 2)",
+         "description": "Build upon the skills from the previous lesson and learn more about Swift programming.",
+         "video": {
+            "title": "Swift Basics (Part 2) - Lesson 6",
+            "videoUrl": "https://www.filepicker.io/api/file/RKZ1AnA0RSKaa4rZcPFO"
+         },
+         "questions": [
+            {
+               "question": "In Swift, what is a function?",
+               "answers": [
+                  {
+                     "text": "A function is a mathematical operation performed on numbers.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A function is a block of code with a name that can be executed when called by name.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A function is for storing values in a class.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What is the difference between declaring a function and calling a function?",
+               "answers": [
+                  {
+                     "text": "Declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "There is no difference.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Declaring a function is the same as declaring a variable. Calling a function is the same as declaring a constant.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Variables declared in a function won’t exist outside of the function. This is called variable scope. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Learn Swift Basics (Part 3)",
+         "description": "Finally, we put it all together and I'll tell you how Swift code plays a part in your app.",
+         "video": {
+            "title": "Swift Basics (Part 3) - Lesson 7",
+            "videoUrl": "https://www.filepicker.io/api/file/jH2i4jYpQhGNHND6R5fd"
+         },
+         "questions": [
+            {
+               "question": "What is a class?",
+               "answers": [
+                  {
+                     "text": "A class is a way to organize your code into a template that can be used to create objects from.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A class is a category of code that is used for creating objects.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A class is a way for you to execute a block of code by calling its name.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What is a property?",
+               "answers": [
+                  {
+                     "text": "A property is another name for a function inside of a class.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A property is another name for a variable inside of a class.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A property stores a value in a function.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What is the difference between a function and a method?",
+               "answers": [
+                  {
+                     "text": "A method is what a function is called when it’s in a class.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A method is for handling button taps whereas functions are for executing other blocks of code.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A method is what a function is called if it has a return value.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Connecting Elements With Swift Code",
+         "description": "You'll learn how to connect the elements in your layout to the Swift code that you write.",
+         "video": {
+            "title": "IBOutlet Properties and IBAction Methods - Lesson 8",
+            "videoUrl": "https://www.filepicker.io/api/file/bJtJQinTQdCyEsc9nSBx"
+         },
+         "questions": [
+            {
+               "question": "What is the difference between an IBOutlet property and an IBAction method? Select the most accurate statement below.",
+               "answers": [
+                  {
+                     "text": "An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "An IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Both A & B",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "What is the preferred way to fix a typo in an IBOutlet property to avoid our app crashing?",
+               "answers": [
+                  {
+                     "text": "Fix the typo directly in the ViewController and rerun the app.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Break the connection, delete the property in the ViewController, and redo the connection.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Nicely ask Xcode to correct the typo.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Where should you look for the reason for an app crash in Xcode?",
+               "answers": [
+                  {
+                     "text": "At the top of the debug console.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "At the bottom of the debug console.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "In the Assistant Editor.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Handling User Interaction",
+         "description": "Learn how to capture and handle taps from the user.",
+         "video": {
+            "title": "Handling User Interaction - Lesson 9",
+            "videoUrl": "https://www.filepicker.io/api/file/6sbQxqdoQ9mKg9Jgnm8C"
+         },
+         "questions": [
+            {
+               "question": "We created IBOutlets for our leftImageView and our rightImageView because",
+               "answers": [
+                  {
+                     "text": "we need to be able to access the image views both in the storyboard and in our code.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "that's the only way to access them.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Xcode requires that we create IBOutlets for our elements.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "How do we generate a random number in Swift?",
+               "answers": [
+                  {
+                     "text": "Number.random(in: lowerBound...upperBound)",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Int.random(in: lowerBound...upperBound)",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Int.randomNumber(in: lowerBound...upperBound)",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What property do we use to change the image of a UIImageView?",
+               "answers": [
+                  {
+                     "text": "image",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "photo",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "String",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Writing The Logic",
+         "description": "Learn how to write code that THINKS!",
+         "video": {
+            "title": "Coding Logic with IF Statements - Lesson 10",
+            "videoUrl": "https://www.filepicker.io/api/file/AhwmMq2SrmEWMQxue4xW"
+         },
+         "questions": [
+            {
+               "question": "What happens if two conditions in an if statement are true?",
+               "answers": [
+                  {
+                     "text": "Xcode will execute the relevant code for both conditions.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Xcode will completely ignore your if statement, and no code will be executed.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Xcode will execute the code relevant to the first true condition.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "What is the difference between = and ==?",
+               "answers": [
+                  {
+                     "text": "== is for assignment, while = checks for equality.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "== checks for equality, while = is for assignment.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "There is no difference between = and ==.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What symbol do we use to check if two values are not equal?",
+               "answers": [
+                  {
+                     "text": "!=",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "==",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "===",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "What You'll Learn Next",
+         "description": "Continue building your Swift skills, learn some critical concepts, build more complex apps and express more complex logic with your Swift code.",
+         "video": {
+            "title": "Intro - Lesson 11",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/ZGv8P9D0QKGNNwZVlUEe"
+         },
+         "questions": [
+            {
+               "question": "Q1",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q2",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q3",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Where to Get Help on UIKit Classes",
+         "description": "Learn 4 different techniques to find documentation and help on UIKit classes and methods.",
+         "video": {
+            "title": "UIKit and Apple Documentation - Lesson 12",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/aHhlvrcQWWePdBvXIbip"
+         },
+         "questions": [
+            {
+               "question": "Q1",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q2",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q3",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Subclassing",
+         "description": "Learn how classes can \"build off\" of one another. It's called class inheritance and subclassing. It will save you a ton of time by not rewriting code!",
+         "video": {
+            "title": "Subclassing and Inheritance - Lesson 13",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/y2E83UQFRRaMJXRM951q"
+         },
+         "questions": [
+            {
+               "question": "In Swift, subclassing lets us",
+               "answers": [
+                  {
+                     "text": "create a new class based off of an existing class.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "duplicate code throughout our entire Xcode project.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "ask Xcode to write all of our classes for us.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "In Swift, inheritance allows the subclass to",
+               "answers": [
+                  {
+                     "text": "inherit the properties of the superclass.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "inherit the methods of the superclass.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Both A & B",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "What keyword do we use to call the parent's version of an overridden method?",
+               "answers": [
+                  {
+                     "text": "parent",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "override",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "super",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Arrays",
+         "description": "Learn how to work with collections of data by using an Array!",
+         "video": {
+            "title": "Arrays - Lesson 14",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/5051ECPiSPS3x5c8E1Nf"
+         },
+         "questions": [
+            {
+               "question": "If we wanted to access the first element in an array, what index would we use?",
+               "answers": [
+                  {
+                     "text": "0",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "1",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Choose the best answer to complete the following sentence: An array is one of the three ________ in Swift.",
+               "answers": [
+                  {
+                     "text": "collection types",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "variables",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "data types",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "An array is ideal for data where order matters. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Optionals",
+         "description": "Think of optionals simply as variables that might contain nil. The only hard part is remembering all of the syntax around optionals.",
+         "video": {
+            "title": "Optionals - Lesson 15",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/1cT9q8qsRwmKOXYxr2MH"
+         },
+         "questions": [
+            {
+               "question": "What is the keyword that means “nothing” or “empty” in Swift?",
+               "answers": [
+                  {
+                     "text": "Nil",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Null",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Na",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Any variable/constant can be made an optional by adding “?” beside the data type when you declare it. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "You must unwrap an implicitly unwrapped optional variable/constant by using “!” before you can access it. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Dictionaries",
+         "description": "You've learned about Arrays. Dictionaries are another often used and highly useful tool to keep track of collections of data!",
+         "video": {
+            "title": "Dictionaries - Lesson 16",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/R8DPdJVzTdSu404EFCXS"
+         },
+         "questions": [
+            {
+               "question": "A dictionary is ideal for data where order matters. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "What happens if we try to access a value in a dictionary using a key that does not exist in our dictionary?",
+               "answers": [
+                  {
+                     "text": "A dictionary always gives us back an optional value, so our app will crash if we try to use it.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A dictionary always forces us to use keys that exist, so our program will not run if the key doesn't exist.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A dictionary always gives us back an optional value, so we can check to see if it's nil before unwrapping and using it.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "We can use optional binding to access values in a dictionary. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Loops",
+         "description": "Loops come in handy to let you go through each item in the collection and execute some code for each!",
+         "video": {
+            "title": "Loops - Lesson 17",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/KmYqcGaDTMatAb2Z87Sa"
+         },
+         "questions": [
+            {
+               "question": "Which loop will repeat for a finite number of times?",
+               "answers": [
+                  {
+                     "text": "Repeat-While Loop",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "While Loop",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "For-In Loop",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "A loop is used to increase the amount of duplicated code in our projects. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "Which collection types are loops most commonly used with?",
+               "answers": [
+                  {
+                     "text": "Arrays & Dictionaries",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Strings & Ints",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Only dictionaries",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Previewing What You'll Build",
+         "description": "In this lesson, I'll show you the app you'll build as well as all of the new skills you'll learn!",
+         "video": {
+            "title": "The Card Game: Intro - Lesson 18",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/JHUgUDsCS5ipUik6BQA1"
+         },
+         "questions": [
+            {
+               "question": "Q1",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q2",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q3",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Model View Controller",
+         "description": "Learn about a KEY design pattern that will help you write reusable and code that is easily maintained.",
+         "video": {
+            "title": "The Card Game: The MVC Design Pattern - Lesson 19",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/Vi6vmyC0ThqlGsYb2Pn5"
+         },
+         "questions": [
+            {
+               "question": "What do the letters MVC stand for?",
+               "answers": [
+                  {
+                     "text": "Model ViewController Class",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Model View Controller",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Method View Controller",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "In the MVC design pattern, which of these is NOT the responsibility of the View?",
+               "answers": [
+                  {
+                     "text": "Display the user interface and data.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Detect events from the user.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Manage the data in our app.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "In the MVC design pattern, the View should talk directly to the Model. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Project Setup",
+         "description": "Here we create the Xcode project, including setting the orientation for the app and setting up some of the user interface elements!",
+         "video": {
+            "title": "The Card Game: Project Setup - Lesson 20",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/dpk26LuRNCuHdVhfKmoK"
+         },
+         "questions": [
+            {
+               "question": "Q1",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q2",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Q3",
+               "answers": [
+                  {
+                     "text": "A1",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A2",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A3",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "subtitle": "Custom Classes",
+         "description": "In this lesson, you'll be setting up the custom classes that we talked about earlier.",
+         "video": {
+            "title": "The Card Game: Custom Classes - Lesson 21",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/2806wy28SW8DQxpw3Pjb"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Protocols & Delegates",
+         "description": "The protocol and delegate pattern is used by many user interface elements in UIKit to communicate with the view controller.",
+         "video": {
+            "title": "The Card Game: Protocols and Delegates - Lesson 22",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/voNv4n5oRcuEmAMxO429"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Implementing Protocols & Delegates ",
+         "description": "Now we will implement what we learned in the previous lesson into the project we are working on.",
+         "video": {
+            "title": "The Card Game: Implementing Protocols and Delegates - Lesson 23",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/fEBE15KQBqerMGIqsVyO"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Xcode Best Practices",
+         "description": "This lesson reveals some best practices when it comes to organizing and setting up your Xcode project.",
+         "video": {
+            "title": "The Card Game: Xcode Best Practices - Lesson 24",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/qpGvma7eSCkIeSP3D2J0"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Debugging",
+         "description": "Xcode gives you many tools to figure out what's wrong with your project and this lesson will teach you how to use them!",
+         "video": {
+            "title": "The Card Game: Debugging your App - Lesson 25",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/CX3tQQxyQWq070qlK1hG"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Card Flipping",
+         "description": "By the end of this lesson, you'll be able to tap on a card to flip it over!",
+         "video": {
+            "title": "The Card Game: Card Flipping - Lesson 26",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/AYmov18tQVCLM6bPk7pD"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Game Logic",
+         "description": "In this lesson, you'll implement the logic for the game.",
+         "video": {
+            "title": "The Card Game: Game Logic - Lesson 27",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/cAYVXthSSXuyZtyGy8Ou"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Win Condition",
+         "description": "In this lesson, you'll implement a countdown timer so that the player only has a short amount of time to win.",
+         "video": {
+            "title": "The Card Game: Win Condition - Lesson 28",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/B86PfywGTQif5lRYuAK4"
+         },
+         "questions": []
+      },
+      {
+         "subtitle": "Sounds",
+         "description": "You'll learn how to include these sounds into your Xcode project and use the AVAudioPlayer class to play them!",
+         "video": {
+            "title": "The Card Game: Adding Sounds - Lesson 29",
+            "videoUrl": "https://cdn.fs.teachablecdn.com/idYkK8asQGeVrpMuo3rJ"
+         },
+         "questions": []
+      }
+   ]
+}

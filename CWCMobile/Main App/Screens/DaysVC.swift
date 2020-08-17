@@ -14,7 +14,7 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     var appView = CWCAppView()
     var transitionView = TransitionView()
     
-    fileprivate let days = MainApp.loadDays()
+    fileprivate let days = Day.loadDays()
     lazy var dataSource = DaysDataSource(days: days)
     
     init(coordinator: MainCoordinator?) {
