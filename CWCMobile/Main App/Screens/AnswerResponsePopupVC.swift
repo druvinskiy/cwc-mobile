@@ -17,7 +17,14 @@ class AnswerResponsePopupVC: UIViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.font = .boldSystemFont(ofSize: 36)
+        label.textColor = .white
         return label
+    }()
+    
+    let titleView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 16
+        return view
     }()
     
     let feedbackLabel: UILabel = {
@@ -40,13 +47,15 @@ class AnswerResponsePopupVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         view.addSubview(containerView)
-        view.addSubViews(dialogView, titleLabel, feedbackLabel, dismissButton)
+        view.addSubViews(dialogView, titleView, feedbackLabel, dismissButton)
+        titleView.addSubview(titleLabel)
         
         configureContainer()
         configureDialogView()
+        configureTitleView()
         configureTitleLabel()
         configureFeedbackLabel()
         configureDismissButton()
@@ -71,9 +80,12 @@ class AnswerResponsePopupVC: UIViewController {
         dialogView.layer.cornerRadius = 16
     }
     
+    private func configureTitleView() {
+        titleView.anchor(top: dialogView.topAnchor, leading: dialogView.leadingAnchor, bottom: nil, trailing: dialogView.trailingAnchor, padding: .init(top: 20, left: 20, bottom: 0, right: 20), size: .init(width: 0, height: 100))
+    }
+    
     private func configureTitleLabel() {
-        titleLabel.anchor(top: dialogView.topAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 100, left: 0, bottom: 0, right: 0), size: .init(width: 200, height: 50))
-        titleLabel.centerXInSuperview()
+        titleLabel.centerInSuperview()
         titleLabel.alpha = 0
     }
     
@@ -95,7 +107,7 @@ class AnswerResponsePopupVC: UIViewController {
         titleLabel.text = answer.title
         feedbackLabel.text = answer.feedback
         dismissButton.setTitle(answer.action, for: .normal)
-        titleLabel.textColor = answer.isCorrect ? .green : .red
+        titleView.backgroundColor = answer.isCorrect ? .systemGreen : .systemRed
         
         //Fade in the labels
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
@@ -106,7 +118,7 @@ class AnswerResponsePopupVC: UIViewController {
             
         }, completion: nil)
     }
-
+    
     @objc func dismissVC() {
         
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {

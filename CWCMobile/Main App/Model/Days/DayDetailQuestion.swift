@@ -10,7 +10,11 @@ import Foundation
 
 struct DayDetailQuestion: Codable {
     var question = ""
-    var answers = [Answer]()
+    private var answers = [Answer]()
+    
+    var shuffledAnswers: [Answer] {
+        return answers.shuffled()
+    }
     
     init(question: String, answers: [Answer]) {
         self.question = question

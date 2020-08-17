@@ -70,7 +70,7 @@ struct DayDetails {
         
         for (index, question) in questions.enumerated() {
             let questionNumber = index + 1
-            let section = DayDetailSection(title: "\(questionNumber). \(question.question)", cells: questions[index].answers)
+            let section = DayDetailSection(title: "\(questionNumber). \(question.question)", cells: questions[index].shuffledAnswers)
             sections.append(section)
         }
         

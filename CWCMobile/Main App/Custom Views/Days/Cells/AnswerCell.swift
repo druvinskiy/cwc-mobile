@@ -12,7 +12,7 @@ class AnswerCell: UICollectionViewCell {
     static let answerCellId = "answerCellId"
     
     let answerLabel: UILabel = {
-        let label = UILabel(text: "Test", font: .boldSystemFont(ofSize: 18))
+        let label = UILabel(text: "Test", font: .boldSystemFont(ofSize: 18), numberOfLines: 0)
         label.textColor = .darkText
         return label
     }()

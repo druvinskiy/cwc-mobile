@@ -90,7 +90,11 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
             return .init(width: view.frame.width, height: view.frame.width / 16 * 9)
         }
         
-        return .init(width: view.frame.width, height: 60)
+        guard let answers = sections[indexPath.section].cells as? [Answer] else { return .zero}
+        let answer = answers[indexPath.row].text
+        let padding: CGFloat = 60
+        
+        return CGSize(width: view.frame.width, height: estimateFrameForText(text: answer).height + padding)
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -116,7 +120,10 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
             return .zero
         }
         
-        return .init(width: width, height: 60)
+        let padding: CGFloat = 50
+        let title = sections[section].title
+        
+        return .init(width: width, height: estimateFrameForText(text: title).height + padding)
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -128,5 +135,16 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
         headerView.section = sections[indexPath.section]
         
         return headerView
+    }
+    
+    private func estimateFrameForText(text: String) -> CGRect {
+        //we make the height arbitrarily large so we don't undershoot height in calculation
+        let height: CGFloat = 200
+
+        let size = CGSize(width: view.frame.width, height: height)
+        let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.light)]
+
+        return NSString(string: text).boundingRect(with: size, options: options, attributes: attributes, context: nil)
     }
 }
