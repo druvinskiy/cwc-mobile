@@ -30,8 +30,9 @@ enum CourseName: String {
     case database = "Database"
 }
 
-struct AlertMessage {
+struct Messages {
     static var comingSoon = "The \(AppName.guidebook.rawValue) is coming soon. In the meantime, feel free to check out the other apps you'll learn how to build."
+    static var noQuestions = "We don't have any questions for you to answer today. Feel free to watch the above video, though. 🙂"
 }
 
 struct Keys {

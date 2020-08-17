@@ -12,8 +12,8 @@ class AnswerCell: UICollectionViewCell {
     static let answerCellId = "answerCellId"
     
     let answerLabel: UILabel = {
-        let label = UILabel(text: "Test", font: .boldSystemFont(ofSize: 18), numberOfLines: 0)
-        label.textColor = .darkText
+        let label = UILabel(text: "Test", font: .systemFont(ofSize: 18), numberOfLines: 0)
+        label.textColor = .black
         return label
     }()
     
@@ -40,6 +40,6 @@ class AnswerCell: UICollectionViewCell {
         
         answerView.addSubview(answerLabel)
         answerLabel.centerYInSuperview()
-        answerLabel.anchor(top: nil, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 20, bottom: 0, right: 20))
+        answerLabel.anchor(top: nil, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 0, left: 22, bottom: 0, right: 22))
     }
 }

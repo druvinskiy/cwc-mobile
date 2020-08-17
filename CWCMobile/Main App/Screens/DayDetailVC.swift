@@ -33,6 +33,8 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
         collectionView.register(DayVideoCell.self, forCellWithReuseIdentifier: DayVideoCell.videoCellId)
         collectionView.register(AnswerCell.self, forCellWithReuseIdentifier: AnswerCell.answerCellId)
         collectionView.register(DayDetailHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: DayDetailHeaderView.reuseId)
+        
+        if day.questions.isEmpty { configureNoQuestionsLabel() }
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -109,16 +111,11 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
         let items = sections[section].cells
-        
         let width: CGFloat = view.frame.width
         
-        if items.isEmpty {
-            return .init(width: width, height: 40)
-        }
-        
-        if items is [VideoItem] {
-            return .zero
-        }
+        if day.questions.isEmpty { return .zero }
+        if items.isEmpty { return .init(width: width, height: 40) }
+        if items is [VideoItem] { return .zero }
         
         let padding: CGFloat = 50
         let title = sections[section].title
@@ -146,5 +143,17 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
         let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.light)]
 
         return NSString(string: text).boundingRect(with: size, options: options, attributes: attributes, context: nil)
+    }
+    
+    func configureNoQuestionsLabel() {
+        let label = UILabel(text: Messages.noQuestions, font: .boldSystemFont(ofSize: 20), numberOfLines: 0)
+        label.textAlignment = .center
+        label.textColor = .black
+        
+        view.addSubview(label)
+        
+        label.centerXInSuperview()
+        label.centerYInSuperview()
+        label.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 20, bottom: 0, right: 20))
     }
 }

@@ -24,14 +24,13 @@ class AnswerResponsePopupVC: UIViewController {
     let titleView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 16
+        view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         return view
     }()
     
     let feedbackLabel: UILabel = {
-        let label = UILabel()
+        let label = UILabel(text: "", font: .systemFont(ofSize: 18), numberOfLines: 0)
         label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
         return label
     }()
     
@@ -50,7 +49,8 @@ class AnswerResponsePopupVC: UIViewController {
         
         // Do any additional setup after loading the view.
         view.addSubview(containerView)
-        view.addSubViews(dialogView, titleView, feedbackLabel, dismissButton)
+        dialogView.addSubview(feedbackLabel)
+        view.addSubViews(dialogView, titleView, dismissButton)
         titleView.addSubview(titleLabel)
         
         configureContainer()
@@ -81,7 +81,7 @@ class AnswerResponsePopupVC: UIViewController {
     }
     
     private func configureTitleView() {
-        titleView.anchor(top: dialogView.topAnchor, leading: dialogView.leadingAnchor, bottom: nil, trailing: dialogView.trailingAnchor, padding: .init(top: 20, left: 20, bottom: 0, right: 20), size: .init(width: 0, height: 100))
+        titleView.anchor(top: dialogView.topAnchor, leading: dialogView.leadingAnchor, bottom: nil, trailing: dialogView.trailingAnchor, size: .init(width: 0, height: 100))
     }
     
     private func configureTitleLabel() {
@@ -92,13 +92,14 @@ class AnswerResponsePopupVC: UIViewController {
     private func configureFeedbackLabel() {
         feedbackLabel.centerXInSuperview()
         feedbackLabel.centerYInSuperview()
+        feedbackLabel.anchor(top: nil, leading: dialogView.leadingAnchor, bottom: nil, trailing: dialogView.trailingAnchor, padding: .init(top: 0, left: 20, bottom: 0, right: 20))
         feedbackLabel.alpha = 0
     }
     
     private func configureDismissButton() {
         dismissButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
-        dismissButton.anchor(top: nil, leading: nil, bottom: dialogView.bottomAnchor, trailing: nil, padding: .init(top: 0, left: 0, bottom: 100, right: 0), size: .init(width: 200, height: 50))
+        dismissButton.anchor(top: nil, leading: nil, bottom: dialogView.bottomAnchor, trailing: nil, padding: .init(top: 0, left: 0, bottom: 50, right: 0), size: .init(width: 200, height: 50))
         dismissButton.centerXInSuperview()
         dismissButton.alpha = 0
     }

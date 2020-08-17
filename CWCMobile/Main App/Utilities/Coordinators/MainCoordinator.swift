@@ -54,7 +54,7 @@ class MainCoordinator: NSObject, Coordinator {
             setupPhotoApp()
             return
         case .guidebook:
-            navigationController.presentAlert(title: "Coming Soon", message: AlertMessage.comingSoon, buttonTitle: "OK")
+            navigationController.presentAlert(title: "Coming Soon", message: Messages.comingSoon, buttonTitle: "OK")
             return
         case .none:
             break

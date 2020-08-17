@@ -702,68 +702,7 @@
             "title": "Intro - Lesson 11",
             "videoUrl": "https://cdn.fs.teachablecdn.com/ZGv8P9D0QKGNNwZVlUEe"
          },
-         "questions": [
-            {
-               "question": "Q1",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q2",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q3",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            }
-         ]
+         "questions": []
       },
       {
          "subtitle": "Where to Get Help on UIKit Classes",
@@ -772,68 +711,7 @@
             "title": "UIKit and Apple Documentation - Lesson 12",
             "videoUrl": "https://cdn.fs.teachablecdn.com/aHhlvrcQWWePdBvXIbip"
          },
-         "questions": [
-            {
-               "question": "Q1",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q2",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q3",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            }
-         ]
+         "questions": []
       },
       {
          "subtitle": "Subclassing",
@@ -1162,68 +1040,7 @@
             "title": "The Card Game: Intro - Lesson 18",
             "videoUrl": "https://cdn.fs.teachablecdn.com/JHUgUDsCS5ipUik6BQA1"
          },
-         "questions": [
-            {
-               "question": "Q1",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q2",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q3",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            }
-         ]
+         "questions": []
       },
       {
          "subtitle": "Model View Controller",
@@ -1297,68 +1114,7 @@
             "title": "The Card Game: Project Setup - Lesson 20",
             "videoUrl": "https://cdn.fs.teachablecdn.com/dpk26LuRNCuHdVhfKmoK"
          },
-         "questions": [
-            {
-               "question": "Q1",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q2",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            },
-            {
-               "question": "Q3",
-               "answers": [
-                  {
-                     "text": "A1",
-                     "feedback": "Feedback",
-                     "isCorrect": true
-                  },
-                  {
-                     "text": "A2",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  },
-                  {
-                     "text": "A3",
-                     "feedback": "Feedback",
-                     "isCorrect": false
-                  }
-               ]
-            }
-         ]
+         "questions": []
       },
       {
          "subtitle": "Custom Classes",
@@ -1367,7 +1123,68 @@
             "title": "The Card Game: Custom Classes - Lesson 21",
             "videoUrl": "https://cdn.fs.teachablecdn.com/2806wy28SW8DQxpw3Pjb"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "What are we going to do with our custom Card class?",
+               "answers": [
+                  {
+                     "text": "Create Card objects from the Card class?",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Store the Card class in an array.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Use the Card class to create Strings.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Thinking back to the MVC design pattern, is the Card class a Model, View, or Controller?",
+               "answers": [
+                  {
+                     "text": "Model",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "View",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Controller",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Thinking back to the MVC design pattern, is the CardCollectionViewCell class a Model, View, or Controller?",
+               "answers": [
+                  {
+                     "text": "Model",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "View",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Controller",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
       },
       {
          "subtitle": "Protocols & Delegates",
@@ -1376,7 +1193,63 @@
             "title": "The Card Game: Protocols and Delegates - Lesson 22",
             "videoUrl": "https://cdn.fs.teachablecdn.com/voNv4n5oRcuEmAMxO429"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "What is a protocol?",
+               "answers": [
+                  {
+                     "text": "A predefined set of methods and parameters that will be used for two parties to communicate.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A way for one class to communicate with another class.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Both A & B",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "What is a delegate?",
+               "answers": [
+                  {
+                     "text": "An object that conforms to a protocol by implementing the methods as described by the protocol.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "An object that has a protocol.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Both A & B",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "A class has to know and care what class conforms to its delegate. True or false?",
+               "answers": [
+                  {
+                     "text": "True",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "False",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            }
+         ]
       },
       {
          "subtitle": "Implementing Protocols & Delegates ",
@@ -1394,7 +1267,68 @@
             "title": "The Card Game: Xcode Best Practices - Lesson 24",
             "videoUrl": "https://cdn.fs.teachablecdn.com/qpGvma7eSCkIeSP3D2J0"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "What is a naming convention?",
+               "answers": [
+                  {
+                     "text": "The only way to name your variables, methods, classes etc.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Apple’s way to name variables, methods, classes etc.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A standard way to name variables, methods, classes etc that is agreed upon by you and your team.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "According to best practice, what should each word in a class name start with?",
+               "answers": [
+                  {
+                     "text": "A capital letter.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A lowercase letter.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "It doesn't matter.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What is the preferred structure for naming methods and functions?",
+               "answers": [
+                  {
+                     "text": "verbNoun",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "nounVerb",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "noun",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
       },
       {
          "subtitle": "Debugging",
@@ -1403,7 +1337,68 @@
             "title": "The Card Game: Debugging your App - Lesson 25",
             "videoUrl": "https://cdn.fs.teachablecdn.com/CX3tQQxyQWq070qlK1hG"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "What is logging?",
+               "answers": [
+                  {
+                     "text": "A debugging technique where you output information to the console area.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "A debugging technique where you pause the execution of code.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "A debugging technique where you walk through the code line by line.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "How do you log something?",
+               "answers": [
+                  {
+                     "text": "Using the print function.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Using the log function.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Using the debug function.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Which of these does using a breakpoint NOT allow you to do?",
+               "answers": [
+                  {
+                     "text": "Pause execution at a line of code.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Output information to the console area.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Tell you exactly why your code isn't working and how to fix the problem.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            }
+         ]
       },
       {
          "subtitle": "Card Flipping",
@@ -1412,7 +1407,68 @@
             "title": "The Card Game: Card Flipping - Lesson 26",
             "videoUrl": "https://cdn.fs.teachablecdn.com/AYmov18tQVCLM6bPk7pD"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "What keyword do we use to cast an object into an object of a different type?",
+               "answers": [
+                  {
+                     "text": "cast",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "is",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "as",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "The main difference between closures and regular functions is that",
+               "answers": [
+                  {
+                     "text": "closures work life functions, but they are blocks of code without names.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "closures allow you to return a value, but functions do not.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "There is no difference.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "Which function does a collection view use to let its delegate know that the user tapped on one of its cells?",
+               "answers": [
+                  {
+                     "text": "didSelectCellAt",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "didSelectItemAt",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "didTapCellAt",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
       },
       {
          "subtitle": "Game Logic",
@@ -1421,7 +1477,68 @@
             "title": "The Card Game: Game Logic - Lesson 27",
             "videoUrl": "https://cdn.fs.teachablecdn.com/cAYVXthSSXuyZtyGy8Ou"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "Optional chaining allows us to",
+               "answers": [
+                  {
+                     "text": "run code only if our optional has a value.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "force unwrap our optional.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "ask the app to crash if a variable contains nil",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "What function did we use to configure the state of our CardCollectionViewCells based on the properties of the Card that a cell represents?",
+               "answers": [
+                  {
+                     "text": "shouldDisplay",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "hasDisplayed",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "willDisplay",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "Who is responsible for configuring the cells that a collection view is displaying?",
+               "answers": [
+                  {
+                     "text": "The collection view itself.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "The collection view's delegate.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Both A & B",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
       },
       {
          "subtitle": "Win Condition",
@@ -1430,7 +1547,68 @@
             "title": "The Card Game: Win Condition - Lesson 28",
             "videoUrl": "https://cdn.fs.teachablecdn.com/B86PfywGTQif5lRYuAK4"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "Selector is another name for",
+               "answers": [
+                  {
+                     "text": "method",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "variable",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "nil",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "We need to use the @objc tag when we",
+               "answers": [
+                  {
+                     "text": "use a method as a selector.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "write any function.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "We never use the @objc tag.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "A UIAlertController is",
+               "answers": [
+                  {
+                     "text": "a function",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "an instance of a class",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "one of the data types in Swift.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            }
+         ]
       },
       {
          "subtitle": "Sounds",
@@ -1439,7 +1617,68 @@
             "title": "The Card Game: Adding Sounds - Lesson 29",
             "videoUrl": "https://cdn.fs.teachablecdn.com/idYkK8asQGeVrpMuo3rJ"
          },
-         "questions": []
+         "questions": [
+            {
+               "question": "What is an app bundle?",
+               "answers": [
+                  {
+                     "text": "The package that gets deployed on the actual device.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "The package that gets deployed to the App Store.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Both A & B",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  }
+               ]
+            },
+            {
+               "question": "The AVAudioPlayer class allows us to",
+               "answers": [
+                  {
+                     "text": "play sounds in our app.",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "randomize cards.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "deploy our app to the App Store.",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            },
+            {
+               "question": "The ability to have Xcode re-indent your code according to the default is found under the",
+               "answers": [
+                  {
+                     "text": "Product menu",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  },
+                  {
+                     "text": "Editor menu",
+                     "feedback": "Feedback",
+                     "isCorrect": true
+                  },
+                  {
+                     "text": "Xcode settings",
+                     "feedback": "Feedback",
+                     "isCorrect": false
+                  }
+               ]
+            }
+         ]
       }
    ]
 }
