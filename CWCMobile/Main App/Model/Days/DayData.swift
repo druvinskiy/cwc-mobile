@@ -18,4 +18,5 @@ class DecodeDay: Codable {
     let video: Video
     let app: App?
     var questions = [DayDetailQuestion]()
+    let page: DayPage?
 }

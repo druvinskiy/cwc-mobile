@@ -702,7 +702,12 @@
             "title": "Intro - Lesson 11",
             "videoUrl": "https://cdn.fs.teachablecdn.com/ZGv8P9D0QKGNNwZVlUEe"
          },
-         "questions": []
+         "questions": [],
+         "page": {
+            "imageName": "calendar17",
+            "headerText": "DAYS 11 – 17:\nStep Up Your Swift Skills",
+            "bodyText": "It’s time to dive a little deeper into the Swift programming language!\n\nApple has a lot of documentation available to help and if you’re going to be building apps, you’d better know how to read it.\n\nBy Day 17, you’ll know how to read Apple documentation and you’ll know how to express deeper logic using Swift code."
+         }
       },
       {
          "subtitle": "Where to Get Help on UIKit Classes",

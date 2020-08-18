@@ -9,7 +9,7 @@
 import UIKit
 
 class PageCell: UICollectionViewCell {
-    var page: Page? {
+    var page: OnboardingPage? {
         didSet {
             guard let unwrappedPage = page else { return }
             
@@ -33,9 +33,9 @@ class PageCell: UICollectionViewCell {
     let descriptionTextView: UITextView = {
         let textView = UITextView()
         
-        let attributedText = NSMutableAttributedString(string: "Join us today in our fun and games!", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+        let attributedText = NSMutableAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
         
-        attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+        attributedText.append(NSAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray]))
         
         textView.attributedText = attributedText
         textView.textAlignment = .center

@@ -22,6 +22,13 @@ class DayDetailCoordinator: Coordinator {
     }
     
     func start() {
+        if let page = day.page {
+            let dayProgressionVC = DayProgressionVC(page: page)
+            navigationController.setNavigationBarHidden(true, animated: false)
+            navigationController.pushViewController(dayProgressionVC, animated: true)
+            return
+        }
+        
         let dayDetailVC = DayDetailVC(day: day)
         dayDetailVC.coordinator = self
         navigationController.navigationBar.tintColor = .white

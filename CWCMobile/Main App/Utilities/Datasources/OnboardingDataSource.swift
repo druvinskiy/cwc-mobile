@@ -10,7 +10,7 @@ import UIKit
 
 class OnboardingDataSource: NSObject, UICollectionViewDataSource {
     
-    private let pages = Page.loadPages()
+    private let pages = OnboardingPage.loadPages()
     
     var numberOfPages: Int {
         return pages.count

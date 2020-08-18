@@ -37,8 +37,8 @@ class OnboardingVC: UICollectionViewController {
     }
     
     func setupCollectionView() {
-        collectionView.register(PageCell.self, forCellWithReuseIdentifier: Page.CellType.app.rawValue)
-        collectionView.register(StartPageCell.self, forCellWithReuseIdentifier: Page.CellType.start.rawValue)
+        collectionView.register(PageCell.self, forCellWithReuseIdentifier: OnboardingPage.CellType.app.rawValue)
+        collectionView.register(StartPageCell.self, forCellWithReuseIdentifier: OnboardingPage.CellType.start.rawValue)
     }
 }
 

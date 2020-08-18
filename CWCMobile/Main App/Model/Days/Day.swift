@@ -15,6 +15,7 @@ class Day: Codable {
     let video: Video
     let app: App?
     var questions = [DayDetailQuestion]()
+    let page: DayPage?
     
     init(day: DecodeDay) {
         self.subtitle = day.subtitle
@@ -22,6 +23,7 @@ class Day: Codable {
         self.video = day.video
         self.app = day.app
         self.questions = day.questions
+        self.page = day.page
     }
     
     static func loadDays() -> [Day] {
