@@ -22,6 +22,8 @@ class DayProgressionVC: UIViewController {
         }
     }
     
+    let coordinator: DayDetailCoordinator
+    
     let topImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "war"))
         imageView.contentMode = .scaleAspectFit
@@ -53,7 +55,16 @@ class DayProgressionVC: UIViewController {
         return button
     }()
     
-    init(page: DayPage) {
+    let backButton: UIButton = {
+        let button = UIButton(title: "Go Back")
+        button.setTitleColor(.gray, for: .normal)
+        
+        return button
+    }()
+    
+    init(page: DayPage, coordinator: DayDetailCoordinator) {
+        self.coordinator = coordinator
+        
         super.init(nibName: nil, bundle: nil)
         
         setPage(page: page)
@@ -72,10 +83,17 @@ class DayProgressionVC: UIViewController {
         
         view.backgroundColor = .white
         
-        setupLayout()
+        configureImageViewAndTextView()
+        configureButtons()
     }
     
-    func setupLayout() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    func configureImageViewAndTextView() {
         let topImageContainerView = UIView()
         
         view.addSubview(topImageContainerView)
@@ -90,8 +108,32 @@ class DayProgressionVC: UIViewController {
         topImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.7).isActive = true
         
         descriptionTextView.anchor(top: topImageContainerView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 24, bottom: 0, right: 24))
+    }
+    
+    func configureButtons() {
         
-        startButton.anchor(top: descriptionTextView.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 30, left: 0, bottom: 0, right: 0), size: .init(width: 200, height: 50))
-        startButton.centerXInSuperview()
+        let stackView = VerticalStackView(arrangedSubviews: [
+            startButton,
+            backButton
+        ], spacing: 4)
+        
+        view.addSubview(stackView)
+        
+        startButton.constrainWidth(constant: 200)
+        startButton.constrainHeight(constant: 50)
+        
+        stackView.anchor(top: descriptionTextView.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 30, left: 0, bottom: 0, right: 0))
+        stackView.centerXInSuperview()
+        
+        startButton.addTarget(self, action: #selector(handleStart), for: .touchUpInside)
+        backButton.addTarget(self, action: #selector(handleBack), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func handleStart() {
+        coordinator.didTapStartButton()
+    }
+    
+    @objc fileprivate func handleBack() {
+        coordinator.didTapBackButton()
     }
 }

@@ -23,14 +23,18 @@ class DayDetailCoordinator: Coordinator {
     
     func start() {
         if let page = day.page {
-            let dayProgressionVC = DayProgressionVC(page: page)
-            navigationController.setNavigationBarHidden(true, animated: false)
+            let dayProgressionVC = DayProgressionVC(page: page, coordinator: self)
             navigationController.pushViewController(dayProgressionVC, animated: true)
             return
         }
         
+        pushDayDetailVC()
+    }
+    
+    fileprivate func pushDayDetailVC() {
         let dayDetailVC = DayDetailVC(day: day)
         dayDetailVC.coordinator = self
+        navigationController.setNavigationBarHidden(false, animated: false)
         navigationController.navigationBar.tintColor = .white
         navigationController.pushViewController(dayDetailVC, animated: true)
     }
@@ -52,5 +56,12 @@ class DayDetailCoordinator: Coordinator {
         navigationController.present(answerPopupVC, animated: true) {
             answerPopupVC.setPopup(with: answer)
         }
+    }
+    
+    func didTapStartButton() { pushDayDetailVC() }
+    
+    func didTapBackButton() {
+        navigationController.setNavigationBarHidden(false, animated: false)
+        navigationController.popToRootViewController(animated: true)
     }
 }
