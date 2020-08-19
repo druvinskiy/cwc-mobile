@@ -80,9 +80,7 @@ class DayCell: UICollectionViewCell {
         ], spacing: 8)
         
         addSubview(stackView)
-        stackView.anchor(top: nil, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 0, left: 24, bottom: 24, right: 24))
-        let topConstraint = stackView.topAnchor.constraint(equalTo: topAnchor, constant: 24)
-        topConstraint.isActive = true
+        stackView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 24, left: 15, bottom: 24, right: 15))
         
         subtitleLabel.textColor = .darkText
         numberLabel.textColor = Theme.chrisBlue
