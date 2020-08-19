@@ -124,6 +124,7 @@
 		DB73A5FD24E7609F00FE9D28 /* AnswerResponsePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */; };
 		DBDC99AD249CF87500543A05 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC99AC249CF87500543A05 /* TransitionView.swift */; };
 		DBE46B5124A360AD0003792E /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE46B5024A360AD0003792E /* SettingsDataSource.swift */; };
+		DBE6B31924ED6D6000F4FE5B /* days.yml in Resources */ = {isa = PBXBuildFile; fileRef = DBE6B31824ED6D5F00F4FE5B /* days.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +248,7 @@
 		DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerResponsePopupVC.swift; sourceTree = "<group>"; };
 		DBDC99AC249CF87500543A05 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
 		DBE46B5024A360AD0003792E /* SettingsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
+		DBE6B31824ED6D5F00F4FE5B /* days.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = days.yml; sourceTree = "<group>"; };
 		F606A965A2CC5B32D4F134A3 /* Pods-CWCMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWCMobile.release.xcconfig"; path = "Target Support Files/Pods-CWCMobile/Pods-CWCMobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -401,6 +403,7 @@
 				B87ECF85247F633F005E2356 /* War */,
 				B87ECF84247F61F3005E2356 /* Main App */,
 				B82CADFC2478C9290051C711 /* Info.plist */,
+				DBE6B31824ED6D5F00F4FE5B /* days.yml */,
 				B8E7645F24E9ABE9006F6062 /* GoogleService-Info.plist */,
 			);
 			path = CWCMobile;
@@ -753,6 +756,7 @@
 				B82CADF62478C9260051C711 /* Main.storyboard in Resources */,
 				B86EDB7B2483279F00E020D8 /* QuestionData.json in Resources */,
 				B8E7646024E9ABE9006F6062 /* GoogleService-Info.plist in Resources */,
+				DBE6B31924ED6D6000F4FE5B /* days.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
