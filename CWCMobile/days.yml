@@ -878,10 +878,10 @@ days:
         answers:
           - text: method
             feedback: Feedback
-            isCorrect: false
+            isCorrect: true
           - text: variable
             feedback: Feedback
-            isCorrect: true
+            isCorrect: false
           - text: nil
             feedback: Feedback
             isCorrect: false
