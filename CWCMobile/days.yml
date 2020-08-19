@@ -8,35 +8,35 @@ days:
       - question: What software do we use to develop iOS apps?
         answers:
           - text: XSwift
-            feedback: No, the correct answer is Xcode.
+            feedback: Feedback
             isCorrect: false
           - text: Xcode
-            feedback: Yes, Xcode is Apple's Integrated Development Environment (IDE).
+            feedback: Feedback
             isCorrect: true
           - text: XApp
-            feedback: No, the correct answer is Xcode.
+            feedback: Feedback
             isCorrect: false
       - question: What programming language are we learning in this course?
         answers:
           - text: Swift
-            feedback: Swift is the preferred programming language for Xcode projects.
+            feedback: Feedback
             isCorrect: true
           - text: Java
-            feedback: No, the correct answer is Swift.
+            feedback: Feedback
             isCorrect: false
           - text: Objective-C
-            feedback: Objective-C is no longer the preferred programming language for Xcode projects.
+            feedback: Feedback
             isCorrect: false
       - question: What file do we use to configure the screen that the user sees?
         answers:
           - text: Main.storyboard
-            feedback: Yes, Main.storyboard is the file in which the user interface is configured
+            feedback: Feedback
             isCorrect: true
           - text: View.swift
-            feedback: No, the correct answer is Main.storyboard
+            feedback: Feedback
             isCorrect: false
           - text: Storyboard.main
-            feedback: No, the correct answer is Main.storyboard
+            feedback: Feedback
             isCorrect: false
   - subtitle: All About Auto Layout
     description: "Jumping right in, you'll learn how to build layouts."
@@ -47,35 +47,35 @@ days:
       - question: What are Auto Layout constraints, and why do we use them when positioning elements on screen?
         answers:
           - text: Auto Layout constraints are rules that tell Xcode the location and size of our elements relative to other elements. We use constraints to ensure that our user interface looks good on multiple devices.
-            feedback: Yes, Auto Layout constraints are rules that tell Xcode the location and size of our elements relative to other elements. We use constraints to ensure that our user interface looks good on multiple devices.
+            feedback: Feedback
             isCorrect: true
           - text: Auto Layout constraints are systems that tell us whether our user interface is pretty or not. We use constraints to prevent us from having to decide if our user interface looks good on our own.
-            feedback: No, Auto Layout constraints are rules that tell Xcode the location and size of our elements relative to other elements. We use constraints to ensure that our user interface looks good on multiple devices.
+            feedback: Feedback
             isCorrect: false
           - text: Auto Layout constraints are an old way of creating user interfaces that were replaced by frames. We used constraints to tell Xcode the exact X and Y coordinates, as well as the exact width and height, for our elements.
-            feedback: No, Auto Layout constraints are rules that tell Xcode the location and size of our elements relative to other elements. We use constraints to ensure that our user interface looks good on multiple devices.
+            feedback: Feedback
             isCorrect: false
       - question: What will happen if we add two conflicting constraints to an element?
         answers:
             - text: Xcode will display a message when we run our app, asking us which constraints we want to keep and which we want to break.
-              feedback: No, Xcode will choose one of the constraints to break, leading to unintended behaviour when we run our app.
+              feedback: Feedback
               isCorrect: false
             - text: Xcode will choose one of the constraints to break, leading to unintended behaviour when we run our app.
-              feedback: Yes, Xcode will choose one of the constraints to break, leading to unintended behaviour when we run our app.
+              feedback: Feedback
               isCorrect: true
             - text: Nothing will happen. Xcode is smart enough to know how we want our user interface to look like even if we add conflicting constraints.
-              feedback: No, Xcode will choose one of the constraints to break, leading to unintended behaviour when we run our app.
+              feedback: Feedback
               isCorrect: false
       - question: What is the Safe Area?
         answers:
             - text: The Safe Area makes sure that the elements you add to your view will not be obscured by the notch or the home indicator.
-              feedback: Yes, the Safe Area makes sure that the elements you add to your view will not be obscured by the notch or the home indicator.
+              feedback: Feedback
               isCorrect: true
             - text: The Safe Area is a place in Xcode to write code that will never have any errors.
-              feedback: No, the Safe Area makes sure that the elements you add to your view will not be obscured by the notch or the home indicator.
+              feedback: Feedback
               isCorrect: false
             - text: The Safe Area is a type of element that tells the user of your app where it is safe to click.
-              feedback: No, the Safe Area makes sure that the elements you add to your view will not be obscured by the notch or the home indicator.
+              feedback: Feedback
               isCorrect: false
   - subtitle: How To Use Stack Views
     description: Learn how to use Stack View elements to build layouts much more easily.
@@ -86,35 +86,35 @@ days:
       - question: What is a StackView?
         answers:
           - text: A term that describes when multiple elements are stacked on top of one another.
-            feedback: No, the correct answer is it is a term that describes when multiple elements are stacked on top of one another AND a user interface element that arranges other user interface elements inside of it in a stacked layout.
+            feedback: Feedback
             isCorrect: false
           - text: A user interface element that arranges other user interface elements inside of it in a stacked layout.
-            feedback: No, the correct answer is it is a term that describes when multiple elements are stacked on top of one another AND a user interface element that arranges other user interface elements inside of it in a stacked layout.
+            feedback: Feedback
             isCorrect: true
           - text: Both A and B
-            feedback: Yes, A term that describes when multiple elements are stacked on top of one another AND a user interface element that arranges other user interface elements inside of it in a stacked layout.
+            feedback: Feedback
             isCorrect: false
       - question: What are the two types of StackViews in Xcode?
         answers:
           - text: A Horizontal StackView and and a Vertical StackView.
-            feedback: Yes, the two types of StackViews used in Xcode are a Horizontal StackView and and a Vertical StackView.
+            feedback: Feedback
             isCorrect: true
           - text: A left/right StackView and an up/down StackView.
-            feedback: No, the two types of StackViews used in Xcode are a Horizontal StackView and and a Vertical StackView.
+            feedback: Feedback
             isCorrect: false
           - text: There are more than two types of StackViews in Xcode.
-            feedback: No, the two types of StackViews used in Xcode are a Horizontal StackView and and a Vertical StackView.
+            feedback: Feedback
             isCorrect: false
       - question: What is the preferred way to add elements to a StackView?
         answers:
           - text: Drag elements into our StackView using our view.
-            feedback: No, we drag elements into our StackView using the Document Outline because it is easier to place them correctly.
+            feedback: Feedback
             isCorrect: false
           - text: Use our voice to tell Xcode to add elements.
-            feedback: No, we drag elements into our StackView using the Document Outline because it is easier to place them correctly.
+            feedback: Feedback
             isCorrect: false
           - text: Drag elements into our StackView using the Document Outline.
-            feedback: Yes, we drag elements into our StackView using the Document Outline because it is easier to place them correctly.
+            feedback: Feedback
             isCorrect: true
   - subtitle: Assembling the War User Interface
     description: Put your skills to the test by building the UI for our War Card Game.
@@ -125,35 +125,35 @@ days:
       - question: Where do we add images to our project in Xcode?
         answers:
           - text: Assets.xcassets
-            feedback: Yes, we add images to our project by placing them in Assets.xcassets which is the Assets catalogue.
+            feedback: Feedback
             isCorrect: true
           - text: Pictures.xcassets
-            feedback: No, we add images to our project by placing them in Assets.xcassets which is the Assets catalogue.
+            feedback: Feedback
             isCorrect: false
           - text: Images.xcassets
-            feedback: No, we add images to our project by placing them in Assets.xcassets which is the Assets catalogue.
+            feedback: Feedback
             isCorrect: false
       - question: What are size classes?
         answers:
           - text: Size classes are categories of screen sizes that you can target your Auto Layout constraints against.
-            feedback: Yes, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
+            feedback: Feedback
             isCorrect: true
           - text: Size class is another name for Auto Layout constraints that deal with the height and width of user interface elements.
-            feedback: No, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
+            feedback: Feedback
             isCorrect: false
           - text: Both A & B
-            feedback: NO, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
+            feedback: Feedback
             isCorrect: false
       - question: We add three of the same image to Xcode because
         answers:
           - text: Xcode will use the correct sized image depending on the resolution of the user's screen.
-            feedback: Yes, Xcode will use the correct sized image depending on the resolution of the user's screen which is why there are 3 sizes added to the assets catalogue.
+            feedback: Feedback
             isCorrect: true
           - text: the user might accidentally delete one of the images.
-            feedback: No, Xcode will use the correct sized image depending on the resolution of the user's screen which is why there are 3 sizes added to the assets catalogue.
+            feedback: Feedback
             isCorrect: false
           - text: Xcode requires us to have a backup of all of our images.
-            feedback: No, Xcode will use the correct sized image depending on the resolution of the user's screen which is why there are 3 sizes added to the assets catalogue.
+            feedback: Feedback
             isCorrect: false
   - subtitle: Learn Swift Basics (Part 1)
     description: Get hands on with the Swift programming language.
@@ -164,35 +164,35 @@ days:
       - question: How do we add a comment to our Swift code?
         answers:
           - text: Use two forward slashes (//)
-            feedback: Yes, we add comments fo our code by prefixing the line with two forward slashes (//)
+            feedback: Feedback
             isCorrect: true
           - text: Use two backslashes (\\)
-            feedback: No, we add comments fo our code by prefixing the line with two forward slashes (//)
+            feedback: Feedback
             isCorrect: false
           - text: Use one number sign (#)
-            feedback: No, we add comments fo our code by prefixing the line with two forward slashes (//)
+            feedback: Feedback
             isCorrect: false
       - question: What’s the difference between a variable and a constant?
         answers:
           - text: We can't reassign data to a variable after the first assignment of data to it.
-            feedback: No, we can reassign data to a variable but we can't reassign data to a constant after the first assignment of data to it.
+            feedback: Feedback
             isCorrect: false
           - text: We can't reassign data to a constant after the first assignment of data to it.
-            feedback: Yes, we can't reassign data to a constant after the first assignment of data to it whereas we can reassign data to a varaiable.
+            feedback: Feedback
             isCorrect: true
           - text: A constant must initially be assigned data when it's declared.
-            feedback: THIS ANSWER OPTION NEEDS TO BE RE-EXAMINED
+            feedback: Feedback
             isCorrect: false
       - question: What happens when you don’t specify a data type for your variable when you declare it?
         answers:
           - text: The variable will be able to store any data type.
-            feedback: No, if you don't specify the type of value you need, Swift uses type inference to work out the appropriate type.
+            feedback: Feedback
             isCorrect: false
           - text: The variable will infer the data type from the first piece of data you assign to it.
-            feedback: Yes, if you don't specify the type of value you need, Swift uses type inference to work out the appropriate type.
+            feedback: Feedback
             isCorrect: true
           - text: The variable will be unusable.
-            feedback: No, if you don't specify the type of value you need, Swift uses type inference to work out the appropriate type.
+            feedback: Feedback
             isCorrect: false
   - subtitle: Learn Swift Basics (Part 2)
     description: Build upon the skills from the previous lesson and learn more about Swift programming.
@@ -203,32 +203,32 @@ days:
       - question: In Swift, what is a function?
         answers:
           - text: A function is a mathematical operation performed on numbers.
-            feedback: No, a function is a block of code with a name that can be executed when called by name.
+            feedback: Feedback
             isCorrect: false
           - text: A function is a block of code with a name that can be executed when called by name.
-            feedback: Yes, a function is a block of code with a name that can be executed when called by name.
+            feedback: Feedback
             isCorrect: true
           - text: A function is for storing values in a class.
-            feedback: No, a function is a block of code with a name that can be executed when called by name.
+            feedback: Feedback
             isCorrect: false
       - question: What is the difference between declaring a function and calling a function?
         answers:
           - text: Declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
-            feedback: Yes, declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
+            feedback: Feedback
             isCorrect: true
           - text: There is no difference.
-            feedback: No, declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
+            feedback: Feedback
             isCorrect: false
           - text: Declaring a function is the same as declaring a variable. Calling a function is the same as declaring a constant.
-            feedback: No, declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
+            feedback: Feedback
             isCorrect: false
       - question: Variables declared in a function won’t exist outside of the function. This is called variable scope. True or false?
         answers:
           - text: "True"
-            feedback: Yes, variables declared in a function won’t exist outside of the function.  This is known as variable scope.  A variable defined at the class level is available to all functions within that class.
+            feedback: Feedback
             isCorrect: true
           - text: "False"
-            feedback: No, variables declared in a function do not exist outside of the function due to variable scope.
+            feedback: Feedback
             isCorrect: false
   - subtitle: Learn Swift Basics (Part 3)
     description: Finally, we put it all together and I'll tell you how Swift code plays a part in your app.
@@ -239,35 +239,35 @@ days:
       - question: What is a class?
         answers:
           - text: A class is a way to organize your code into a template that can be used to create objects from.
-            feedback: Yes, a class is a way to organize your code into a template that can be used to create objects from.
+            feedback: Feedback
             isCorrect: true
           - text: A class is a category of code that is used for creating objects.
-            feedback: No, a class is a way to organize your code into a template that can be used to create objects from.
+            feedback: Feedback
             isCorrect: false
           - text: A class is a way for you to execute a block of code by calling its name.
-            feedback: No, a class is a way to organize your code into a template that can be used to create objects from.
+            feedback: Feedback
             isCorrect: false
       - question: What is a property?
         answers:
           - text: A property is another name for a function inside of a class.
-            feedback: No, a property is another name for a variable inside of a class.
+            feedback: Feedback
             isCorrect: false
           - text: A property is another name for a variable inside of a class.
-            feedback: Yes, a property is another name for a variable inside of a class.
+            feedback: Feedback
             isCorrect: true
           - text: A property stores a value in a function.
-            feedback: No, a property is another name for a variable inside of a class.
+            feedback: Feedback
             isCorrect: false
       - question: What is the difference between a function and a method?
         answers:
           - text: A method is what a function is called when it’s in a class.
-            feedback: Yes, both of them are reusable chunks of code, but methods belong to classes, structs, and enums, whereas functions do not.
+            feedback: Feedback
             isCorrect: true
           - text: A method is for handling button taps whereas functions are for executing other blocks of code.
-            feedback: No, both of them are reusable chunks of code, but methods belong to classes, structs, and enums, whereas functions do not.
+            feedback: Feedback
             isCorrect: false
           - text: A method is what a function is called if it has a return value.
-            feedback: No, both of them are reusable chunks of code, but methods belong to classes, structs, and enums, whereas functions do not.
+            feedback: Feedback
             isCorrect: false
   - subtitle: Connecting Elements With Swift Code
     description:  You'll learn how to connect the elements in your layout to the Swift code that you write.
