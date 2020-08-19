@@ -10,7 +10,7 @@ import UIKit
 
 class SwipingAppController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: AppsCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

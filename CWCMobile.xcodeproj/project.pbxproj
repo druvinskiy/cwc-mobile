@@ -21,6 +21,14 @@
 		B82A95C72479F7BC006063BC /* CWCPageContol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95C62479F7BC006063BC /* CWCPageContol.swift */; };
 		B82A95C9247A1186006063BC /* CWCOnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95C8247A1186006063BC /* CWCOnboardingButton.swift */; };
 		B82A95CB247A1236006063BC /* UIViews+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95CA247A1236006063BC /* UIViews+Convenience.swift */; };
+		B82CA93024EDC9F100FAF60D /* AppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA92F24EDC9F000FAF60D /* AppsVC.swift */; };
+		B82CA93224EDCAB300FAF60D /* AppsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93124EDCAB300FAF60D /* AppsDataSource.swift */; };
+		B82CA93424EDCB4900FAF60D /* MainAppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93324EDCB4900FAF60D /* MainAppSection.swift */; };
+		B82CA93724EDCDE600FAF60D /* AppCellBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93624EDCDE600FAF60D /* AppCellBackgroundView.swift */; };
+		B82CA93924EDCE3F00FAF60D /* BaseAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93824EDCE3E00FAF60D /* BaseAppCell.swift */; };
+		B82CA93B24EDCE6100FAF60D /* ColorAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93A24EDCE6100FAF60D /* ColorAppCell.swift */; };
+		B82CA93D24EDCE8C00FAF60D /* ImageAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93C24EDCE8C00FAF60D /* ImageAppCell.swift */; };
+		B82CA93F24EDCF5400FAF60D /* AppsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93E24EDCF5400FAF60D /* AppsCoordinator.swift */; };
 		B82CADEF2478C9260051C711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CADEE2478C9260051C711 /* AppDelegate.swift */; };
 		B82CADF12478C9260051C711 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CADF02478C9260051C711 /* SceneDelegate.swift */; };
 		B82CADF62478C9260051C711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82CADF42478C9260051C711 /* Main.storyboard */; };
@@ -142,6 +150,14 @@
 		B82A95C62479F7BC006063BC /* CWCPageContol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWCPageContol.swift; sourceTree = "<group>"; };
 		B82A95C8247A1186006063BC /* CWCOnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWCOnboardingButton.swift; sourceTree = "<group>"; };
 		B82A95CA247A1236006063BC /* UIViews+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViews+Convenience.swift"; sourceTree = "<group>"; };
+		B82CA92F24EDC9F000FAF60D /* AppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsVC.swift; sourceTree = "<group>"; };
+		B82CA93124EDCAB300FAF60D /* AppsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDataSource.swift; sourceTree = "<group>"; };
+		B82CA93324EDCB4900FAF60D /* MainAppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppSection.swift; sourceTree = "<group>"; };
+		B82CA93624EDCDE600FAF60D /* AppCellBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellBackgroundView.swift; sourceTree = "<group>"; };
+		B82CA93824EDCE3E00FAF60D /* BaseAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppCell.swift; sourceTree = "<group>"; };
+		B82CA93A24EDCE6100FAF60D /* ColorAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAppCell.swift; sourceTree = "<group>"; };
+		B82CA93C24EDCE8C00FAF60D /* ImageAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAppCell.swift; sourceTree = "<group>"; };
+		B82CA93E24EDCF5400FAF60D /* AppsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCoordinator.swift; sourceTree = "<group>"; };
 		B82CADEB2478C9260051C711 /* CWCMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWCMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82CADEE2478C9260051C711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B82CADF02478C9260051C711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -297,6 +313,7 @@
 				B81BF99124A4D9BE00B433F8 /* SocialNetworkUrl.swift */,
 				B898B67C24CCBD4A009666E6 /* Video.swift */,
 				B801777D24EB600A002B29AD /* DayPage.swift */,
+				B82CA93324EDCB4900FAF60D /* MainAppSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +334,7 @@
 		B82A95B52478D001006063BC /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				B82CA93524EDCDB900FAF60D /* Apps */,
 				B87C8E62249E9D82008DF3E9 /* Settings */,
 				B8E2B0A1247B68E600605EC3 /* Days */,
 				B82A95C32479F667006063BC /* Onboarding */,
@@ -335,6 +353,7 @@
 				B8512E6D24E1870200525636 /* DayDetailVC.swift */,
 				DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */,
 				B801777F24EB6B6C002B29AD /* DayProgressionVC.swift */,
+				B82CA92F24EDC9F000FAF60D /* AppsVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -371,6 +390,19 @@
 				B82A95B82478D0B8006063BC /* Cells */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B82CA93524EDCDB900FAF60D /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				B87ECF82247F5944005E2356 /* CWCAppView.swift */,
+				B87ECFAA24805DA2005E2356 /* FloatingContainerView.swift */,
+				B82CA93624EDCDE600FAF60D /* AppCellBackgroundView.swift */,
+				B82CA93824EDCE3E00FAF60D /* BaseAppCell.swift */,
+				B82CA93A24EDCE6100FAF60D /* ColorAppCell.swift */,
+				B82CA93C24EDCE8C00FAF60D /* ImageAppCell.swift */,
+			);
+			path = Apps;
 			sourceTree = "<group>";
 		};
 		B82CADE22478C9260051C711 = {
@@ -457,6 +489,7 @@
 				B8E2B098247B09F200605EC3 /* MainCoordinator.swift */,
 				B87C8E68249EC2AB008DF3E9 /* SettingsCoordinator.swift */,
 				B8B62EEB24E3240100645BCC /* DayDetailCoordinator.swift */,
+				B82CA93E24EDCF5400FAF60D /* AppsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -475,6 +508,7 @@
 				DBE46B5024A360AD0003792E /* SettingsDataSource.swift */,
 				B8E2B090247AF41B00605EC3 /* OnboardingDataSource.swift */,
 				B87ECF80247F57F8005E2356 /* DaysDataSource.swift */,
+				B82CA93124EDCAB300FAF60D /* AppsDataSource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -633,8 +667,6 @@
 			isa = PBXGroup;
 			children = (
 				B8E2B0A2247B68EE00605EC3 /* Cells */,
-				B87ECF82247F5944005E2356 /* CWCAppView.swift */,
-				B87ECFAA24805DA2005E2356 /* FloatingContainerView.swift */,
 				DB73A5FA24E6CF1400FE9D28 /* AnswerResponseContainerView.swift */,
 			);
 			path = Days;
@@ -844,6 +876,7 @@
 				B82CADEF2478C9260051C711 /* AppDelegate.swift in Sources */,
 				B8B62EF224E35E8100645BCC /* String+Ext.swift in Sources */,
 				B87ECFAB24805DA2005E2356 /* FloatingContainerView.swift in Sources */,
+				B82CA93B24EDCE6100FAF60D /* ColorAppCell.swift in Sources */,
 				B82CADF12478C9260051C711 /* SceneDelegate.swift in Sources */,
 				B8D393AD2485CF3100ED8646 /* PhotoConstants.swift in Sources */,
 				B8E2B095247B08AF00605EC3 /* Coordinator.swift in Sources */,
@@ -851,6 +884,7 @@
 				B87ECFB82480CCEB005E2356 /* CardCollectionViewCell.swift in Sources */,
 				B87ECFAE2480C55F005E2356 /* SwipingAppController.swift in Sources */,
 				B87ECFB72480CCEB005E2356 /* Card.swift in Sources */,
+				B82CA93924EDCE3F00FAF60D /* BaseAppCell.swift in Sources */,
 				B87C8E5F249E9B84008DF3E9 /* SettingsVC.swift in Sources */,
 				B82A95BA2478D0F3006063BC /* PageCell.swift in Sources */,
 				B8E2B091247AF41B00605EC3 /* OnboardingDataSource.swift in Sources */,
@@ -863,6 +897,7 @@
 				B8D393AA2485CF3100ED8646 /* SettingsViewController.swift in Sources */,
 				B82A95C72479F7BC006063BC /* CWCPageContol.swift in Sources */,
 				B87C8E7024A17E47008DF3E9 /* GeneralSetting.swift in Sources */,
+				B82CA93F24EDCF5400FAF60D /* AppsCoordinator.swift in Sources */,
 				B87C8E9424A2C25D008DF3E9 /* GeneralSettingsCell.swift in Sources */,
 				B84CACC024DE1C8D00C09E9D /* Day.swift in Sources */,
 				DB73A5FD24E7609F00FE9D28 /* AnswerResponsePopupVC.swift in Sources */,
@@ -885,6 +920,7 @@
 				B86EDB7D2483279F00E020D8 /* QuizModel.swift in Sources */,
 				B8D393942485CEF400ED8646 /* UserService.swift in Sources */,
 				B8D393A72485CF3100ED8646 /* LoginViewController.swift in Sources */,
+				B82CA93224EDCAB300FAF60D /* AppsDataSource.swift in Sources */,
 				B898B67D24CCBD4A009666E6 /* Video.swift in Sources */,
 				B840684124A4566900196092 /* BaseSettingsCell.swift in Sources */,
 				B8E2B0A8247B6AA800605EC3 /* VerticalStackView.swift in Sources */,
@@ -906,6 +942,7 @@
 				DBDC99AD249CF87500543A05 /* TransitionView.swift in Sources */,
 				B86EDB9024832C3B00E020D8 /* CacheManager.swift in Sources */,
 				B898B68124CCC0B4009666E6 /* Bundle+Decodable.swift in Sources */,
+				B82CA93424EDCB4900FAF60D /* MainAppSection.swift in Sources */,
 				B87ECFB32480CCC2005E2356 /* MatchViewController.swift in Sources */,
 				B8E2B09F247B66C400605EC3 /* App.swift in Sources */,
 				B86EDB8824832C0300E020D8 /* ArticleService.swift in Sources */,
@@ -917,7 +954,9 @@
 				B8B62EF624E3967C00645BCC /* DayDetailHeaderView.swift in Sources */,
 				B83ED0BB24995789008F4ABD /* AlertVC.swift in Sources */,
 				B8841AC824E4C8D40022DEFA /* DayDetailQuestion.swift in Sources */,
+				B82CA93024EDC9F100FAF60D /* AppsVC.swift in Sources */,
 				B82A95BC2478D169006063BC /* OnboardingPage.swift in Sources */,
+				B82CA93D24EDCE8C00FAF60D /* ImageAppCell.swift in Sources */,
 				B801777E24EB600A002B29AD /* DayPage.swift in Sources */,
 				B8512E6E24E1870200525636 /* DayDetailVC.swift in Sources */,
 				B8512E7024E1880600525636 /* DayVideoCell.swift in Sources */,
@@ -926,6 +965,7 @@
 				B8E2B09D247B470D00605EC3 /* DaysVC.swift in Sources */,
 				B8E2B099247B09F200605EC3 /* MainCoordinator.swift in Sources */,
 				B87ECF81247F57F8005E2356 /* DaysDataSource.swift in Sources */,
+				B82CA93724EDCDE600FAF60D /* AppCellBackgroundView.swift in Sources */,
 				B87C8E6E24A01829008DF3E9 /* MySettingsCellDelegate.swift in Sources */,
 				B8E2B097247B08F700605EC3 /* Storyboarded.swift in Sources */,
 				B8C129B22496951300FA319D /* Floatable.swift in Sources */,

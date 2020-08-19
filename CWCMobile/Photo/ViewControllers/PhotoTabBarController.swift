@@ -11,7 +11,7 @@ import UIKit
 class PhotoTabBarController: UITabBarController, Storyboarded {
     
     var loginVC: LoginViewController?
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: AppsCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +85,7 @@ class PhotoTabBarController: UITabBarController, Storyboarded {
         present(imagePicker, animated: true, completion: nil)
     }
     
-    func set(coordinator: MainCoordinator) {
+    func set(coordinator: AppsCoordinator) {
         self.coordinator = coordinator
         guard let feedViewController = viewControllers?.first as? FeedViewController else { return }
         feedViewController.coordinator = coordinator

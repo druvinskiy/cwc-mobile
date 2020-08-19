@@ -1,31 +1,24 @@
 //
-//  DaysVC.swift
+//  AppsVC.swift
 //  CWCMobile
 //
-//  Created by David Ruvinskiy on 5/24/20.
+//  Created by David Ruvinskiy on 8/19/20.
 //  Copyright © 2020 David Ruvinskiy. All rights reserved.
 //
 
 import UIKit
 
-class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class AppsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: AppsCoordinator?
+    var dataSource = AppsDataSource()
     var appView = AppView()
-    var transitionView = TransitionView()
     
-    fileprivate let days = Day.loadDays()
-    lazy var dataSource = DaysDataSource(days: days)
+    fileprivate let sections = MainApp.loadSections()
     
-    init(coordinator: MainCoordinator?) {
+    init(coordinator: AppsCoordinator?) {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
         self.coordinator = coordinator
-        
-        dataSource.videoDidSelectHandler = { [weak self] video in
-            guard let self = self else { return }
-            
-            self.coordinator?.didSelectVideo(video: video)
-        }
     }
     
     required init?(coder: NSCoder) {
@@ -34,7 +27,7 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "CodeWithChris Hub"
+        title = "Sample Apps"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,31 +54,28 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         
         collectionView = appView
         setupCollectionView()
-        setupTransitionView()
-    }
-    
-    func removeTransitionView() {
-        transitionView.removeFromSuperview()
-    }
-    
-    func setupTransitionView() {
-        appView.addSubview(transitionView)
-        transitionView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
     
     func setupCollectionView() {
-        collectionView.register(DayCell.self, forCellWithReuseIdentifier: DayCell.dayCellId)
+        collectionView.register(ImageAppCell.self, forCellWithReuseIdentifier: ImageAppCell.imageCellId)
+        collectionView.register(ColorAppCell.self, forCellWithReuseIdentifier: ColorAppCell.colorCellId)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderView.reuseId)
+        
         collectionView.dataSource = dataSource
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let day = days[indexPath.row]
-        coordinator?.didSelectDay(day: day)
+        
+        let item = sections[indexPath.section].cellItem(at: indexPath.row)
+        
+        if let appItem = item as? AppItem {
+            coordinator?.didSelectApp(app: appItem.getApp())
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return .init(width: view.frame.width - 64, height: 455)
+        return .init(width: view.frame.width - 64, height: 500)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -93,11 +83,7 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .init(top: 0, left: 0, bottom: 16, right: 0)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: 40)
+        return .init(top: 16, left: 0, bottom: 16, right: 0)
     }
     
     let multiplier: CGFloat = 0.47

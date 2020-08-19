@@ -45,6 +45,7 @@ struct Settings {
         return [
             SettingsSection(title: "General", cells: [
                 GeneralItem.courses(.init(description: "Browse our Courses", image: #imageLiteral(resourceName: "smallerLogo"), socialNetworkUrl: .courses)),
+                GeneralItem.showApps(.init(description: "Try our Training Apps")),
                 GeneralItem.showOnboarding(.init(description: "Replay Walkthrough")),
                 GeneralItem.showSwipeMessage(.init(description: "Show \"Swipe Down\" Message", isOn: MainLocalStorageService.isFloatingViewEnabled()))
             ]),
@@ -53,6 +54,21 @@ struct Settings {
                 SocialItem.youtube(.init(description: "YouTube", image: #imageLiteral(resourceName: "youtube"), socialNetworkUrl: .youtube)),
                 SocialItem.instagram(.init(description: "Instagram", image: #imageLiteral(resourceName: "instagram"), socialNetworkUrl: .instagram)),
                 SocialItem.facebook(.init(description: "Facebook", image: #imageLiteral(resourceName: "facebook"), socialNetworkUrl: .facebook))
+            ])
+        ]
+    }
+}
+
+struct MainApp {
+    static func loadSections() -> [MainAppSection] {
+        return [
+            MainAppSection(title: "Sample Apps", cells: [
+                AppItem.war(.init(courseName: .fundamentals, appName: .war, image: #imageLiteral(resourceName: "war"), backgroundImage: #imageLiteral(resourceName: "warBackground"))),
+                AppItem.match(.init(courseName: .fundamentals, appName: .match, image: #imageLiteral(resourceName: "match"), backgroundImage: #imageLiteral(resourceName: "matchBackground"))),
+                AppItem.quiz(.init(courseName: .fundamentals, appName: .quiz, image: #imageLiteral(resourceName: "quizNoPurple"), backgroundImage: #imageLiteral(resourceName: "quizBackground"))),
+                AppItem.news(.init(courseName: .fundamentals, appName: .news, image: #imageLiteral(resourceName: "newsNoBackGround"), backgroundColor: #colorLiteral(red: 0.08994158357, green: 0.3607954979, blue: 0.5560376644, alpha: 1))),
+                AppItem.photo(.init(courseName: .database, appName: .photo, image: #imageLiteral(resourceName: "photoNoBackground"), backgroundColor: .darkGray)),
+                AppItem.guidebook(.init(courseName: .database, appName: .guidebook, image: #imageLiteral(resourceName: "guidebookNoBackground"), backgroundColor: .darkGray))
             ])
         ]
     }

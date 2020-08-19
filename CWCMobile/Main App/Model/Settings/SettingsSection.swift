@@ -30,6 +30,7 @@ struct SettingsSection {
 
 enum GeneralItem: SettingsCellItem {
     case courses(SocialSetting)
+    case showApps(GeneralSetting)
     case showOnboarding(GeneralSetting)
     case showSwipeMessage(SwitchSetting)
 }

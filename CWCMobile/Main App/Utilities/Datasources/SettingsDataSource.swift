@@ -38,6 +38,8 @@ class SettingsDataSource: NSObject, UITableViewDataSource {
                 cell = createGeneralSettingsCell(with: cellModel, tableView: tableView)
             case .showSwipeMessage(let cellModel):
                 cell = createSwitchSettingsCell(with: cellModel, tableView: tableView)
+            case .showApps(let cellModel):
+                cell = createGeneralSettingsCell(with: cellModel, tableView: tableView)
             }
         }
         

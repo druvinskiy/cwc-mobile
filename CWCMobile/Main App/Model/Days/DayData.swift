@@ -16,7 +16,6 @@ class DecodeDay: Codable {
     let subtitle: String
     let description: String
     let video: Video
-    let app: App?
     var questions = [DayDetailQuestion]()
     let page: DayPage?
 }

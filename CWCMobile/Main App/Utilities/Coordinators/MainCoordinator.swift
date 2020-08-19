@@ -13,7 +13,6 @@ class MainCoordinator: NSObject, Coordinator {
     internal var childCoordinators = [Coordinator]()
     internal var navigationController: UINavigationController
     fileprivate lazy var daysVC = DaysVC(coordinator: self)
-    fileprivate var specificAppVC = SwipingAppController()
     
     init(navigationController: UINavigationController) {
         
@@ -38,40 +37,6 @@ class MainCoordinator: NSObject, Coordinator {
         child.start()
     }
     
-    func didSelectApp(app: App) {
-        let appName = AppName(rawValue: app.name)
-        
-        switch appName {
-        case .war:
-            specificAppVC = WarViewController.instantiate()
-        case .match:
-            specificAppVC = MatchViewController.instantiate()
-        case .quiz:
-            specificAppVC = QuizViewController.instantiate()
-        case .news:
-            specificAppVC = NewsViewController.instantiate()
-        case .photo:
-            setupPhotoApp()
-            return
-        case .guidebook:
-            navigationController.presentAlert(title: "Coming Soon", message: Messages.comingSoon, buttonTitle: "OK")
-            return
-        case .none:
-            break
-        }
-        
-        specificAppVC.coordinator = self
-        navigationController.pushViewController(specificAppVC, animated: true)
-    }
-    
-    func didSwipeDown() {
-        navigationController.setNavigationBarHidden(false, animated: false)
-        navigationController.popToViewController(daysVC, animated: true)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-            self?.navigationController.navigationBar.sizeToFit()
-        }
-    }
-    
     func replayWalkthroughPressed() {
         displayOnboarding(addTransitionView: false)
     }
@@ -89,23 +54,6 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     // MARK: - Fileprivate
-    
-    fileprivate func setupPhotoApp() {
-        let loginVC = LoginViewController.instantiate()
-        loginVC.coordinator = self
-        
-        guard LocalStorageService.loadUser() != nil else {
-            specificAppVC = LoginViewController.instantiate()
-            specificAppVC.coordinator = self
-            navigationController.pushViewController(specificAppVC, animated: true)
-            return
-        }
-        
-        let tabBarVC = PhotoTabBarController.instantiate()
-        tabBarVC.loginVC = loginVC
-        tabBarVC.set(coordinator: self)
-        navigationController.pushViewController(tabBarVC, animated: true)
-    }
     
     @objc fileprivate func handleSettings() {
         let child = SettingsCoordinator(navigationController: navigationController)

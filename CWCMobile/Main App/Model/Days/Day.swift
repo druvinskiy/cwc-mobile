@@ -13,7 +13,6 @@ class Day: Codable {
     let subtitle: String
     let description: String
     let video: Video
-    let app: App?
     var questions = [DayDetailQuestion]()
     let page: DayPage?
     
@@ -21,7 +20,6 @@ class Day: Codable {
         self.subtitle = day.subtitle
         self.description = day.description
         self.video = day.video
-        self.app = day.app
         self.questions = day.questions
         self.page = day.page
     }

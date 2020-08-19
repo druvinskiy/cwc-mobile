@@ -1,5 +1,5 @@
 //
-//  CWCAppView.swift
+//  AppView.swift
 //  CWCMobile
 //
 //  Created by David Ruvinskiy on 5/27/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CWCAppView: UICollectionView {
+class AppView: UICollectionView {
     
     init() {
         super.init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())

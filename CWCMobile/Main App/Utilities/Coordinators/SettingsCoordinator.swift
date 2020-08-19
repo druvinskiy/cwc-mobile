@@ -12,19 +12,20 @@ class SettingsCoordinator: Coordinator {
     weak var parentCoordinator: MainCoordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
+    var settingsNavigationController: UINavigationController!
+    let settingsVC = SettingsVC()
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
 
     func start() {
-        let settingsVC = SettingsVC()
         settingsVC.coordinator = self
         
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismiss))
         settingsVC.navigationItem.rightBarButtonItem = doneButton
         
-        let settingsNavigationController = UINavigationController(rootViewController: settingsVC)
+        settingsNavigationController = UINavigationController(rootViewController: settingsVC)
         settingsNavigationController.navigationBar.prefersLargeTitles = true
         settingsNavigationController.modalPresentationStyle = .fullScreen
         UINavigationBar.appearance().tintColor = Theme.chrisBlue
@@ -35,6 +36,14 @@ class SettingsCoordinator: Coordinator {
     func replayWalkthroughPressed() {
         dismiss()
         parentCoordinator?.replayWalkthroughPressed()
+    }
+    
+    func browseAppsPressed() {
+        let child = AppsCoordinator(navigationController: settingsNavigationController)
+        child.parentCoordinator = self
+        childCoordinators.append(child)
+        settingsVC.navigationItem.title = "Back"
+        child.start()
     }
     
     // MARK: - Fileprivate

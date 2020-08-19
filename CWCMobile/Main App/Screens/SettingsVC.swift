@@ -18,8 +18,12 @@ class SettingsVC: UITableViewController {
         super.viewDidLoad()
         
         configureTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        title = "Settings"
+        navigationItem.title = "Settings"
     }
     
     func configureTableView() {
@@ -45,6 +49,9 @@ class SettingsVC: UITableViewController {
                 cellModel.openPage()
             case .showSwipeMessage:
                 break
+            case .showApps:
+
+                coordinator?.browseAppsPressed()
             }
         }
         
