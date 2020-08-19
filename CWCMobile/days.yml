@@ -387,7 +387,7 @@ days:
             feedback: Feedback
             isCorrect: false
   - subtitle: What You'll Learn Next
-    description:  Continue building your Swift skills, learn some critical concepts, build more complex apps and express more complex logic with your Swift code.
+    description: Continue building your Swift skills, learn some critical concepts, build more complex apps and express more complex logic with your Swift code.
     video:
       title: Intro - Lesson 11
       videoUrl: https://cdn.fs.teachablecdn.com/ZGv8P9D0QKGNNwZVlUEe
@@ -585,6 +585,10 @@ days:
       title: "The Card Game: Intro - Lesson 18"
       videoUrl: https://cdn.fs.teachablecdn.com/JHUgUDsCS5ipUik6BQA1
     questions: []
+    page:
+        imageName: "calendar29"
+        headerText: "DAYS 18 – 29:\nA Bigger, Better App"
+        bodyText: "With the skills you’ve gained up to this point, you’re ready to start your second app!\n\nBy Day 28, you’ll know how to do animations, play sounds and follow some best practices for iOS development.\n\nYou’ll also learn how to troubleshoot and debug your Swift code."
   - subtitle: Model View Controller
     description: Learn about a KEY design pattern that will help you write reusable and code that is easily maintained.
     video:
