@@ -1,5 +1,5 @@
 //
-//  DayPage.swift
+//  MainAppPage.swift
 //  CWCMobile
 //
 //  Created by David Ruvinskiy on 8/17/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DayPage: Codable {
+struct MainAppPage: Codable {
     let imageName: String
     let headerText: String
     let bodyText: String

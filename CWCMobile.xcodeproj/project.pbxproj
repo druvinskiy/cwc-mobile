@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		29CBF161DC57735B8ECE7736 /* Pods_CWCMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7C1E606D937341D6436093 /* Pods_CWCMobile.framework */; };
-		B801777E24EB600A002B29AD /* DayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B801777D24EB600A002B29AD /* DayPage.swift */; };
-		B801778024EB6B6C002B29AD /* DayProgressionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B801777F24EB6B6C002B29AD /* DayProgressionVC.swift */; };
+		B801777E24EB600A002B29AD /* MainAppPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B801777D24EB600A002B29AD /* MainAppPage.swift */; };
+		B801778024EB6B6C002B29AD /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B801777F24EB6B6C002B29AD /* PageVC.swift */; };
 		B81BF99024A4D15800B433F8 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BF98F24A4D15800B433F8 /* SettingsSection.swift */; };
 		B81BF99224A4D9BE00B433F8 /* SocialNetworkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BF99124A4D9BE00B433F8 /* SocialNetworkUrl.swift */; };
 		B82A95BA2478D0F3006063BC /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A95B92478D0F3006063BC /* PageCell.swift */; };
@@ -138,8 +138,8 @@
 /* Begin PBXFileReference section */
 		3F7C1E606D937341D6436093 /* Pods_CWCMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWCMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		810A435545B1FB048D25BB62 /* Pods-CWCMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWCMobile.debug.xcconfig"; path = "Target Support Files/Pods-CWCMobile/Pods-CWCMobile.debug.xcconfig"; sourceTree = "<group>"; };
-		B801777D24EB600A002B29AD /* DayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPage.swift; sourceTree = "<group>"; };
-		B801777F24EB6B6C002B29AD /* DayProgressionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgressionVC.swift; sourceTree = "<group>"; };
+		B801777D24EB600A002B29AD /* MainAppPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppPage.swift; sourceTree = "<group>"; };
+		B801777F24EB6B6C002B29AD /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		B81BF98F24A4D15800B433F8 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		B81BF99124A4D9BE00B433F8 /* SocialNetworkUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUrl.swift; sourceTree = "<group>"; };
 		B82A95B92478D0F3006063BC /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
@@ -314,7 +314,7 @@
 				B8E2B09E247B66C400605EC3 /* App.swift */,
 				B81BF99124A4D9BE00B433F8 /* SocialNetworkUrl.swift */,
 				B898B67C24CCBD4A009666E6 /* Video.swift */,
-				B801777D24EB600A002B29AD /* DayPage.swift */,
+				B801777D24EB600A002B29AD /* MainAppPage.swift */,
 				B82CA93324EDCB4900FAF60D /* MainAppSection.swift */,
 			);
 			path = Model;
@@ -354,7 +354,7 @@
 				B87C8E5E249E9B84008DF3E9 /* SettingsVC.swift */,
 				B8512E6D24E1870200525636 /* DayDetailVC.swift */,
 				DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */,
-				B801777F24EB6B6C002B29AD /* DayProgressionVC.swift */,
+				B801777F24EB6B6C002B29AD /* PageVC.swift */,
 				B82CA92F24EDC9F000FAF60D /* AppsVC.swift */,
 				B82CA94024EDE37900FAF60D /* CWCNavigationController.swift */,
 			);
@@ -907,7 +907,7 @@
 				DB73A5FD24E7609F00FE9D28 /* AnswerResponsePopupVC.swift in Sources */,
 				B81BF99224A4D9BE00B433F8 /* SocialNetworkUrl.swift in Sources */,
 				B87C8E9824A2FB94008DF3E9 /* ImageSettingCell.swift in Sources */,
-				B801778024EB6B6C002B29AD /* DayProgressionVC.swift in Sources */,
+				B801778024EB6B6C002B29AD /* PageVC.swift in Sources */,
 				B87C8E9624A2C979008DF3E9 /* HeaderView.swift in Sources */,
 				B86EDB8A24832C0300E020D8 /* Article.swift in Sources */,
 				B87ECF89247F63A1005E2356 /* WarViewController.swift in Sources */,
@@ -961,7 +961,7 @@
 				B82CA93024EDC9F100FAF60D /* AppsVC.swift in Sources */,
 				B82A95BC2478D169006063BC /* OnboardingPage.swift in Sources */,
 				B82CA93D24EDCE8C00FAF60D /* ImageAppCell.swift in Sources */,
-				B801777E24EB600A002B29AD /* DayPage.swift in Sources */,
+				B801777E24EB600A002B29AD /* MainAppPage.swift in Sources */,
 				B8512E6E24E1870200525636 /* DayDetailVC.swift in Sources */,
 				B8512E7024E1880600525636 /* DayVideoCell.swift in Sources */,
 				B8841AC324E4A7D10022DEFA /* Answer.swift in Sources */,

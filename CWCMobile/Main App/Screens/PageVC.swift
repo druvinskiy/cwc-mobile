@@ -1,5 +1,5 @@
 //
-//  DayProgressionVC.swift
+//  PageVC.swift
 //  CWCMobile
 //
 //  Created by David Ruvinskiy on 8/17/20.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class DayProgressionVC: UIViewController {
-    var page: DayPage! {
+class PageVC: UIViewController {
+    var page: MainAppPage! {
         didSet {
             topImageView.image = UIImage(named: page.imageName)
             
@@ -21,8 +21,6 @@ class DayProgressionVC: UIViewController {
             descriptionTextView.textAlignment = .center
         }
     }
-    
-    let coordinator: DayDetailCoordinator
     
     let topImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "war"))
@@ -62,15 +60,19 @@ class DayProgressionVC: UIViewController {
         return button
     }()
     
-    init(page: DayPage, coordinator: DayDetailCoordinator) {
-        self.coordinator = coordinator
+    let startHandler: () -> Void
+    let backHandler: () -> Void
+    
+    init(page: MainAppPage, startHandler: @escaping () -> Void, backHandler: @escaping () -> Void) {
+        self.startHandler = startHandler
+        self.backHandler = backHandler
         
         super.init(nibName: nil, bundle: nil)
         
         setPage(page: page)
     }
     
-    private func setPage(page: DayPage) {
+    private func setPage(page: MainAppPage) {
         self.page = page
     }
     
@@ -100,9 +102,9 @@ class DayProgressionVC: UIViewController {
         view.addSubview(descriptionTextView)
         view.addSubview(startButton)
         
-        topImageContainerView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor)
+        topImageContainerView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 10, left: 0, bottom: 0, right: 0))
         topImageContainerView.addSubview(topImageView)
-        topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
+        topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3).isActive = true
         
         topImageView.centerInSuperview()
         topImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.7).isActive = true
@@ -122,7 +124,7 @@ class DayProgressionVC: UIViewController {
         startButton.constrainWidth(constant: 200)
         startButton.constrainHeight(constant: 50)
         
-        stackView.anchor(top: descriptionTextView.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 30, left: 0, bottom: 0, right: 0))
+        stackView.anchor(top: descriptionTextView.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 20, left: 0, bottom: 0, right: 0))
         stackView.centerXInSuperview()
         
         startButton.addTarget(self, action: #selector(handleStart), for: .touchUpInside)
@@ -130,10 +132,10 @@ class DayProgressionVC: UIViewController {
     }
     
     @objc fileprivate func handleStart() {
-        coordinator.didTapStartButton()
+        startHandler()
     }
     
     @objc fileprivate func handleBack() {
-        coordinator.didTapBackButton()
+        backHandler()
     }
 }

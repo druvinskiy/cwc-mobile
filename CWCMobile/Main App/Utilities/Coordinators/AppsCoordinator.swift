@@ -13,7 +13,7 @@ class AppsCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: CWCNavigationController
     fileprivate var specificAppVC = SwipingAppController()
-    var appsVC: AppsVC!
+    fileprivate var appsVC: AppsVC!
     
     init(navigationController: CWCNavigationController) {
         self.navigationController = navigationController
@@ -37,7 +37,8 @@ class AppsCoordinator: Coordinator {
         case .news:
             specificAppVC = NewsViewController.instantiate()
         case .photo:
-            setupPhotoApp()
+            let pageVC = PageVC(page: app.page, startHandler: setupPhotoApp, backHandler: didTapBackButton)
+            navigationController.pushViewController(pageVC, animated: true)
             return
         case .guidebook:
             navigationController.presentAlert(title: "Coming Soon", message: Messages.comingSoon, buttonTitle: "OK")
@@ -46,8 +47,8 @@ class AppsCoordinator: Coordinator {
             break
         }
         
-        specificAppVC.coordinator = self
-        navigationController.pushViewController(specificAppVC, animated: true)
+        let pageVC = PageVC(page: app.page, startHandler: pushSpecificAppVC, backHandler: didTapBackButton)
+        navigationController.pushViewController(pageVC, animated: true)
     }
     
     func didSwipeDown() {
@@ -59,7 +60,18 @@ class AppsCoordinator: Coordinator {
         }
     }
     
-    fileprivate func setupPhotoApp() {
+    // MARK: - Fileprivate
+    
+    @objc fileprivate func pushSpecificAppVC() {
+        specificAppVC.coordinator = self
+        navigationController.pushViewController(self.specificAppVC, animated: true)
+    }
+    
+    @objc fileprivate func didTapBackButton() {
+        didSwipeDown()
+    }
+    
+    @objc fileprivate func setupPhotoApp() {
         let loginVC = LoginViewController.instantiate()
         loginVC.coordinator = self
         

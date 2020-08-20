@@ -23,20 +23,12 @@ class DayDetailCoordinator: Coordinator {
     
     func start() {
         if let page = day.page {
-            let dayProgressionVC = DayProgressionVC(page: page, coordinator: self)
+            let dayProgressionVC = PageVC(page: page, startHandler: didTapStartButton, backHandler: didTapBackButton)
             navigationController.pushViewController(dayProgressionVC, animated: true)
             return
         }
         
         pushDayDetailVC()
-    }
-    
-    fileprivate func pushDayDetailVC() {
-        let dayDetailVC = DayDetailVC(day: day)
-        dayDetailVC.coordinator = self
-        navigationController.setNavigationBarHidden(false, animated: false)
-        navigationController.navigationBar.tintColor = .white
-        navigationController.pushViewController(dayDetailVC, animated: true)
     }
     
     func didSelectVideo() {
@@ -58,10 +50,20 @@ class DayDetailCoordinator: Coordinator {
         }
     }
     
-    func didTapStartButton() { pushDayDetailVC() }
+    // MARK: - Fileprivate
     
-    func didTapBackButton() {
+    @objc fileprivate func didTapStartButton() { pushDayDetailVC() }
+    
+    @objc fileprivate func didTapBackButton() {
         navigationController.setNavigationBarHidden(false, animated: false)
         navigationController.popToRootViewController(animated: true)
+    }
+    
+    fileprivate func pushDayDetailVC() {
+        let dayDetailVC = DayDetailVC(day: day)
+        dayDetailVC.coordinator = self
+        navigationController.setNavigationBarHidden(false, animated: false)
+        navigationController.navigationBar.tintColor = .white
+        navigationController.pushViewController(dayDetailVC, animated: true)
     }
 }

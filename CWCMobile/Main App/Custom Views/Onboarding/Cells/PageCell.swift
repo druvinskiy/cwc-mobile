@@ -56,9 +56,9 @@ class PageCell: UICollectionViewCell {
         addSubview(topImageContainerView)
         addSubview(descriptionTextView)
         
-        topImageContainerView.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor)
+        topImageContainerView.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 20, left: 0, bottom: 0, right: 0))
         topImageContainerView.addSubview(topImageView)
-        topImageContainerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.4).isActive = true
+        topImageContainerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.3).isActive = true
         
         topImageView.centerInSuperview()
         topImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.7).isActive = true
