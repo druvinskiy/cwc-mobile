@@ -164,13 +164,13 @@ days:
       - question: How do we add a comment to our Swift code?
         answers:
           - text: Use two forward slashes (//)
-            feedback: Yes, we add comments fo our code by prefixing the line with two forward slashes (//)
+            feedback: Yes, we add comments to our code by prefixing the line with two forward slashes (//)
             isCorrect: true
           - text: Use two backslashes (\\)
-            feedback: No, we add comments fo our code by prefixing the line with two forward slashes (//)
+            feedback: No, we add comments to our code by prefixing the line with two forward slashes (//)
             isCorrect: false
           - text: Use one number sign (#)
-            feedback: No, we add comments fo our code by prefixing the line with two forward slashes (//)
+            feedback: No, we add comments to our code by prefixing the line with two forward slashes (//)
             isCorrect: false
       - question: What’s the difference between a variable and a constant?
         answers:
@@ -278,35 +278,35 @@ days:
       - question: What is the difference between an IBOutlet property and an IBAction method? Select the most accurate statement below.
         answers:
           - text: An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it.
-            feedback: Feedback
+            feedback: Both are correct. An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it and an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
             isCorrect: false
           - text: An IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
-            feedback: Feedback
+            feedback: Both are correct. An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it and an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
             isCorrect: false
           - text: Both A & B
-            feedback: Feedback
+            feedback: Yes, both are correct. Both are correct. An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it and an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
             isCorrect: true
       - question: What is the preferred way to fix a typo in an IBOutlet property to avoid our app crashing?
         answers:
           - text: Fix the typo directly in the ViewController and rerun the app.
-            feedback: Feedback
+            feedback: No, you must break the connection, delete the property in the ViewController, and redo the connection.  Alternatively, you can Refactor > Rename a connection and that will correct the entry in both the swift file and the storyboard.
             isCorrect: false
           - text: Break the connection, delete the property in the ViewController, and redo the connection.
-            feedback: Feedback
+            feedback: Yes, you must break the connection, delete the property in the ViewController, and redo the connection.  Alternatively, you can Refactor > Rename a connection and that will correct the entry in both the swift file and the storyboard.
             isCorrect: true
           - text: Nicely ask Xcode to correct the typo.
-            feedback: Feedback
+            feedback: No, you must break the connection, delete the property in the ViewController, and redo the connection.  Alternatively, you can Refactor > Rename a connection and that will correct the entry in both the swift file and the storyboard.
             isCorrect: false
       - question: Where should you look for the reason for an app crash in Xcode?
         answers:
           - text: At the top of the debug console.
-            feedback: Feedback
+            feedback: Yes, you should look at the top of the debug console.
             isCorrect: true
           - text: At the bottom of the debug console.
-            feedback: Feedback
+            feedback: No, you should look at the top of the debug console.
             isCorrect: false
           - text: In the Assistant Editor.
-            feedback: Feedback
+            feedback: No, you should look at the top of the debug console.
             isCorrect: false
   - subtitle: Handling User Interaction
     description: Learn how to capture and handle taps from the user.
@@ -317,35 +317,35 @@ days:
       - question: We created IBOutlets for our leftImageView and our rightImageView because
         answers:
           - text: we need to be able to access the image views both in the storyboard and in our code.
-            feedback: Feedback
+            feedback: Yes, we need to be able to change both imageViews to show the newly selectes cards each time the user deals.
             isCorrect: true
           - text: that's the only way to access them.
-            feedback: Feedback
+            feedback: No, we need to be able to change both imageViews to show the newly selected cards each time the user deals.
             isCorrect: false
           - text: Xcode requires that we create IBOutlets for our elements.
-            feedback: Feedback
+            feedback: No, we need to be able to change both imageViews to show the newly selected cards each time the user deals.
             isCorrect: false
       - question: How do we generate a random number in Swift?
         answers:
           - text: "Number.random(in: lowerBound...upperBound)"
-            feedback: Feedback
+            feedback: "No, the code is: Int.random(in: lowerBound...upperBound)"
             isCorrect: false
           - text: "Int.random(in: lowerBound...upperBound)"
-            feedback: Feedback
+            feedback: "Yes, the code is: Int.random(in: lowerBound...upperBound)"
             isCorrect: true
           - text: "Int.randomNumber(in: lowerBound...upperBound)"
-            feedback: Feedback
+            feedback: "No, the code is: Int.random(in: lowerBound...upperBound)"
             isCorrect: false
       - question: What property do we use to change the image of a UIImageView?
         answers:
           - text: image
-            feedback: Feedback
+            feedback: Yes, we change the image by using the assignment - imageView.image = newUIImage
             isCorrect: true
           - text: photo
-            feedback: Feedback
+            feedback: No, we change the image by using the assignment - imageView.image = newUIImage
             isCorrect: false
           - text: String
-            feedback: Feedback
+            feedback: No, we change the image by using the assignment - imageView.image = newUIImage
             isCorrect: false
   - subtitle: Writing The Logic
     description: Learn how to write code that THINKS!
@@ -356,35 +356,35 @@ days:
       - question: What happens if two conditions in an if statement are true?
         answers:
           - text: Xcode will execute the relevant code for both conditions.
-            feedback: Feedback
+            feedback: No, Xcode will execute the code relevant to the first true condition.
             isCorrect: false
           - text: Xcode will completely ignore your if statement, and no code will be executed.
-            feedback: Feedback
+            feedback: No, Xcode will execute the code relevant to the first true condition.
             isCorrect: false
           - text: Xcode will execute the code relevant to the first true condition.
-            feedback: Feedback
+            feedback: Yes, Xcode will execute the code relevant to the first true condition.
             isCorrect: true
       - question: What is the difference between = and ==?
         answers:
           - text: == is for assignment, while = checks for equality.
-            feedback: Feedback
+            feedback: No, == checks for equality, while = is for assignment.
             isCorrect: false
           - text: == checks for equality, while = is for assignment.
-            feedback: Feedback
+            feedback: Yes, == checks for equality, while = is for assignment.
             isCorrect: true
           - text: There is no difference between = and ==.
-            feedback: Feedback
+            feedback: No, == checks for equality, while = is for assignment.
             isCorrect: false
       - question: What symbol do we use to check if two values are not equal?
         answers:
           - text: "!="
-            feedback: Feedback
+            feedback: "Yes, != is used to check if two values are not equal.  The ! means NOT"
             isCorrect: true
           - text: ==
-            feedback: Feedback
+            feedback: "No, != is used to check if two values are not equal.  The ! means NOT"
             isCorrect: false
           - text: ===
-            feedback: Feedback
+            feedback: "No, != is used to check if two values are not equal.  The ! means NOT"
             isCorrect: false
   - subtitle: What You'll Learn Next
     description: Continue building your Swift skills, learn some critical concepts, build more complex apps and express more complex logic with your Swift code.
