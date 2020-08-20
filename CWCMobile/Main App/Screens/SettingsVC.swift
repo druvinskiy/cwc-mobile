@@ -41,40 +41,43 @@ class SettingsVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let setting = sections[indexPath.section].setting(at: indexPath.row)
         
-        if let setting = setting as? GeneralItem {
-            switch setting {
-            case .showOnboarding:
-                coordinator?.replayWalkthroughPressed()
-            case .courses(let cellModel):
-                cellModel.openPage()
-            case .showSwipeMessage:
-                break
-            case .showApps:
-
-                coordinator?.browseAppsPressed()
-            }
+        if let setting = setting as? GeneralItem { generalSettingTapped(setting: setting) }
+        if let setting = setting as? SocialItem { socialSettingTapped(setting: setting) }
+        if let setting = setting as? ProfileItem { profileSettingTapped(setting: setting) }
+    }
+    
+    fileprivate func generalSettingTapped(setting: GeneralItem) {
+        switch setting {
+        case .showOnboarding:
+            coordinator?.replayWalkthroughPressed()
+        case .courses(let cellModel):
+            cellModel.openPage()
+        case .showSwipeMessage:
+            break
+        case .showApps:
+            coordinator?.browseAppsPressed()
         }
-        
-        if let setting = setting as? SocialItem {
-            switch setting {
-            case .twitter(let cellModel),
-                 .youtube(let cellModel),
-                 .instagram(let cellModel),
-                 .facebook(let cellModel):
-                
-                cellModel.openPage()
-            }
+    }
+    
+    fileprivate func socialSettingTapped(setting: SocialItem) {
+        switch setting {
+        case .twitter(let cellModel),
+             .youtube(let cellModel),
+             .instagram(let cellModel),
+             .facebook(let cellModel):
+            
+            cellModel.openPage()
         }
-        
-        if let setting = setting as? ProfileItem {
-            switch setting {
-            case .profile1:
-                break
-            case .profile2:
-                break
-            case .profile3:
-                break
-            }
+    }
+    
+    fileprivate func profileSettingTapped(setting: ProfileItem) {
+        switch setting {
+        case .profile1:
+            break
+        case .profile2:
+            break
+        case .profile3:
+            break
         }
     }
     

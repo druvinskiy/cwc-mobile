@@ -12,11 +12,11 @@ import AVKit
 class DayDetailCoordinator: Coordinator {
     weak var parentCoordinator: MainCoordinator?
     var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
+    var navigationController: CWCNavigationController
     
     var day: Day
 
-    init(navigationController: UINavigationController, day: Day) {
+    init(navigationController: CWCNavigationController, day: Day) {
         self.navigationController = navigationController
         self.day = day
     }

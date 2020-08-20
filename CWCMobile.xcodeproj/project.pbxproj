@@ -29,6 +29,7 @@
 		B82CA93B24EDCE6100FAF60D /* ColorAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93A24EDCE6100FAF60D /* ColorAppCell.swift */; };
 		B82CA93D24EDCE8C00FAF60D /* ImageAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93C24EDCE8C00FAF60D /* ImageAppCell.swift */; };
 		B82CA93F24EDCF5400FAF60D /* AppsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA93E24EDCF5400FAF60D /* AppsCoordinator.swift */; };
+		B82CA94124EDE37900FAF60D /* CWCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CA94024EDE37900FAF60D /* CWCNavigationController.swift */; };
 		B82CADEF2478C9260051C711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CADEE2478C9260051C711 /* AppDelegate.swift */; };
 		B82CADF12478C9260051C711 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CADF02478C9260051C711 /* SceneDelegate.swift */; };
 		B82CADF62478C9260051C711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82CADF42478C9260051C711 /* Main.storyboard */; };
@@ -158,6 +159,7 @@
 		B82CA93A24EDCE6100FAF60D /* ColorAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAppCell.swift; sourceTree = "<group>"; };
 		B82CA93C24EDCE8C00FAF60D /* ImageAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAppCell.swift; sourceTree = "<group>"; };
 		B82CA93E24EDCF5400FAF60D /* AppsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCoordinator.swift; sourceTree = "<group>"; };
+		B82CA94024EDE37900FAF60D /* CWCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWCNavigationController.swift; sourceTree = "<group>"; };
 		B82CADEB2478C9260051C711 /* CWCMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWCMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82CADEE2478C9260051C711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B82CADF02478C9260051C711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 				DB73A5FC24E7609F00FE9D28 /* AnswerResponsePopupVC.swift */,
 				B801777F24EB6B6C002B29AD /* DayProgressionVC.swift */,
 				B82CA92F24EDC9F000FAF60D /* AppsVC.swift */,
+				B82CA94024EDE37900FAF60D /* CWCNavigationController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -873,6 +876,7 @@
 			files = (
 				B8E2B0A6247B699F00605EC3 /* DayCell.swift in Sources */,
 				B8D393932485CEF400ED8646 /* LocalStorageService.swift in Sources */,
+				B82CA94124EDE37900FAF60D /* CWCNavigationController.swift in Sources */,
 				B82CADEF2478C9260051C711 /* AppDelegate.swift in Sources */,
 				B8B62EF224E35E8100645BCC /* String+Ext.swift in Sources */,
 				B87ECFAB24805DA2005E2356 /* FloatingContainerView.swift in Sources */,

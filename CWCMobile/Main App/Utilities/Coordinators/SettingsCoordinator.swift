@@ -11,11 +11,11 @@ import UIKit
 class SettingsCoordinator: Coordinator {
     weak var parentCoordinator: MainCoordinator?
     var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
-    var settingsNavigationController: UINavigationController!
+    var navigationController: CWCNavigationController
+    var settingsNavigationController: CWCNavigationController!
     let settingsVC = SettingsVC()
 
-    init(navigationController: UINavigationController) {
+    init(navigationController: CWCNavigationController) {
         self.navigationController = navigationController
     }
 
@@ -25,7 +25,7 @@ class SettingsCoordinator: Coordinator {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismiss))
         settingsVC.navigationItem.rightBarButtonItem = doneButton
         
-        settingsNavigationController = UINavigationController(rootViewController: settingsVC)
+        settingsNavigationController = CWCNavigationController(rootViewController: settingsVC)
         settingsNavigationController.navigationBar.prefersLargeTitles = true
         settingsNavigationController.modalPresentationStyle = .fullScreen
         UINavigationBar.appearance().tintColor = Theme.chrisBlue

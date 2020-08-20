@@ -11,7 +11,7 @@ import UIKit
 // swiftlint:disable all
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
-    var navigationController: UINavigationController { get set }
+    var navigationController: CWCNavigationController { get set }
 
     func start()
 }

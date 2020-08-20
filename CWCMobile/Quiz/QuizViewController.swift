@@ -34,7 +34,7 @@ class QuizViewController: SwipingAppController, QuizProtocol, UITableViewDataSou
         // Do any additional setup after loading the view, typically from a nib.
         
         //Set up result dialoge view controller
-        resultVC = storyboard?.instantiateViewController(withIdentifier: "ResultVC") as? ResultViewController
+        resultVC = ResultViewController.instantiate()
         resultVC?.delegate = self
         resultVC?.modalPresentationStyle = .overCurrentContext
         

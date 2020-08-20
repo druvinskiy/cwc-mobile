@@ -11,10 +11,10 @@ import SafariServices
 
 class MainCoordinator: NSObject, Coordinator {
     internal var childCoordinators = [Coordinator]()
-    internal var navigationController: UINavigationController
+    internal var navigationController: CWCNavigationController
     fileprivate lazy var daysVC = DaysVC(coordinator: self)
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: CWCNavigationController) {
         
         self.navigationController = navigationController
     }
@@ -94,6 +94,7 @@ class MainCoordinator: NSObject, Coordinator {
     
     fileprivate func displayApps() {
         navigationController.setNavigationBarHidden(false, animated: true)
+        navigationController.statusBarStyle = .lightContent
         daysVC.removeTransitionView()
     }
 }

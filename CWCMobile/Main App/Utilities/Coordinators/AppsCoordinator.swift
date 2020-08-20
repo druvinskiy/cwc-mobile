@@ -11,11 +11,11 @@ import UIKit
 class AppsCoordinator: Coordinator {
     weak var parentCoordinator: SettingsCoordinator?
     var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
+    var navigationController: CWCNavigationController
     fileprivate var specificAppVC = SwipingAppController()
     var appsVC: AppsVC!
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: CWCNavigationController) {
         self.navigationController = navigationController
     }
     
@@ -52,6 +52,7 @@ class AppsCoordinator: Coordinator {
     
     func didSwipeDown() {
         navigationController.setNavigationBarHidden(false, animated: false)
+        navigationController.navigationBar.prefersLargeTitles = true
         navigationController.popToViewController(appsVC, animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
             self?.navigationController.navigationBar.sizeToFit()
