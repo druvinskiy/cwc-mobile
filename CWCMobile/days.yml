@@ -30,13 +30,13 @@ days:
       - question: What file do we use to configure the screen that the user sees?
         answers:
           - text: Main.storyboard
-            feedback: Yes, Main.storyboard is the file in which the user interface is configured
+            feedback: Yes, Main.storyboard is the file in which the user interface is configured.
             isCorrect: true
           - text: View.swift
-            feedback: No, the correct answer is Main.storyboard
+            feedback: No, Main.storyboard is the file in which the user interface is configured.
             isCorrect: false
           - text: Storyboard.main
-            feedback: No, the correct answer is Main.storyboard
+            feedback: No, Main.storyboard is the file in which the user interface is configured.
             isCorrect: false
   - subtitle: All About Auto Layout
     description: "Jumping right in, you'll learn how to build layouts."
@@ -86,13 +86,13 @@ days:
       - question: What is a StackView?
         answers:
           - text: A term that describes when multiple elements are stacked on top of one another.
-            feedback: No, the correct answer is it is a term that describes when multiple elements are stacked on top of one another AND a user interface element that arranges other user interface elements inside of it in a stacked layout.
+            feedback: No, it is a user interface element that arranges other user interface elements inside of it in a stacked layout.
             isCorrect: false
           - text: A user interface element that arranges other user interface elements inside of it in a stacked layout.
-            feedback: No, the correct answer is it is a term that describes when multiple elements are stacked on top of one another AND a user interface element that arranges other user interface elements inside of it in a stacked layout.
+            feedback: Yes, it is a user interface element that arranges other user interface elements inside of it in a stacked layout.
             isCorrect: true
           - text: Both A and B
-            feedback: Yes, A term that describes when multiple elements are stacked on top of one another AND a user interface element that arranges other user interface elements inside of it in a stacked layout.
+            feedback: No, it is a user interface element that arranges other user interface elements inside of it in a stacked layout.
             isCorrect: false
       - question: What are the two types of StackViews in Xcode?
         answers:
@@ -142,7 +142,7 @@ days:
             feedback: No, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
             isCorrect: false
           - text: Both A & B
-            feedback: NO, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
+            feedback: No, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
             isCorrect: false
       - question: We add three of the same image to Xcode because
         answers:
@@ -175,13 +175,13 @@ days:
       - question: What’s the difference between a variable and a constant?
         answers:
           - text: We can't reassign data to a variable after the first assignment of data to it.
-            feedback: No, we can reassign data to a variable but we can't reassign data to a constant after the first assignment of data to it.
+            feedback: No, we can reassign data to a variable but we can't reassign data to a constant after the first assignment of data to it. A constant is immutable.
             isCorrect: false
           - text: We can't reassign data to a constant after the first assignment of data to it.
-            feedback: Yes, we can't reassign data to a constant after the first assignment of data to it whereas we can reassign data to a varaiable.
+            feedback: Yes, we can't reassign data to a constant after the first assignment of data to it whereas we can reassign data to a varaiable. A constant is immutable.
             isCorrect: true
           - text: A constant must initially be assigned data when it's declared.
-            feedback: THIS ANSWER OPTION NEEDS TO BE RE-EXAMINED
+            feedback: No, we can't reassign data to a constant after the first assignment of data to it whereas we can reassign data to a varaiable. A constant is immutable.
             isCorrect: false
       - question: What happens when you don’t specify a data type for your variable when you declare it?
         answers:
@@ -217,7 +217,7 @@ days:
             feedback: Yes, declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
             isCorrect: true
           - text: There is no difference.
-            feedback: No, declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
+            feedback: No, there is a difference. Declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
             isCorrect: false
           - text: Declaring a function is the same as declaring a variable. Calling a function is the same as declaring a constant.
             feedback: No, declaring a function is writing the code that you want to be executed when the function is called. Calling a function is running the code that is inside of the function.
@@ -225,10 +225,10 @@ days:
       - question: Variables declared in a function won’t exist outside of the function. This is called variable scope. True or false?
         answers:
           - text: "True"
-            feedback: Yes, variables declared in a function won’t exist outside of the function.  This is known as variable scope.  A variable defined at the class level is available to all functions within that class.
+            feedback: "Yes, variables declared in a function won’t exist outside of the function.  This is known as variable scope.\n\nA variable defined at the class level is available to all functions within that class."
             isCorrect: true
           - text: "False"
-            feedback: No, variables declared in a function do not exist outside of the function due to variable scope.
+            feedback: "No, variables declared in a function do not exist outside of the function due to variable scope.\n\nA variable defined at the class level is available to all functions within that class."
             isCorrect: false
   - subtitle: Learn Swift Basics (Part 3)
     description: Finally, we put it all together and I'll tell you how Swift code plays a part in your app.
@@ -278,35 +278,35 @@ days:
       - question: What is the difference between an IBOutlet property and an IBAction method? Select the most accurate statement below.
         answers:
           - text: An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it.
-            feedback: Both are correct. An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it and an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
+            feedback: No, an IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it AND an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
             isCorrect: false
           - text: An IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
-            feedback: Both are correct. An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it and an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
+            feedback: No, IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered AND an IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it.
             isCorrect: false
           - text: Both A & B
-            feedback: Yes, both are correct. Both are correct. An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it and an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
+            feedback: Yes, both are correct. An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it AND an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
             isCorrect: true
       - question: What is the preferred way to fix a typo in an IBOutlet property to avoid our app crashing?
         answers:
           - text: Fix the typo directly in the ViewController and rerun the app.
-            feedback: No, you must break the connection, delete the property in the ViewController, and redo the connection.  Alternatively, you can Refactor > Rename a connection and that will correct the entry in both the swift file and the storyboard.
+            feedback: "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard."
             isCorrect: false
           - text: Break the connection, delete the property in the ViewController, and redo the connection.
-            feedback: Yes, you must break the connection, delete the property in the ViewController, and redo the connection.  Alternatively, you can Refactor > Rename a connection and that will correct the entry in both the swift file and the storyboard.
+            feedback: "Yes, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard."
             isCorrect: true
           - text: Nicely ask Xcode to correct the typo.
-            feedback: No, you must break the connection, delete the property in the ViewController, and redo the connection.  Alternatively, you can Refactor > Rename a connection and that will correct the entry in both the swift file and the storyboard.
+            feedback: "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard."
             isCorrect: false
       - question: Where should you look for the reason for an app crash in Xcode?
         answers:
           - text: At the top of the debug console.
-            feedback: Yes, you should look at the top of the debug console.
+            feedback: "Yes, you should look at the top of the debug console.\n\nIn the event of a crash, the debug console will contain a lot of information but the important details to help you identfy the problem are generally at the top."
             isCorrect: true
           - text: At the bottom of the debug console.
-            feedback: No, you should look at the top of the debug console.
+            feedback: "No, you should look at the top of the debug console.\n\nIn the event of a crash, the debug console will contain a lot of information but the important details to help you identfy the problem are generally at the top."
             isCorrect: false
           - text: In the Assistant Editor.
-            feedback: No, you should look at the top of the debug console.
+            feedback: "No, you should look at the top of the debug console.\n\nIn the event of a crash, the debug console will contain a lot of information but the important details to help you identfy the problem are generally at the top."
             isCorrect: false
   - subtitle: Handling User Interaction
     description: Learn how to capture and handle taps from the user.
@@ -317,13 +317,13 @@ days:
       - question: We created IBOutlets for our leftImageView and our rightImageView because
         answers:
           - text: we need to be able to access the image views both in the storyboard and in our code.
-            feedback: Yes, we need to be able to change both imageViews to show the newly selectes cards each time the user deals.
+            feedback: Yes, we need to be able to change both imageViews to show the newly selected cards each time the user taps the deal button.
             isCorrect: true
           - text: that's the only way to access them.
-            feedback: No, we need to be able to change both imageViews to show the newly selected cards each time the user deals.
+            feedback: No, we need to be able to change both imageViews to show the newly selected cards each time the user taps the deal button.
             isCorrect: false
           - text: Xcode requires that we create IBOutlets for our elements.
-            feedback: No, we need to be able to change both imageViews to show the newly selected cards each time the user deals.
+            feedback: No, we need to be able to change both imageViews to show the newly selected cards each time the user taps the deal button.
             isCorrect: false
       - question: How do we generate a random number in Swift?
         answers:
@@ -339,13 +339,13 @@ days:
       - question: What property do we use to change the image of a UIImageView?
         answers:
           - text: image
-            feedback: Yes, we change the image by using the assignment - imageView.image = newUIImage
+            feedback: "Yes, we change the image by using the assignment:\nimageView.image = newUIImage"
             isCorrect: true
           - text: photo
-            feedback: No, we change the image by using the assignment - imageView.image = newUIImage
+            feedback: "No, we change the image by using the assignment:\nimageView.image = newUIImage"
             isCorrect: false
           - text: String
-            feedback: No, we change the image by using the assignment - imageView.image = newUIImage
+            feedback: "No, we change the image by using the assignment:\nimageView.image = newUIImage"
             isCorrect: false
   - subtitle: Writing The Logic
     description: Learn how to write code that THINKS!
@@ -356,13 +356,13 @@ days:
       - question: What happens if two conditions in an if statement are true?
         answers:
           - text: Xcode will execute the relevant code for both conditions.
-            feedback: No, Xcode will execute the code relevant to the first true condition.
+            feedback: No, Xcode will execute the code relevant to the first true condition and ignore the other.
             isCorrect: false
           - text: Xcode will completely ignore your if statement, and no code will be executed.
-            feedback: No, Xcode will execute the code relevant to the first true condition.
+            feedback: No, Xcode will execute the code relevant to the first true condition and ignore the other.
             isCorrect: false
           - text: Xcode will execute the code relevant to the first true condition.
-            feedback: Yes, Xcode will execute the code relevant to the first true condition.
+            feedback: Yes, Xcode will execute the code relevant to the first true condition and ignore the other.
             isCorrect: true
       - question: What is the difference between = and ==?
         answers:
@@ -378,10 +378,10 @@ days:
       - question: What symbol do we use to check if two values are not equal?
         answers:
           - text: "!="
-            feedback: "Yes, != is used to check if two values are not equal.  The ! means NOT"
+            feedback: "Yes, != is used to check if two values are not equal.  The '!' means NOT"
             isCorrect: true
           - text: ==
-            feedback: "No, != is used to check if two values are not equal.  The ! means NOT"
+            feedback: "No, != is used to check if two values are not equal.  The '!' means NOT"
             isCorrect: false
           - text: ===
             feedback: "No, != is used to check if two values are not equal.  The ! means NOT"
@@ -410,36 +410,36 @@ days:
     questions:
       - question: In Swift, subclassing lets us
         answers:
-          - text: create a new class based off of an existing class.
-            feedback: Feedback
+          - text: create a new class based on an existing class.
+            feedback: Yes, subclassing lets us create a new class based on an existing class.
             isCorrect: true
           - text: duplicate code throughout our entire Xcode project.
-            feedback: Feedback
+            feedback: No, subclassing lets us create a new class based on an existing class.
             isCorrect: false
           - text: ask Xcode to write all of our classes for us.
-            feedback: Feedback
+            feedback: No, subclassing lets us create a new class based on an existing class.
             isCorrect: false
       - question: In Swift, inheritance allows the subclass to
         answers:
           - text: inherit the properties of the superclass.
-            feedback: Feedback
+            feedback: No, not only does inheritance allow the subclass to inherit the properties of the superclass, it also inherits the methods of the superclass.
             isCorrect: false
           - text: inherit the methods of the superclass.
-            feedback: Feedback
+            feedback: No, not only does inheritance allow the subclass to inherit the methods of the superclass, it also inherits the properties of the superclass.
             isCorrect: false
           - text: Both A & B
-            feedback: Feedback
+            feedback: Yes, inheritance allows the subclass to inherit the properties and methods of the superclass.
             isCorrect: true
       - question: What keyword do we use to call the parent's version of an overridden method?
         answers:
           - text: parent
-            feedback: Feedback
+            feedback: No, the keyword we use to call the parent's version of an overridden method is 'super'.
             isCorrect: false
           - text: override
-            feedback: Feedback
+            feedback: No, the keyword we use to call the parent's version of an overridden method is 'super'.
             isCorrect: false
           - text: super
-            feedback: Feedback
+            feedback: Yes, the keyword we use to call the parent's version of an overridden method is 'super'.
             isCorrect: true
   - subtitle: Arrays
     description: Learn how to work with collections of data by using an Array!
@@ -450,32 +450,32 @@ days:
       - question: If we wanted to access the first element in an array, what index would we use?
         answers:
           - text: "0"
-            feedback: Feedback
+            feedback: Yes, if we wanted to access the first element in an array, we would use index 0.
             isCorrect: true
           - text: "1"
-            feedback: Feedback
+            feedback: No, if we wanted to access the first element in an array, we would use index 0.  Index 1 is the second element.
             isCorrect: false
           - text: "2"
-            feedback: Feedback
+            feedback: No, if we wanted to access the first element in an array, we would use index 0.  Index 2 is the third element.
             isCorrect: false
       - question: "Choose the best answer to complete the following sentence: An array is one of the three ________ in Swift."
         answers:
           - text: collection types
-            feedback: Feedback
+            feedback: Yes, an array is one of the three collection types in Swift.
             isCorrect: true
           - text: variables
-            feedback: Feedback
+            feedback: No, an array is one of the three collection types in Swift.
             isCorrect: false
           - text: data types
-            feedback: Feedback
+            feedback: No, an array is one of the three collection types in Swift.
             isCorrect: false
       - question: An array is ideal for data where order matters. True or false?
         answers:
           - text: "True"
-            feedback: Feedback
+            feedback: Yes, an array is ideal for data where order matters.
             isCorrect: true
           - text: "False"
-            feedback: Feedback
+            feedback: No, an array is ideal for data where order matters.
             isCorrect: false
   - subtitle: Optionals
     description: Think of optionals simply as variables that might contain nil. The only hard part is remembering all of the syntax around optionals.
@@ -486,29 +486,29 @@ days:
       - question: What is the keyword that means “nothing” or “empty” in Swift?
         answers:
           - text: Nil
-            feedback: Feedback
+            feedback: Yes, the keyword that means “nothing” or “empty” in Swift is nil.
             isCorrect: true
           - text: "Null"
-            feedback: Feedback
+            feedback: No, the keyword that means “nothing” or “empty” in Swift is nil.
             isCorrect: false
           - text: Na
-            feedback: Feedback
+            feedback: No, the keyword that means “nothing” or “empty” in Swift is nil.
             isCorrect: false
       - question: Any variable/constant can be made an optional by adding “?” beside the data type when you declare it. True or false?
         answers:
           - text: "True"
-            feedback: Feedback
+            feedback: Yes, any variable/constant can be made an optional by adding “?” beside the data type when you declare it.
             isCorrect: true
           - text: "False"
-            feedback: Feedback
+            feedback: No, any variable/constant can be made an optional by adding “?” beside the data type when you declare it.
             isCorrect: false
       - question: You must unwrap an implicitly unwrapped optional variable/constant by using “!” before you can access it. True or false?
         answers:
           - text: "True"
-            feedback: Feedback
+            feedback: No, you do not have to unwrap an implicitly unwrapped optional variable/constant by using “!” before you can access it.
             isCorrect: false
           - text: "False"
-            feedback: Feedback
+            feedback: Yes, you do not have to unwrap an implicitly unwrapped optional variable/constant by using “!” before you can access it.
             isCorrect: true
   - subtitle: Dictionaries
     description: You've learned about Arrays. Dictionaries are another often used and highly useful tool to keep track of collections of data!
@@ -519,29 +519,29 @@ days:
       - question: A dictionary is ideal for data where order matters. True or false?
         answers:
           - text: "True"
-            feedback: Feedback
+            feedback: "No, a dictionary is ideal for data where order does not matter.  It uses 'key: value' pairs where the key must be unique but the data can be randomly ordered."
             isCorrect: false
           - text: "False"
-            feedback: Feedback
+            feedback: "Yes, a dictionary is ideal for data where order does not matter.  It uses 'key: value' pairs where the key must be unique but the data can be randomly ordered."
             isCorrect: true
       - question: What happens if we try to access a value in a dictionary using a key that does not exist in our dictionary?
         answers:
           - text: A dictionary always gives us back an optional value, so our app will crash if we try to use it.
-            feedback: Feedback
+            feedback: No, a dictionary always gives us back an optional value, so we can check to see if it's nil before unwrapping and using it.
             isCorrect: false
           - text: A dictionary always forces us to use keys that exist, so our program will not run if the key doesn't exist.
-            feedback: Feedback
+            feedback: No, a dictionary always gives us back an optional value, so we can check to see if it's nil before unwrapping and using it.
             isCorrect: false
           - text: A dictionary always gives us back an optional value, so we can check to see if it's nil before unwrapping and using it.
-            feedback: Feedback
+            feedback: Yes, a dictionary always gives us back an optional value, so we can check to see if it's nil before unwrapping and using it.
             isCorrect: true
       - question: We can use optional binding to access values in a dictionary. True or false?
         answers:
           - text: "True"
-            feedback: Feedback
+            feedback: Yes, we can use optional binding to access values in a dictionary.
             isCorrect: true
           - text: "False"
-            feedback: Feedback
+            feedback: No, we can use optional binding to access values in a dictionary.
             isCorrect: false
   - subtitle: Loops
     description: Loops come in handy to let you go through each item in the collection and execute some code for each!
@@ -552,32 +552,32 @@ days:
       - question: Which loop will repeat for a finite number of times?
         answers:
           - text: Repeat-While Loop
-            feedback: Feedback
+            feedback: No, a Repeat-While loop will repeat at least once and any number of times under control of the conditional clause.
             isCorrect: false
           - text: While Loop
-            feedback: Feedback
+            feedback: No, a While loop will repeat between 0 and any number of times under control of the conditional clause.
             isCorrect: false
           - text: For-In Loop
-            feedback: Feedback
+            feedback: Yes, a For-In Loop will repeat for a finite number of times.  
             isCorrect: true
       - question: A loop is used to increase the amount of duplicated code in our projects. True or false?
         answers:
           - text: "True"
-            feedback: Feedback
+            feedback: "No, a loop is used to DECREASE the amount of duplicated code in our projects.\n\nIn fact it is used to perform repetitive operations which result in less code."
             isCorrect: false
           - text: "False"
-            feedback: Feedback
+            feedback: "Yes, a loop is used to DECREASE the amount of duplicated code in our projects.\n\nIn fact it is used to perform repetitive operations which result in less code."
             isCorrect: true
       - question: Which collection types are loops most commonly used with?
         answers:
           - text: Arrays & Dictionaries
-            feedback: Feedback
+            feedback: Yes, Arrays & Dictionaries are collection types where loops are most commonly used.
             isCorrect: true
           - text: Strings & Ints
-            feedback: Feedback
+            feedback: No, Arrays & Dictionaries are collection types where loops are most commonly used.
             isCorrect: false
           - text: Only dictionaries
-            feedback: Feedback
+            feedback: No, Arrays & Dictionaries are collection types where loops are most commonly used.
             isCorrect: false
   - subtitle: "Previewing What You'll Build"
     description: In this lesson, I'll show you the app you'll build as well as all of the new skills you'll learn!
@@ -598,32 +598,32 @@ days:
       - question: What do the letters MVC stand for?
         answers:
           - text: Model ViewController Class
-            feedback: Feedback
+            feedback: No, the letters MVC stand for 'Model View Controller'.
             isCorrect: false
           - text: Model View Controller
-            feedback: Feedback
+            feedback: Yes, the letters MVC stand for 'Model View Controller'.
             isCorrect: true
           - text: Method View Controller
-            feedback: Feedback
+            feedback: No, the letters MVC stand for 'Model View Controller'.
             isCorrect: false
       - question: In the MVC design pattern, which of these is NOT the responsibility of the View?
         answers:
           - text: Display the user interface and data.
-            feedback: Feedback
+            feedback: No, the View IS responsible for displaying the user interface and data.
             isCorrect: false
           - text: Detect events from the user.
-            feedback: Feedback
+            feedback: No, the View IS responsible for detecting events from the user.
             isCorrect: false
           - text: Manage the data in our app.
-            feedback: Feedback
+            feedback: "Yes, the View is not responsible for managing the data in our Apps.\n\nManaging data is the responsibility of the Model."
             isCorrect: true
       - question: In the MVC design pattern, the View should talk directly to the Model. True or false?
         answers:
           - text: "True"
-            feedback: Feedback
+            feedback: "No, in the MVC design pattern, the View should NOT talk directly to the Model.\n\nThe View communicates to the Model through the ViewController."
             isCorrect: false
           - text: "False"
-            feedback: Feedback
+            feedback: "Yes, in the MVC design pattern, the View should NOT talk directly to the Model.\n\nThe View communicates to the Model through the ViewController."
             isCorrect: true
   - subtitle: Project Setup
     description: Here we create the Xcode project, including setting the orientation for the app and setting up some of the user interface elements!
@@ -639,36 +639,36 @@ days:
     questions:
       - question: What are we going to do with our custom Card class?
         answers:
-          - text: Create Card objects from the Card class?
-            feedback: Feedback
+          - text: Create Card objects from the Card class.
+            feedback: Yes, we are going to create Card objects from the Card class.
             isCorrect: true
           - text: Store the Card class in an array.
-            feedback: Feedback
+            feedback: No, we are going to create Card objects from the Card class.
             isCorrect: false
           - text: Use the Card class to create Strings.
-            feedback: Feedback
+            feedback: No, we are going to create Card objects from the Card class.
             isCorrect: false
       - question: Thinking back to the MVC design pattern, is the Card class a Model, View, or Controller?
         answers:
           - text: Model
-            feedback: Feedback
+            feedback: Yes, the Card class a Model where the data is stored or generated.
             isCorrect: true
           - text: View
-            feedback: Feedback
+            feedback: No, the Card class a Model where the data is stored or generated.
             isCorrect: false
           - text: Controller
-            feedback: Feedback
+            feedback: No, the Card class a Model where the data is stored or generated.
             isCorrect: false
       - question: Thinking back to the MVC design pattern, is the CardCollectionViewCell class a Model, View, or Controller?
         answers:
           - text: Model
-            feedback: Feedback
+            feedback: No, the CardCollectionViewCell class is a View.
             isCorrect: false
           - text: View
-            feedback: Feedback
+            feedback: Yes, the CardCollectionViewCell class is a View.
             isCorrect: true
           - text: Controller
-            feedback: Feedback
+            feedback: No, the CardCollectionViewCell class is a View.
             isCorrect: false
   - subtitle: Protocols & Delegates
     description: The protocol and delegate pattern is used by many user interface elements in UIKit to communicate with the view controller.
@@ -679,32 +679,32 @@ days:
      - question: What is a protocol?
        answers:
           - text: A predefined set of methods and parameters that will be used for two parties to communicate.
-            feedback: Feedback
+            feedback: No, not only is a protocol is both a predefined set of methods and parameters that will be used for two parties to communicate but it is also a way for one class to communicate with another class.
             isCorrect: false
           - text: A way for one class to communicate with another class.
-            feedback: Feedback
+            feedback:  No, not only is a protocol a way for one class to communicate with another class but it is also a predefined set of methods and parameters that will be used for two parties to communicate.
             isCorrect: false
           - text: Both A & B
-            feedback: Feedback
+            feedback: Yes, a protocol is both a predefined set of methods and parameters that will be used for two parties to communicate.  It is also a way for one class to communicate with another class.
             isCorrect: true
      - question: What is a delegate?
        answers:
           - text: An object that conforms to a protocol by implementing the methods as described by the protocol.
-            feedback: Feedback
+            feedback: Yes, a 'delegate' is an object that conforms to a protocol by implementing the methods as described by the protocol.
             isCorrect: true
           - text: An object that has a protocol.
-            feedback: Feedback
+            feedback: No, a 'delegate' is an object that conforms to a protocol by implementing the methods as described by the protocol.
             isCorrect: false
           - text: Both A & B
-            feedback: Feedback
+            feedback: No, a 'delegate' is an object that conforms to a protocol by implementing the methods as described by the protocol.
             isCorrect: false
      - question: A class has to know and care what class conforms to its delegate. True or false?
        answers:
           - text: "True"
-            feedback: Feedback
+            feedback: No, a class does NOT have to know NOR care what class conforms to its delegate. All the class with the delegate knows about is that the functions in the protocol are implemented.
             isCorrect: false
           - text: "False"
-            feedback: Feedback
+            feedback: Yes, a class does NOT have to know NOR care what class conforms to its delegate.  All the class with the delegate knows about is that the functions in the protocol are implemented.
             isCorrect: true 
   - subtitle: "Implementing Protocols & Delegates "
     description: Now we will implement what we learned in the previous lesson into the project we are working on.
@@ -721,35 +721,35 @@ days:
      - question: What is a naming convention?
        answers:
           - text: The only way to name your variables, methods, classes etc.
-            feedback: Feedback
+            feedback: No, a naming convention is a standard way to name variables, methods, classes etc that is agreed upon by you and your team.
             isCorrect: false
           - text: Apple’s way to name variables, methods, classes etc.
-            feedback: Feedback
+            feedback: No, a naming convention is a standard way to name variables, methods, classes etc that is agreed upon by you and your team.
             isCorrect: false
           - text: A standard way to name variables, methods, classes etc that is agreed upon by you and your team.
-            feedback: Feedback
+            feedback: Yes, a naming convention is a standard way to name variables, methods, classes etc that is agreed upon by you and your team.
             isCorrect: true
      - question: According to best practice, what should each word in a class name start with?
        answers:
           - text: A capital letter.
-            feedback: Feedback
+            feedback: Yes, according to best practice, each word in a class name should start with a capital letter.
             isCorrect: true
           - text: A lowercase letter.
-            feedback: Feedback
+            feedback: No, according to best practice, each word in a class name should start with a capital letter.
             isCorrect: false
           - text: It doesn't matter.
-            feedback: Feedback
+            feedback: No, according to best practice, each word in a class name should start with a capital letter.
             isCorrect: false
      - question: What is the preferred structure for naming methods and functions?
        answers:
           - text: verbNoun
-            feedback: Feedback
+            feedback: "Yes, the preferred structure for naming methods and functions is verbNoun.\n\nFor example getCards() - 'get' being the verb and 'Cards' being the noun."
             isCorrect: true
           - text: nounVerb
-            feedback: Feedback
+            feedback: "No, the preferred structure for naming methods and functions is verbNoun.\n\nFor example getCards() - 'get' being the verb and 'Cards' being the noun."
             isCorrect: false
           - text: noun
-            feedback: Feedback
+            feedback: "No, the preferred structure for naming methods and functions is verbNoun.\n\nFor example getCards() - 'get' being the verb and 'Cards' being the noun."
             isCorrect: false
   - subtitle: Debugging
     description: Xcode gives you many tools to figure out what's wrong with your project and this lesson will teach you how to use them!
@@ -760,35 +760,35 @@ days:
       - question: What is logging?
         answers:
           - text: A debugging technique where you output information to the console area.
-            feedback: Feedback
+            feedback: Yes, logging is a debugging technique where you output information to the console area.
             isCorrect: true
           - text: A debugging technique where you pause the execution of code.
-            feedback: Feedback
+            feedback: No, logging is a debugging technique where you output information to the console area.
             isCorrect: false
           - text: A debugging technique where you walk through the code line by line.
-            feedback: Feedback
+            feedback: No, logging is a debugging technique where you output information to the console area.
             isCorrect: false
       - question: How do you log something?
         answers:
           - text: Using the print function.
-            feedback: Feedback
+            feedback: Yes, you log something by making use of the print function.
             isCorrect: true
           - text: Using the log function.
-            feedback: Feedback
+            feedback: No, you log something by making use of the print function.
             isCorrect: false
           - text: Using the debug function.
-            feedback: Feedback
+            feedback: No, you log something by making use of the print function.
             isCorrect: false
       - question: Which of these does using a breakpoint NOT allow you to do?
         answers:
           - text: Pause execution at a line of code.
-            feedback: Feedback
+            feedback: No, a breakpoint DOES allow you to pause execution at a line of code
             isCorrect: false
           - text: Output information to the console area.
-            feedback: Feedback
+            feedback: No, a breakpoint DOES allow you to Output information to the console area.
             isCorrect: false
           - text: Tell you exactly why your code isn't working and how to fix the problem.
-            feedback: Feedback
+            feedback: Yes, a breakpoint will NOT tell you exactly why your code isn't working and how to fix the problem.
             isCorrect: true
   - subtitle: Card Flipping
     description: By the end of this lesson, you'll be able to tap on a card to flip it over!
@@ -799,35 +799,35 @@ days:
       - question: What keyword do we use to cast an object into an object of a different type?
         answers:
           - text: cast
-            feedback: Feedback
+            feedback: "No, the keyword we use to cast an object into an object of a different type is 'as'.\n\nFor example: \nlet cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell casts 'cell' as a CardCollectionViewCell"
             isCorrect: false
           - text: is
-            feedback: Feedback
+            feedback: "No, the keyword we use to cast an object into an object of a different type is 'as'.\n\nFor example: \nlet cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell casts 'cell' as a CardCollectionViewCell"
             isCorrect: false
           - text: as
-            feedback: Feedback
+            feedback: "Yes, the keyword we use to cast an object into an object of a different type is 'as'.\n\nFor example: \nlet cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell casts 'cell' as a CardCollectionViewCell"
             isCorrect: true
       - question: The main difference between closures and regular functions is that
         answers:
-          - text: closures work life functions, but they are blocks of code without names.
-            feedback: Feedback
+          - text: closures work like functions, but they are blocks of code without names.
+            feedback: Yes, the main difference between closures and regular functions is that closures work like functions, but they are blocks of code without names.
             isCorrect: true
           - text: closures allow you to return a value, but functions do not.
-            feedback: Feedback
+            feedback: No, the main difference between closures and regular functions is that closures work like functions, but they are blocks of code without names.
             isCorrect: false
           - text: There is no difference.
-            feedback: Feedback
+            feedback: No, the main difference between closures and regular functions is that closures work like functions, but they are blocks of code without names.
             isCorrect: false
       - question: Which function does a collection view use to let its delegate know that the user tapped on one of its cells?
         answers:
           - text: didSelectCellAt
-            feedback: Feedback
+            feedback: No, the function a collection view uses to let its delegate know that the user tapped on one of its cells is 'didSelectItemAt'.
             isCorrect: false
           - text: didSelectItemAt
-            feedback: Feedback
+            feedback: Yes, the function a collection view uses to let its delegate know that the user tapped on one of its cells is 'didSelectItemAt'.
             isCorrect: true
           - text: didTapCellAt
-            feedback: Feedback
+            feedback: No, the function a collection view uses to let its delegate know that the user tapped on one of its cells is 'didSelectItemAt'.
             isCorrect: false
   - subtitle: Game Logic
     description: "In this lesson, you'll implement the logic for the game."
@@ -838,35 +838,35 @@ days:
       - question: Optional chaining allows us to
         answers:
           - text: run code only if our optional has a value.
-            feedback: Feedback
+            feedback: No, optional chaining allows us to force unwrap our optional.
             isCorrect: false
           - text: force unwrap our optional.
-            feedback: Feedback
+            feedback: Yes, optional chaining allows us to force unwrap our optional.
             isCorrect: true
           - text: ask the app to crash if a variable contains nil
-            feedback: Feedback
+            feedback: No, optional chaining allows us to force unwrap our optional.
             isCorrect: false
       - question: What function did we use to configure the state of our CardCollectionViewCells based on the properties of the Card that a cell represents?
         answers:
           - text: shouldDisplay
-            feedback: Feedback
+            feedback: No, the function we use to configure the state of our CardCollectionViewCells based on the properties of the Card that a cell represents is 'willDisplay'.
             isCorrect: false
           - text: hasDisplayed
-            feedback: Feedback
+            feedback: No, the function we use to configure the state of our CardCollectionViewCells based on the properties of the Card that a cell represents is 'willDisplay'.
             isCorrect: false
           - text: willDisplay
-            feedback: Feedback
+            feedback: Yes, the function we use to configure the state of our CardCollectionViewCells based on the properties of the Card that a cell represents is 'willDisplay'.
             isCorrect: true
       - question: Who is responsible for configuring the cells that a collection view is displaying?
         answers:
           - text: The collection view itself.
-            feedback: Feedback
+            feedback: No, the collection view delegate is responsible for configuring the cells that a collection view is displaying.
             isCorrect: false
           - text: The collection view's delegate.
-            feedback: Feedback
+            feedback: Yes, the collection view delegate is responsible for configuring the cells that a collection view is displaying.
             isCorrect: true
           - text: Both A & B
-            feedback: Feedback
+            feedback: No, the collection view delegate is responsible for configuring the cells that a collection view is displaying.
             isCorrect: false
   - subtitle: Win Condition
     description: In this lesson, you'll implement a countdown timer so that the player only has a short amount of time to win.
@@ -874,38 +874,38 @@ days:
       title: "The Card Game: Win Condition - Lesson 28"
       videoUrl: https://cdn.fs.teachablecdn.com/B86PfywGTQif5lRYuAK4
     questions:
-      - question: Selector is another name for
+      - question: Selector is another name for a
         answers:
           - text: method
-            feedback: Feedback
+            feedback: Yes, selector is another name for a 'method'.
             isCorrect: true
           - text: variable
-            feedback: Feedback
+            feedback: No, selector is another name for a 'method'.
             isCorrect: false
           - text: nil
-            feedback: Feedback
+            feedback: No, selector is another name for a 'method'.
             isCorrect: false
       - question: We need to use the @objc tag when we
         answers:
           - text: use a method as a selector.
-            feedback: Feedback
+            feedback: Yes, when we use a method as a selector we need to prefix the function name with @objc.
             isCorrect: true
           - text: write any function.
-            feedback: Feedback
+            feedback: No, when we use a method as a selector we need to prefix the function name with @objc.
             isCorrect: false
           - text: We never use the @objc tag.
-            feedback: Feedback
+            feedback: No, when we use a method as a selector we need to prefix the function name with @objc.
             isCorrect: false
       - question: A UIAlertController is
         answers:
           - text: a function
-            feedback: Feedback
+            feedback: No, a UIAlertController is one of the data types in Swift.
             isCorrect: false
           - text: an instance of a class
-            feedback: Feedback
+            feedback: No, a UIAlertController is one of the data types in Swift.
             isCorrect: false
           - text: one of the data types in Swift.
-            feedback: Feedback
+            feedback: Yes, a UIAlertController is one of the data types in Swift.
             isCorrect: true
   - subtitle: Sounds
     description: You'll learn how to include these sounds into your Xcode project and use the AVAudioPlayer class to play them!
@@ -916,33 +916,33 @@ days:
       - question: What is an app bundle?
         answers:
           - text: The package that gets deployed on the actual device.
-            feedback: Feedback
+            feedback: No, not only is an app bundle the package that gets deployed on the actual device but it is also the package that gets deployed to the App Store.
             isCorrect: false
           - text: The package that gets deployed to the App Store.
-            feedback: Feedback
+            feedback: No, not only is an app bundle the package that gets deployed to the App Store but it is also the package that gets deployed on the actual device.
             isCorrect: false
           - text: Both A & B
-            feedback: Feedback
+            feedback: Yes, an app bundle is both the package that gets deployed on the actual device and the package that gets deployed to the App Store.
             isCorrect: true
       - question: The AVAudioPlayer class allows us to
         answers:
           - text: play sounds in our app.
-            feedback: Feedback
+            feedback: Yes, the AVAudioPlayer class allows us to play sounds in our app.
             isCorrect: true
           - text: randomize cards.
-            feedback: Feedback
+            feedback: No, the AVAudioPlayer class allows us to play sounds in our app.
             isCorrect: false
           - text: deploy our app to the App Store.
-            feedback: Feedback
+            feedback: No, the AVAudioPlayer class allows us to play sounds in our app.
             isCorrect: false
       - question: The ability to have Xcode re-indent your code according to the default is found under the
         answers:
           - text: Product menu
-            feedback: Feedback
+            feedback: NO, the ability to have Xcode re-indent your code according to the default is found under the Editor menu.
             isCorrect: false
           - text: Editor menu
-            feedback: Feedback
+            feedback: Yes, the ability to have Xcode re-indent your code according to the default is found under the Editor menu.
             isCorrect: true
           - text: Xcode settings
-            feedback: Feedback
+            feedback: No, the ability to have Xcode re-indent your code according to the default is found under the Editor menu.
             isCorrect: false
