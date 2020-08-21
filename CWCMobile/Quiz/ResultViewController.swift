@@ -67,9 +67,9 @@ class ResultViewController: UIViewController, Storyboarded {
         dismissButton.setTitle(withAction, for: .normal)
         
         if withTitle == "Correct!" {
-            resultLabel.textColor = UIColor.green
+            resultLabel.textColor = UIColor.systemGreen
         } else {
-            resultLabel.textColor = UIColor.red
+            resultLabel.textColor = UIColor.systemRed
         }
         
         //Fade in the labels
