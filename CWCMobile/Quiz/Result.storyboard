@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -20,25 +20,25 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNz-PQ-ft5" userLabel="DialogView">
-                                <rect key="frame" x="40" y="100" width="295" height="467"/>
+                                <rect key="frame" x="40" y="80" width="295" height="507"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ng6-jQ-14o">
-                                        <rect key="frame" x="50" y="50" width="195" height="367"/>
+                                        <rect key="frame" x="50" y="50" width="195" height="407"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpU-SC-pkq">
-                                                <rect key="frame" x="64" y="0.0" width="67.5" height="122.5"/>
+                                                <rect key="frame" x="64" y="0.0" width="67.5" height="135.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGw-E9-yk8">
-                                                <rect key="frame" x="0.0" y="122.5" width="195" height="122"/>
+                                                <rect key="frame" x="0.0" y="135.5" width="195" height="136"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRv-KU-9t2">
-                                                <rect key="frame" x="0.0" y="244.5" width="195" height="122.5"/>
+                                                <rect key="frame" x="0.0" y="271.5" width="195" height="135.5"/>
                                                 <state key="normal" title="Next"/>
                                                 <connections>
                                                     <action selector="dismissTapped:" destination="FRt-PP-W1y" eventType="touchUpInside" id="iPf-Ip-a04"/>
@@ -66,8 +66,8 @@
                             <constraint firstItem="43i-gm-A6u" firstAttribute="top" secondItem="cHT-n3-hOf" secondAttribute="top" id="3mx-Fx-lkv"/>
                             <constraint firstAttribute="trailing" secondItem="43i-gm-A6u" secondAttribute="trailing" id="6xm-ak-Ych"/>
                             <constraint firstAttribute="bottom" secondItem="43i-gm-A6u" secondAttribute="bottom" id="GYQ-KO-8lm"/>
-                            <constraint firstItem="Gtt-1G-RYS" firstAttribute="bottom" secondItem="bNz-PQ-ft5" secondAttribute="bottom" constant="100" id="THT-xO-hCZ"/>
-                            <constraint firstItem="bNz-PQ-ft5" firstAttribute="top" secondItem="Gtt-1G-RYS" secondAttribute="top" constant="100" id="Vr1-0J-6xe"/>
+                            <constraint firstItem="Gtt-1G-RYS" firstAttribute="bottom" secondItem="bNz-PQ-ft5" secondAttribute="bottom" constant="80" id="THT-xO-hCZ"/>
+                            <constraint firstItem="bNz-PQ-ft5" firstAttribute="top" secondItem="Gtt-1G-RYS" secondAttribute="top" constant="80" id="Vr1-0J-6xe"/>
                             <constraint firstItem="43i-gm-A6u" firstAttribute="leading" secondItem="cHT-n3-hOf" secondAttribute="leading" id="oIT-GF-1Ij"/>
                             <constraint firstItem="bNz-PQ-ft5" firstAttribute="leading" secondItem="Gtt-1G-RYS" secondAttribute="leading" constant="40" id="qBJ-gg-7Ir"/>
                             <constraint firstItem="Gtt-1G-RYS" firstAttribute="trailing" secondItem="bNz-PQ-ft5" secondAttribute="trailing" constant="40" id="wAr-a3-S2Y"/>
