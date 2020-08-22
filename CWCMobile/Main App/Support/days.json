@@ -13,7 +13,7 @@
                "answers": [
                   {
                      "text": "XSwift",
-                     "feedback": "No, the correct answer is Xcode.",
+                     "feedback": "No, Xcode is Apple's Integrated Development Environment (IDE).",
                      "isCorrect": false
                   },
                   {
@@ -23,7 +23,7 @@
                   },
                   {
                      "text": "XApp",
-                     "feedback": "No, the correct answer is Xcode.",
+                     "feedback": "No, Xcode is Apple's Integrated Development Environment (IDE).",
                      "isCorrect": false
                   }
                ]
@@ -33,17 +33,17 @@
                "answers": [
                   {
                      "text": "Swift",
-                     "feedback": "Swift is the preferred programming language for Xcode projects.",
+                     "feedback": "Yes, Swift is the preferred programming language for Xcode projects.",
                      "isCorrect": true
                   },
                   {
                      "text": "Java",
-                     "feedback": "No, the correct answer is Swift.",
+                     "feedback": "No, Swift is the preferred programming language for Xcode projects.",
                      "isCorrect": false
                   },
                   {
                      "text": "Objective-C",
-                     "feedback": "Objective-C is no longer the preferred programming language for Xcode projects.",
+                     "feedback": "No, Swift is the preferred programming language for Xcode projects.",
                      "isCorrect": false
                   }
                ]

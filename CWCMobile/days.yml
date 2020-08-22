@@ -8,24 +8,24 @@ days:
       - question: What software do we use to develop iOS apps?
         answers:
           - text: XSwift
-            feedback: No, the correct answer is Xcode.
+            feedback: No, Xcode is Apple's Integrated Development Environment (IDE).
             isCorrect: false
           - text: Xcode
             feedback: Yes, Xcode is Apple's Integrated Development Environment (IDE).
             isCorrect: true
           - text: XApp
-            feedback: No, the correct answer is Xcode.
+            feedback: No, Xcode is Apple's Integrated Development Environment (IDE).
             isCorrect: false
       - question: What programming language are we learning in this course?
         answers:
           - text: Swift
-            feedback: Swift is the preferred programming language for Xcode projects.
+            feedback: Yes, Swift is the preferred programming language for Xcode projects.
             isCorrect: true
           - text: Java
-            feedback: No, the correct answer is Swift.
+            feedback: No, Swift is the preferred programming language for Xcode projects.
             isCorrect: false
           - text: Objective-C
-            feedback: Objective-C is no longer the preferred programming language for Xcode projects.
+            feedback: No, Swift is the preferred programming language for Xcode projects.
             isCorrect: false
       - question: What file do we use to configure the screen that the user sees?
         answers:
