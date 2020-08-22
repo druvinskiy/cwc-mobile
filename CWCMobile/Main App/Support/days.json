@@ -13,7 +13,7 @@
                "answers": [
                   {
                      "text": "XSwift",
-                     "feedback": "No, the correct answer is Xcode.",
+                     "feedback": "No, Xcode is Apple's Integrated Development Environment (IDE).",
                      "isCorrect": false
                   },
                   {
@@ -23,7 +23,7 @@
                   },
                   {
                      "text": "XApp",
-                     "feedback": "No, the correct answer is Xcode.",
+                     "feedback": "No, Xcode is Apple's Integrated Development Environment (IDE).",
                      "isCorrect": false
                   }
                ]
@@ -33,17 +33,17 @@
                "answers": [
                   {
                      "text": "Swift",
-                     "feedback": "Swift is the preferred programming language for Xcode projects.",
+                     "feedback": "Yes, Swift is the preferred programming language for Xcode projects.",
                      "isCorrect": true
                   },
                   {
                      "text": "Java",
-                     "feedback": "No, the correct answer is Swift.",
+                     "feedback": "No, Swift is the preferred programming language for Xcode projects.",
                      "isCorrect": false
                   },
                   {
                      "text": "Objective-C",
-                     "feedback": "Objective-C is no longer the preferred programming language for Xcode projects.",
+                     "feedback": "No, Swift is the preferred programming language for Xcode projects.",
                      "isCorrect": false
                   }
                ]
@@ -363,17 +363,17 @@
                "answers": [
                   {
                      "text": "A function is a mathematical operation performed on numbers.",
-                     "feedback": "No, a function is a block of code with a name that can be executed when called by name.",
+                     "feedback": "No, a function is a block of code with a name that can be executed when called by its name.",
                      "isCorrect": false
                   },
                   {
-                     "text": "A function is a block of code with a name that can be executed when called by name.",
-                     "feedback": "Yes, a function is a block of code with a name that can be executed when called by name.",
+                     "text": "A function is a block of code with a name that can be executed when called by its name.",
+                     "feedback": "Yes, a function is a block of code with a name that can be executed when called by its name.",
                      "isCorrect": true
                   },
                   {
                      "text": "A function is for storing values in a class.",
-                     "feedback": "No, a function is a block of code with a name that can be executed when called by name.",
+                     "feedback": "No, a function is a block of code with a name that can be executed when called by its name.",
                      "isCorrect": false
                   }
                ]
@@ -518,17 +518,17 @@
                "answers": [
                   {
                      "text": "Fix the typo directly in the ViewController and rerun the app.",
-                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
+                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the property name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
                      "isCorrect": false
                   },
                   {
                      "text": "Break the connection, delete the property in the ViewController, and redo the connection.",
-                     "feedback": "Yes, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
+                     "feedback": "Yes, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the property name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
                      "isCorrect": true
                   },
                   {
                      "text": "Nicely ask Xcode to correct the typo.",
-                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
+                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the property name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
                      "isCorrect": false
                   }
                ]
@@ -1021,17 +1021,17 @@
                "answers": [
                   {
                      "text": "Arrays & Dictionaries",
-                     "feedback": "Yes, Arrays & Dictionaries are collection types where loops are most commonly used.",
+                     "feedback": "Yes, loops are most commonly used to iterate over Arrays & Dictionaries.",
                      "isCorrect": true
                   },
                   {
                      "text": "Strings & Ints",
-                     "feedback": "No, Arrays & Dictionaries are collection types where loops are most commonly used.",
+                     "feedback": "No, loops are most commonly used to iterate over Arrays & Dictionaries.",
                      "isCorrect": false
                   },
                   {
                      "text": "Only dictionaries",
-                     "feedback": "No, Arrays & Dictionaries are collection types where loops are most commonly used.",
+                     "feedback": "No, loops are most commonly used to iterate over Arrays & Dictionaries.",
                      "isCorrect": false
                   }
                ]
@@ -1054,7 +1054,7 @@
       },
       {
          "subtitle": "Model View Controller",
-         "description": "Learn about a KEY design pattern that will help you write reusable and code that is easily maintained.",
+         "description": "Learn about a KEY design pattern that will help you write reusable code that is easily maintained.",
          "video": {
             "title": "The Card Game: The MVC Design Pattern - Lesson 19",
             "videoUrl": "https://cdn.fs.teachablecdn.com/Vi6vmyC0ThqlGsYb2Pn5"
@@ -1159,17 +1159,17 @@
                "answers": [
                   {
                      "text": "Model",
-                     "feedback": "Yes, the Card class a Model where the data is stored or generated.",
+                     "feedback": "Yes, the Card class is a Model where the data is stored or generated.",
                      "isCorrect": true
                   },
                   {
                      "text": "View",
-                     "feedback": "No, the Card class a Model where the data is stored or generated.",
+                     "feedback": "No, the Card class is a Model where the data is stored or generated.",
                      "isCorrect": false
                   },
                   {
                      "text": "Controller",
-                     "feedback": "No, the Card class a Model where the data is stored or generated.",
+                     "feedback": "No, the Card class is a Model where the data is stored or generated.",
                      "isCorrect": false
                   }
                ]
@@ -1283,17 +1283,17 @@
                "answers": [
                   {
                      "text": "The only way to name your variables, methods, classes etc.",
-                     "feedback": "No, a naming convention is a standard way to name variables, methods, classes etc that is agreed upon by you and your team.",
+                     "feedback": "No, a naming convention is a standard way to name variables, methods, classes etc, that is agreed upon by you and your team.",
                      "isCorrect": false
                   },
                   {
                      "text": "Apple’s way to name variables, methods, classes etc.",
-                     "feedback": "No, a naming convention is a standard way to name variables, methods, classes etc that is agreed upon by you and your team.",
+                     "feedback": "No, a naming convention is a standard way to name variables, methods, classes etc, that is agreed upon by you and your team.",
                      "isCorrect": false
                   },
                   {
                      "text": "A standard way to name variables, methods, classes etc that is agreed upon by you and your team.",
-                     "feedback": "Yes, a naming convention is a standard way to name variables, methods, classes etc that is agreed upon by you and your team.",
+                     "feedback": "Yes, a naming convention is a standard way to name variables, methods, classes etc, that is agreed upon by you and your team.",
                      "isCorrect": true
                   }
                ]
@@ -1583,17 +1583,17 @@
                "answers": [
                   {
                      "text": "use a method as a selector.",
-                     "feedback": "Yes, when we use a method as a selector we need to prefix the function name with @objc.",
+                     "feedback": "Yes, when we use a method as a selector, we need to prefix the function name with @objc.",
                      "isCorrect": true
                   },
                   {
                      "text": "write any function.",
-                     "feedback": "No, when we use a method as a selector we need to prefix the function name with @objc.",
+                     "feedback": "No, when we use a method as a selector, we need to prefix the function name with @objc.",
                      "isCorrect": false
                   },
                   {
                      "text": "We never use the @objc tag.",
-                     "feedback": "No, when we use a method as a selector we need to prefix the function name with @objc.",
+                     "feedback": "No, when we use a method as a selector, we need to prefix the function name with @objc.",
                      "isCorrect": false
                   }
                ]
@@ -1673,7 +1673,7 @@
                "answers": [
                   {
                      "text": "Product menu",
-                     "feedback": "NO, the ability to have Xcode re-indent your code according to the default is found under the Editor menu.",
+                     "feedback": "No, the ability to have Xcode re-indent your code according to the default is found under the Editor menu.",
                      "isCorrect": false
                   },
                   {
