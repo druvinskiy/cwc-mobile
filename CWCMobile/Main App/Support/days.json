@@ -518,17 +518,17 @@
                "answers": [
                   {
                      "text": "Fix the typo directly in the ViewController and rerun the app.",
-                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
+                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the property name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
                      "isCorrect": false
                   },
                   {
                      "text": "Break the connection, delete the property in the ViewController, and redo the connection.",
-                     "feedback": "Yes, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
+                     "feedback": "Yes, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the property name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
                      "isCorrect": true
                   },
                   {
                      "text": "Nicely ask Xcode to correct the typo.",
-                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the Outlet name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
+                     "feedback": "No, you must break the connection, delete the property in the ViewController, and redo the connection.\n\nAlternatively, you can right click the property name and select Refactor > Rename to rename a connection and that will correct the entry in both the swift file and the associated storyboard.",
                      "isCorrect": false
                   }
                ]
