@@ -23,9 +23,4 @@ class Day: Codable {
         self.questions = day.questions
         self.page = day.page
     }
-    
-    static func loadDays() -> [Day] {
-        let result = Bundle.main.decode("days.json") as DayData
-        return result.days.map({ Day(day: $0) })
-    }
 }

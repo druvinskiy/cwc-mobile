@@ -8,13 +8,15 @@
 
 import UIKit
 
-class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, DataLoader {
     
     weak var coordinator: MainCoordinator?
+    
     var appView = AppView()
     var transitionView = TransitionView()
+    var containerView: UIView! = UIView()
     
-    fileprivate let days = Day.loadDays()
+    fileprivate var days = [Day]()
     lazy var dataSource = DaysDataSource(days: days)
     
     init(coordinator: MainCoordinator?) {
@@ -66,6 +68,7 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     func removeTransitionView() {
         transitionView.removeFromSuperview()
+        getDays()
     }
     
     func setupTransitionView() {
@@ -101,4 +104,25 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     let multiplier: CGFloat = 0.47
+    
+    func getDays() {
+        let dayModel = DayModel()
+        dayModel.delegate = self
+        
+        showLoadingView(containerView: containerView)
+        dayModel.loadDays()
+    }
+}
+
+extension DaysVC: DayProtocol {
+    func daysRetrieved(days: [Day]) {
+        DispatchQueue.main.async {
+            self.dismissLoadingView(containerView: self.containerView)
+            self.containerView = nil
+            
+            self.days = days
+            self.dataSource.days = days
+            self.collectionView.reloadData()
+        }
+    }
 }

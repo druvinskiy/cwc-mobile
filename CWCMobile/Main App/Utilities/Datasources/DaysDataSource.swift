@@ -9,7 +9,7 @@
 import UIKit
 
 class DaysDataSource: NSObject, UICollectionViewDataSource {
-    let days: [Day]
+    var days: [Day]
     
     init(days: [Day]) {
         self.days = days
