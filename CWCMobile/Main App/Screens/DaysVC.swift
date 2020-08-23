@@ -109,6 +109,8 @@ class DaysVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, Da
         let dayModel = DayModel()
         dayModel.delegate = self
         
+        guard let containerView = containerView else { return }
+        
         showLoadingView(containerView: containerView)
         dayModel.loadDays()
     }
