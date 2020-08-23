@@ -9,23 +9,18 @@
 import Foundation
 
 struct DayDetailQuestion: Codable {
-    var question = ""
     private var answers = [Answer]()
+    private var shouldShuffle: Bool
+    
+    var question = ""
     
     var shuffledAnswers: [Answer] {
-        return answers.shuffled()
+        return shouldShuffle ? answers.shuffled() : answers
     }
     
-    init(question: String, answers: [Answer]) {
-        self.question = question
-        
-        guard let feedbackAnswer = answers.first(where: { $0.feedback != "" }) else { return }
-        let feedback = feedbackAnswer.feedback
-        
-        self.answers = answers.map {
-            let copy = $0
-            copy.feedback = feedback
-            return copy
-        }
+    init(question: DecodeQuestion) {
+        self.question = question.question
+        self.answers = question.answers
+        self.shouldShuffle = (question.preventShuffling != nil) ? false : true
     }
 }

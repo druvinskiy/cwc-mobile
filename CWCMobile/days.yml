@@ -84,6 +84,7 @@ days:
       videoUrl: https://www.filepicker.io/api/file/vdGXXl2RYanrVDAnFfU3
     questions:
       - question: What is a StackView?
+        preventShuffling: true
         answers:
           - text: A term that describes when multiple elements are stacked on top of one another.
             feedback: No, it is a user interface element that arranges other user interface elements inside of it in a stacked layout.
@@ -134,7 +135,7 @@ days:
             feedback: No, we add images to our project by placing them in Assets.xcassets which is the Assets catalogue.
             isCorrect: false
       - question: What are size classes?
-        shouldShuffle: false
+        preventShuffling: true
         answers:
           - text: Size classes are categories of screen sizes that you can target your Auto Layout constraints against.
             feedback: Yes, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
@@ -277,7 +278,7 @@ days:
       videoUrl: https://www.filepicker.io/api/file/bJtJQinTQdCyEsc9nSBx
     questions:
       - question: What is the difference between an IBOutlet property and an IBAction method? Select the most accurate statement below.
-        shouldShuffle: false
+        preventShuffling: true
         answers:
           - text: An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it.
             feedback: No, an IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it AND an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
@@ -422,7 +423,7 @@ days:
             feedback: No, subclassing lets us create a new class based on an existing class.
             isCorrect: false
       - question: In Swift, inheritance allows the subclass to
-        shouldShuffle: false
+        preventShuffling: true
         answers:
           - text: inherit the properties of the superclass.
             feedback: No, not only does inheritance allow the subclass to inherit the properties of the superclass, it also inherits the methods of the superclass.
@@ -680,7 +681,7 @@ days:
       videoUrl: https://cdn.fs.teachablecdn.com/voNv4n5oRcuEmAMxO429
     questions:
       - question: What is a protocol?
-        shouldShuffle: false
+        preventShuffling: true
         answers:
           - text: A predefined set of methods and parameters that will be used for two parties to communicate.
             feedback: No, not only is a protocol is both a predefined set of methods and parameters that will be used for two parties to communicate but it is also a way for one class to communicate with another class.
@@ -692,7 +693,7 @@ days:
             feedback: Yes, a protocol is both a predefined set of methods and parameters that will be used for two parties to communicate.  It is also a way for one class to communicate with another class.
             isCorrect: true
       - question: What is a delegate?
-        shouldShuffle: false
+        preventShuffling: true
         answers:
           - text: An object that conforms to a protocol by implementing the methods as described by the protocol.
             feedback: Yes, a 'delegate' is an object that conforms to a protocol by implementing the methods as described by the protocol.
@@ -863,7 +864,7 @@ days:
             feedback: Yes, the function we use to configure the state of our CardCollectionViewCells based on the properties of the Card that a cell represents is 'willDisplay'.
             isCorrect: true
       - question: Who is responsible for configuring the cells that a collection view is displaying?
-        shouldShuffle: false
+        preventShuffling: true
         answers:
           - text: The collection view itself.
             feedback: No, the collection view delegate is responsible for configuring the cells that a collection view is displaying.
@@ -920,7 +921,7 @@ days:
       videoUrl: https://cdn.fs.teachablecdn.com/idYkK8asQGeVrpMuo3rJ
     questions:
       - question: What is an app bundle?
-        shouldShuffle: false
+        preventShuffling: true
         answers:
           - text: The package that gets deployed on the actual device.
             feedback: No, not only is an app bundle the package that gets deployed on the actual device but it is also the package that gets deployed to the App Store.

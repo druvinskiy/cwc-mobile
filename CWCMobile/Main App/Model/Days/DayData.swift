@@ -22,11 +22,6 @@ class DecodeDay: Codable {
 
 struct DecodeQuestion: Codable {
     let question: String
-    let shouldShuffle: Bool?
-    
-    private var answers = [Answer]()
-    
-    var shuffledAnswers: [Answer] {
-        return shouldShuffle ?? true ? answers.shuffled() : answers 
-    }
+    let preventShuffling: Bool?
+    let answers: [Answer]
 }
