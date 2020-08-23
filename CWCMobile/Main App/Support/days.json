@@ -240,6 +240,7 @@
             },
             {
                "question": "What are size classes?",
+               "shouldShuffle": false,
                "answers": [
                   {
                      "text": "Size classes are categories of screen sizes that you can target your Auto Layout constraints against.",
@@ -495,6 +496,7 @@
          "questions": [
             {
                "question": "What is the difference between an IBOutlet property and an IBAction method? Select the most accurate statement below.",
+               "shouldShuffle": false,
                "answers": [
                   {
                      "text": "An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it.",
@@ -748,6 +750,7 @@
             },
             {
                "question": "In Swift, inheritance allows the subclass to",
+               "shouldShuffle": false,
                "answers": [
                   {
                      "text": "inherit the properties of the superclass.",
@@ -1206,6 +1209,7 @@
          "questions": [
             {
                "question": "What is a protocol?",
+               "shouldShuffle": false,
                "answers": [
                   {
                      "text": "A predefined set of methods and parameters that will be used for two parties to communicate.",
@@ -1226,6 +1230,7 @@
             },
             {
                "question": "What is a delegate?",
+               "shouldShuffle": false,
                "answers": [
                   {
                      "text": "An object that conforms to a protocol by implementing the methods as described by the protocol.",
@@ -1530,6 +1535,7 @@
             },
             {
                "question": "Who is responsible for configuring the cells that a collection view is displaying?",
+               "shouldShuffle": false,
                "answers": [
                   {
                      "text": "The collection view itself.",
@@ -1630,6 +1636,7 @@
          "questions": [
             {
                "question": "What is an app bundle?",
+               "shouldShuffle": false,
                "answers": [
                   {
                      "text": "The package that gets deployed on the actual device.",

@@ -134,6 +134,7 @@ days:
             feedback: No, we add images to our project by placing them in Assets.xcassets which is the Assets catalogue.
             isCorrect: false
       - question: What are size classes?
+        shouldShuffle: false
         answers:
           - text: Size classes are categories of screen sizes that you can target your Auto Layout constraints against.
             feedback: Yes, size classes are categories of screen sizes that you can target your Auto Layout constraints against.
@@ -276,6 +277,7 @@ days:
       videoUrl: https://www.filepicker.io/api/file/bJtJQinTQdCyEsc9nSBx
     questions:
       - question: What is the difference between an IBOutlet property and an IBAction method? Select the most accurate statement below.
+        shouldShuffle: false
         answers:
           - text: An IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it.
             feedback: No, an IBOutlet property connects to a user interface element in the storyboard and gives you a reference to it AND an IBAction method connects to an event raised by a user interface element in the storyboard and executes when the event is triggered.
@@ -420,6 +422,7 @@ days:
             feedback: No, subclassing lets us create a new class based on an existing class.
             isCorrect: false
       - question: In Swift, inheritance allows the subclass to
+        shouldShuffle: false
         answers:
           - text: inherit the properties of the superclass.
             feedback: No, not only does inheritance allow the subclass to inherit the properties of the superclass, it also inherits the methods of the superclass.
@@ -676,8 +679,9 @@ days:
       title: "The Card Game: Protocols and Delegates - Lesson 22"
       videoUrl: https://cdn.fs.teachablecdn.com/voNv4n5oRcuEmAMxO429
     questions:
-     - question: What is a protocol?
-       answers:
+      - question: What is a protocol?
+        shouldShuffle: false
+        answers:
           - text: A predefined set of methods and parameters that will be used for two parties to communicate.
             feedback: No, not only is a protocol is both a predefined set of methods and parameters that will be used for two parties to communicate but it is also a way for one class to communicate with another class.
             isCorrect: false
@@ -687,8 +691,9 @@ days:
           - text: Both A & B
             feedback: Yes, a protocol is both a predefined set of methods and parameters that will be used for two parties to communicate.  It is also a way for one class to communicate with another class.
             isCorrect: true
-     - question: What is a delegate?
-       answers:
+      - question: What is a delegate?
+        shouldShuffle: false
+        answers:
           - text: An object that conforms to a protocol by implementing the methods as described by the protocol.
             feedback: Yes, a 'delegate' is an object that conforms to a protocol by implementing the methods as described by the protocol.
             isCorrect: true
@@ -698,8 +703,8 @@ days:
           - text: Both A & B
             feedback: No, a 'delegate' is an object that conforms to a protocol by implementing the methods as described by the protocol.
             isCorrect: false
-     - question: A class has to know and care what class conforms to its delegate. True or false?
-       answers:
+      - question: A class has to know and care what class conforms to its delegate. True or false?
+        answers:
           - text: "True"
             feedback: No, a class does NOT have to know NOR care what class conforms to its delegate. All the class with the delegate knows about is that the functions in the protocol are implemented.
             isCorrect: false
@@ -718,8 +723,8 @@ days:
       title: "The Card Game: Xcode Best Practices - Lesson 24"
       videoUrl: https://cdn.fs.teachablecdn.com/qpGvma7eSCkIeSP3D2J0
     questions:
-     - question: What is a naming convention?
-       answers:
+      - question: What is a naming convention?
+        answers:
           - text: The only way to name your variables, methods, classes etc.
             feedback: No, a naming convention is a standard way to name variables, methods, classes etc, that is agreed upon by you and your team.
             isCorrect: false
@@ -729,8 +734,8 @@ days:
           - text: A standard way to name variables, methods, classes etc that is agreed upon by you and your team.
             feedback: Yes, a naming convention is a standard way to name variables, methods, classes etc, that is agreed upon by you and your team.
             isCorrect: true
-     - question: According to best practice, what should each word in a class name start with?
-       answers:
+      - question: According to best practice, what should each word in a class name start with?
+        answers:
           - text: A capital letter.
             feedback: Yes, according to best practice, each word in a class name should start with a capital letter.
             isCorrect: true
@@ -740,8 +745,8 @@ days:
           - text: It doesn't matter.
             feedback: No, according to best practice, each word in a class name should start with a capital letter.
             isCorrect: false
-     - question: What is the preferred structure for naming methods and functions?
-       answers:
+      - question: What is the preferred structure for naming methods and functions?
+        answers:
           - text: verbNoun
             feedback: "Yes, the preferred structure for naming methods and functions is verbNoun.\n\nFor example getCards() - 'get' being the verb and 'Cards' being the noun."
             isCorrect: true
@@ -858,6 +863,7 @@ days:
             feedback: Yes, the function we use to configure the state of our CardCollectionViewCells based on the properties of the Card that a cell represents is 'willDisplay'.
             isCorrect: true
       - question: Who is responsible for configuring the cells that a collection view is displaying?
+        shouldShuffle: false
         answers:
           - text: The collection view itself.
             feedback: No, the collection view delegate is responsible for configuring the cells that a collection view is displaying.
@@ -914,6 +920,7 @@ days:
       videoUrl: https://cdn.fs.teachablecdn.com/idYkK8asQGeVrpMuo3rJ
     questions:
       - question: What is an app bundle?
+        shouldShuffle: false
         answers:
           - text: The package that gets deployed on the actual device.
             feedback: No, not only is an app bundle the package that gets deployed on the actual device but it is also the package that gets deployed to the App Store.

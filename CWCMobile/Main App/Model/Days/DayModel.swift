@@ -16,7 +16,7 @@ class DayModel {
     weak var delegate: DayProtocol?
     
     func loadDays() {
-        getRemoteJSONFile()
+        getLocalJSONFile()
     }
     
     private func getLocalJSONFile() {

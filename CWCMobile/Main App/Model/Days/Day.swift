@@ -13,7 +13,7 @@ class Day: Codable {
     let subtitle: String
     let description: String
     let video: Video
-    var questions = [DayDetailQuestion]()
+    var questions = [DecodeQuestion]()
     let page: MainAppPage?
     
     init(day: DecodeDay) {
