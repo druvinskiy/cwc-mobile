@@ -56,15 +56,11 @@ class CWCOnboardingView: UICollectionView, UICollectionViewDelegateFlowLayout {
     }
     
     func hideButton(_ pageButton: UIButton) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             pageButton.layer.opacity = 0
-        }
     }
     
     func showButton(_ pageButton: UIButton) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             pageButton.layer.opacity = 1
-        }
     }
     
     init(numberOfPages: Int) {
