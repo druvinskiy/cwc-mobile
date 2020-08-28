@@ -15,7 +15,7 @@ class DayCellBackgroundView: UIView {
         backgroundColor = .white
         layer.cornerRadius = 16
         
-        layer.shadowOpacity = 0.6
+        layer.shadowOpacity = 0.4  //  was 0.6
         layer.shadowRadius = 8
         layer.shadowOffset = .init(width: 5, height: 5)
         layer.shouldRasterize = true

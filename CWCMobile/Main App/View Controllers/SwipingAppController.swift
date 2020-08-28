@@ -26,7 +26,7 @@ class SwipingAppController: UIViewController, Storyboarded {
     
     func addTwoFingerSwipeGesture() {
         let gesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
-        gesture.direction = .down
+        gesture.direction = .right
         gesture.numberOfTouchesRequired = 2
         gesture.delegate = self
         view.addGestureRecognizer(gesture)

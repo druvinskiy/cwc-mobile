@@ -24,6 +24,7 @@ class CWCOnboardingView: UICollectionView, UICollectionViewDelegateFlowLayout {
         let nextIndex = max(pageControl.currentPage - 1, 0)
         let indexPath = IndexPath(item: nextIndex, section: 0)
         pageControl.currentPage = nextIndex
+        updatePagingButtonsVisibility()
         scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
@@ -38,7 +39,32 @@ class CWCOnboardingView: UICollectionView, UICollectionViewDelegateFlowLayout {
         let nextIndex = min(pageControl.currentPage + 1, numberOfPages - 1)
         let indexPath = IndexPath(item: nextIndex, section: 0)
         pageControl.currentPage = nextIndex
+        updatePagingButtonsVisibility()
         scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+    }
+    
+    func updatePagingButtonsVisibility() {
+        switch pageControl.currentPage {
+        case 0:
+            hideButton(previousButton)
+        case numberOfPages - 1:
+            hideButton(nextButton)
+        default:
+            showButton(previousButton)
+            showButton(nextButton)
+        }
+    }
+    
+    func hideButton(_ pageButton: UIButton) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            pageButton.layer.opacity = 0
+        }
+    }
+    
+    func showButton(_ pageButton: UIButton) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            pageButton.layer.opacity = 1
+        }
     }
     
     init(numberOfPages: Int) {
@@ -51,6 +77,7 @@ class CWCOnboardingView: UICollectionView, UICollectionViewDelegateFlowLayout {
         
         configure()
         createSubviews()
+        updatePagingButtonsVisibility()
     }
     
     required init?(coder: NSCoder) {
@@ -76,6 +103,7 @@ class CWCOnboardingView: UICollectionView, UICollectionViewDelegateFlowLayout {
         let x = targetContentOffset.pointee.x
         
         pageControl.currentPage = Int(x / frame.width)
+        updatePagingButtonsVisibility()
         
     }
     
