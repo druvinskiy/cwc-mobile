@@ -12,13 +12,8 @@ class DayCellBackgroundView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         layer.cornerRadius = 16
-        
-        layer.shadowOpacity = 0.4  //  was 0.6
-        layer.shadowRadius = 8
-        layer.shadowOffset = .init(width: 5, height: 5)
-        layer.shouldRasterize = true
     }
     
     required init?(coder: NSCoder) {

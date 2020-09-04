@@ -15,9 +15,9 @@ class PageCell: UICollectionViewCell {
             
             topImageView.image = UIImage(named: unwrappedPage.imageName)
             
-            let attributedText = NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+            let attributedText = NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.white : UIColor.black])
             
-            attributedText.append(NSAttributedString(string: "\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+            attributedText.append(NSAttributedString(string: "\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.lightGray : UIColor.gray]))
             
             descriptionTextView.attributedText = attributedText
             descriptionTextView.textAlignment = .center
@@ -33,9 +33,9 @@ class PageCell: UICollectionViewCell {
     let descriptionTextView: UITextView = {
         let textView = UITextView()
         
-        let attributedText = NSMutableAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+        let attributedText = NSMutableAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.white : UIColor.black])
         
-        attributedText.append(NSAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+        attributedText.append(NSAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.lightGray : UIColor.gray]))
         
         textView.attributedText = attributedText
         textView.textAlignment = .center

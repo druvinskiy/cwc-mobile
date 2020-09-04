@@ -14,10 +14,10 @@ class AppCellBackgroundView: UIView {
         
         backgroundColor = .white
         layer.cornerRadius = 16
-        
+        layer.shadowColor = UserInterface.isDarkMode() ? UIColor.clear.cgColor : UIColor.black.cgColor
         layer.shadowOpacity = 0.6
-        layer.shadowRadius = 8
-        layer.shadowOffset = .init(width: 5, height: 5)
+        layer.shadowRadius = 5
+        layer.shadowOffset = .init(width: 4, height: 4)
         layer.shouldRasterize = true
     }
     

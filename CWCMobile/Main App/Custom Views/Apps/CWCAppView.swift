@@ -16,7 +16,7 @@ class AppView: UICollectionView {
     }
     
     func configure() {
-        backgroundColor = #colorLiteral(red: 0.9489166141, green: 0.9490789771, blue: 0.9489063621, alpha: 1)
+        backgroundColor = .systemBackground
     }
     
     required init?(coder: NSCoder) {

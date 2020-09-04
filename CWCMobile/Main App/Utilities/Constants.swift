@@ -16,6 +16,17 @@ class Theme {
     static let rowDark = UIColor(red: 0.88, green: 0.88, blue: 0.88, alpha: 1.0)
 }
 
+struct UserInterface {
+    static func isDarkMode() -> Bool {
+        switch UITraitCollection.current.userInterfaceStyle {
+        case .dark:
+            return true
+        default:
+            return false
+        }
+    }
+}
+
 enum AppName: String {
     case war = "War Card Game"
     case match = "Match App"

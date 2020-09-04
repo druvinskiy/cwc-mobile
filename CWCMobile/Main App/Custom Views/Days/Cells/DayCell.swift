@@ -16,9 +16,19 @@ class DayCell: UICollectionViewCell {
             thumbnailImageView.image = UIImage(named: "Video_\(day.number)")
             descriptionLabel.text = day.description
             
+            subtitleLabel.textColor = UserInterface.isDarkMode() ? .white : .darkText
+            descriptionLabel.textColor = UserInterface.isDarkMode() ? .white : .darkText
+            
             let color = (day.number % 2 == 0) ? Theme.rowLight : Theme.rowDark
-            backgroundColor = color
-            backgroundView?.backgroundColor = color
+            backgroundColor = UserInterface.isDarkMode() ? .secondarySystemBackground : color
+            backgroundView?.backgroundColor = UserInterface.isDarkMode() ? .secondarySystemBackground : color
+            
+            backgroundView?.layer.shadowColor = UserInterface.isDarkMode() ? UIColor.clear.cgColor : UIColor.black.cgColor
+            backgroundView?.layer.shadowOpacity = UserInterface.isDarkMode() ? 1 : 0.4  //  was 0.6
+            backgroundView?.layer.shadowRadius = 6
+            backgroundView?.layer.shadowOffset = .init(width: 5, height: 5)
+            backgroundView?.layer.shouldRasterize = true
+            
         }
     }
     
@@ -82,8 +92,8 @@ class DayCell: UICollectionViewCell {
         addSubview(stackView)
         stackView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 24, left: 15, bottom: 24, right: 15))
         
-        subtitleLabel.textColor = .darkText
+        subtitleLabel.textColor = UserInterface.isDarkMode() ? .white : .darkText
         numberLabel.textColor = Theme.chrisBlue
-        descriptionLabel.textColor = .darkText
+        descriptionLabel.textColor = UserInterface.isDarkMode() ? .white : .darkText
     }
 }

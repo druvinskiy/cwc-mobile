@@ -14,12 +14,14 @@ class AlertVC: UIViewController {
     
     let titleLabel: UILabel = {
         let label = UILabel(text: "", font: .systemFont(ofSize: 20, weight: .bold))
+        label.textColor = .black
         label.textAlignment = .center
         return label
     }()
     
     let messageLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .black
         label.textAlignment = .center
         return label
     }()

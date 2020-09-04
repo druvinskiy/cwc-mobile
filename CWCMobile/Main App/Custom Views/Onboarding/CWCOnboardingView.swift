@@ -81,7 +81,7 @@ class CWCOnboardingView: UICollectionView, UICollectionViewDelegateFlowLayout {
     }
     
     private func configure() {
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         isPagingEnabled = true
         delegate = self
     }

@@ -31,6 +31,7 @@ class AnswerResponsePopupVC: UIViewController {
     let feedbackLabel: UILabel = {
         let label = UILabel(text: "", font: .systemFont(ofSize: 18), numberOfLines: 0)
         label.textAlignment = .left
+        label.textColor = .darkText
         return label
     }()
     

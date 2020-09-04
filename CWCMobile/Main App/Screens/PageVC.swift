@@ -13,9 +13,9 @@ class PageVC: UIViewController {
         didSet {
             topImageView.image = UIImage(named: page.imageName)
             
-            let attributedText = NSMutableAttributedString(string: page.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+            let attributedText = NSMutableAttributedString(string: page.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.white : UIColor.black])
             
-            attributedText.append(NSAttributedString(string: "\n\n\(page.bodyText)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+            attributedText.append(NSAttributedString(string: "\n\n\(page.bodyText)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.white : UIColor.black]))
             
             descriptionTextView.attributedText = attributedText
             descriptionTextView.textAlignment = .center
@@ -31,9 +31,9 @@ class PageVC: UIViewController {
     let descriptionTextView: UITextView = {
         let textView = UITextView()
         
-        let attributedText = NSMutableAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+        let attributedText = NSMutableAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.white : UIColor.black])
         
-        attributedText.append(NSAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+        attributedText.append(NSAttributedString(string: "", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UserInterface.isDarkMode() ? UIColor.white : UIColor.black]))
         
         textView.attributedText = attributedText
         textView.textAlignment = .center
@@ -83,7 +83,7 @@ class PageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         configureImageViewAndTextView()
         configureButtons()
