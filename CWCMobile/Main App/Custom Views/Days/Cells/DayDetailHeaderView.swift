@@ -20,12 +20,20 @@ class DayDetailHeaderView: UICollectionReusableView {
             
             let items = section.cells
             
-            if items.isEmpty {
-                backgroundColor = Theme.chrisBlue
-                title.textColor = .white
+            if UserInterface.isDarkMode() {
+                if items.isEmpty {
+                    backgroundColor = Theme.chrisBlue //.secondarySystemBackground
+                } else {
+                    backgroundColor = (section.number % 2 == 0) ? .tertiarySystemBackground : .secondarySystemBackground
+                }
             } else {
-                backgroundColor = (section.number % 2 == 0) ? Theme.rowLight : Theme.rowDark
-                title.textColor = .darkText
+                if items.isEmpty {
+                    backgroundColor = Theme.chrisBlue
+                    title.textColor = .white
+                } else {
+                    backgroundColor = (section.number % 2 == 0) ? Theme.rowLight : Theme.rowDark
+                    title.textColor = .darkText
+                }
             }
         }
     }

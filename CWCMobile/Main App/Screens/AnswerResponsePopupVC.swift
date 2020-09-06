@@ -31,7 +31,7 @@ class AnswerResponsePopupVC: UIViewController {
     let feedbackLabel: UILabel = {
         let label = UILabel(text: "", font: .systemFont(ofSize: 18), numberOfLines: 0)
         label.textAlignment = .left
-        label.textColor = .darkText
+        label.textColor = UserInterface.isDarkMode() ? .white : .darkText
         return label
     }()
     
@@ -77,7 +77,7 @@ class AnswerResponsePopupVC: UIViewController {
     
     private func configureDialogView() {
         dialogView.anchor(top: containerView.topAnchor, leading: containerView.leadingAnchor, bottom: containerView.bottomAnchor, trailing: containerView.trailingAnchor, padding: .init(top: 100, left: 40, bottom: 100, right: 40))
-        dialogView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        dialogView.backgroundColor = UserInterface.isDarkMode() ? .secondarySystemBackground : #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         dialogView.layer.cornerRadius = 16
     }
     

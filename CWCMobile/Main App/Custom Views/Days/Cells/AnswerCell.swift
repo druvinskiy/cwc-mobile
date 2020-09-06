@@ -13,13 +13,13 @@ class AnswerCell: UICollectionViewCell {
     
     let answerLabel: UILabel = {
         let label = UILabel(text: "Test", font: .systemFont(ofSize: 18), numberOfLines: 0)
-        label.textColor = .black
+//        label.textColor = .black
         return label
     }()
     
     let answerView: UIView = {
         let view = UIView()
-        view.backgroundColor = Theme.chrisBlueLight
+        view.backgroundColor = UserInterface.isDarkMode() ? Theme.chrisBlueDark : Theme.chrisBlueLight
         view.layer.cornerRadius = 8
         return view
     }()

@@ -27,7 +27,7 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .systemBackground
         title = "Day \(day.number)"
         
         collectionView.register(DayVideoCell.self, forCellWithReuseIdentifier: DayVideoCell.videoCellId)
@@ -148,7 +148,7 @@ class DayDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     func configureNoQuestionsLabel() {
         let label = UILabel(text: Messages.noQuestions, font: .boldSystemFont(ofSize: 20), numberOfLines: 0)
         label.textAlignment = .center
-        label.textColor = .black
+        label.textColor = UserInterface.isDarkMode() ? .white : .black
         
         view.addSubview(label)
         

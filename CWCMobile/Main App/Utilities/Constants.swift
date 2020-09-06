@@ -12,6 +12,7 @@ class Theme {
     static let chrisBlue = UIColor(named: "Chris Blue") ?? UIColor.blue
     static let chrisBlueNavigation = UIColor(named: "Chris Blue Navigation") ?? UIColor.blue
     static let chrisBlueLight = UIColor(named: "Chris Blue Light") ?? UIColor.blue
+    static let chrisBlueDark = UIColor(named: "Chris Blue Dark") ?? UIColor.blue
     static let rowLight = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
     static let rowDark = UIColor(red: 0.88, green: 0.88, blue: 0.88, alpha: 1.0)
 }
