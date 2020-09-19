@@ -88,7 +88,7 @@ class CWCOnboardingView: UICollectionView, UICollectionViewDelegateFlowLayout {
     
     private func createSubviews() {
         let bottomControlsStackView = UIStackView(arrangedSubviews: [previousButton, pageControl, nextButton])
-        bottomControlsStackView.distribution = .fillEqually
+        bottomControlsStackView.distribution = .fillProportionally
         addSubview(bottomControlsStackView)
         
         bottomControlsStackView.anchor(top: nil, leading: safeAreaLayoutGuide.leadingAnchor, bottom: safeAreaLayoutGuide.bottomAnchor, trailing: safeAreaLayoutGuide.trailingAnchor, padding: .zero, size: .init(width: 0, height: 50))

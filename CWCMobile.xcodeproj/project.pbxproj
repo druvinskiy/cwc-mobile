@@ -523,7 +523,6 @@
 		B87ECF84247F61F3005E2356 /* Main App */ = {
 			isa = PBXGroup;
 			children = (
-				B8841AC424E4A8250022DEFA /* Controllers */,
 				B87ECFAC2480C541005E2356 /* View Controllers */,
 				B82A95B32478CFE9006063BC /* Model */,
 				B82A95B42478CFF5006063BC /* Extensions */,
@@ -576,13 +575,6 @@
 				B87ECFBE2480CD01005E2356 /* dingwrong.wav */,
 			);
 			path = Sounds;
-			sourceTree = "<group>";
-		};
-		B8841AC424E4A8250022DEFA /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B8B62EED24E33A9F00645BCC /* Settings */ = {
@@ -742,7 +734,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "David Ruvinskiy";
 				TargetAttributes = {
 					B82CADEA2478C9260051C711 = {
@@ -1028,6 +1020,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1088,6 +1081,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

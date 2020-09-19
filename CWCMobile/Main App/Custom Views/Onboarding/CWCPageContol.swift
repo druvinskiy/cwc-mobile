@@ -27,6 +27,6 @@ class CWCPageControl: UIPageControl {
     private func configure() {
         currentPage = 0
         currentPageIndicatorTintColor = Theme.chrisBlue
-        pageIndicatorTintColor = .gray
+        pageIndicatorTintColor = .lightGray
     }
 }
